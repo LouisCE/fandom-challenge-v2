@@ -1,4 +1,9 @@
+from colorama import Fore, init
 from data import JAK_QUESTIONS
+
+# initialise colorama
+init(autoreset=True)
+print(Fore.GREEN + "Colorama test passed!")
 
 
 def main():
