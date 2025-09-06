@@ -1,3 +1,10 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+from data import JAK_QUESTIONS
+
+
+def main():
+    print("Fandom Challenge v2 - Test Run")
+    print("Sample Jak Question:", JAK_QUESTIONS[0]["question"])
+
+
+if __name__ == "__main__":
+    main()
