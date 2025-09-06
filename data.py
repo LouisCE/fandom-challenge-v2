@@ -29,3 +29,18 @@ RATCHET_QUESTIONS = [
         "answer": "A"
     }
 ]
+
+GOD_OF_WAR_QUESTIONS = [
+    {
+        "question": (
+            "Who is Kratos' father?"
+        ),
+        "options": [
+            "A) Zeus",
+            "B) Ares",
+            "C) Poseidon",
+            "D) Hades"
+        ],
+        "answer": "A"
+    }
+]
