@@ -13,3 +13,19 @@ JAK_QUESTIONS = [
         "answer": "B"
     }
 ]
+
+RATCHET_QUESTIONS = [
+    {
+        "question": (
+            "What is the name of Ratchet's robot companion "
+            "throughout most of the series?"
+        ),
+        "options": [
+            "A) Clank",
+            "B) Qwark",
+            "C) Drek",
+            "D) Skid McMarx"
+        ],
+        "answer": "A"
+    }
+]
