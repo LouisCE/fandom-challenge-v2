@@ -1142,5 +1142,445 @@ GOD_OF_WAR_QUESTIONS = [
             "D) Hercules"
         ],
         "answer": "Kratos"
-    }
+    },
+    {
+    "question": "What sea monster serves as the first major boss fight in God of War (2005)?",
+    "options": [
+        "A) The Kraken",
+        "B) The Hydra",
+        "C) Scylla",
+        "D) Cerberus"
+    ],
+    "answer": "The Hydra"
+},
+{
+    "question": "What does Kratos do with the ship's Captain after taking his key during the Hydra battle?",
+    "options": [
+        "A) Throws him overboard",
+        "B) Leaves him trapped in a cage",
+        "C) Drops him into the Hydra's throat",
+        "D) Stabs him with the Blades of Chaos"
+    ],
+    "answer": "Drops him into the Hydra's throat"
+},
+{
+    "question": "Which chained weapons were gifted to Kratos by Ares, binding him to the god of war?",
+    "options": [
+        "A) Blade of Artemis",
+        "B) Blades of Chaos",
+        "C) Blade of Olympus",
+        "D) Nemean Cestus"
+    ],
+    "answer": "Blades of Chaos"
+},
+{
+    "question": "What powerful foe does Kratos face in Pandora's Temple that is clad in armor?",
+    "options": [
+        "A) Armoured Minotaur",
+        "B) Cyclops Titan",
+        "C) Stone Talos",
+        "D) Gorgon Queen"
+    ],
+    "answer": "Armoured Minotaur"
+},
+{
+    "question": "What artifact does Kratos seek inside Pandora's Temple to defeat Ares?",
+    "options": [
+        "A) The Amulet of Fates",
+        "B) Pandora's Box",
+        "C) The Blade of Olympus",
+        "D) The Ambrosia of the Gods"
+    ],
+    "answer": "Pandora's Box"
+},
+{
+    "question": "Where does Kratos fall after Ares kills him during God of War (2005)?",
+    "options": [
+        "A) The River Styx",
+        "B) The Underworld",
+        "C) Mount Olympus",
+        "D) Tartarus"
+    ],
+    "answer": "The Underworld"
+},
+{
+    "question": "Who is the main antagonist and final boss of God of War (2005)?",
+    "options": [
+        "A) Hades",
+        "B) Zeus",
+        "C) Ares",
+        "D) Perseus"
+    ],
+    "answer": "Ares"
+},
+{
+    "question": "Who was ordered to build Pandora’s Temple, carrying the task on his back until his death?",
+    "options": [
+        "A) Pathos Verdes III",
+        "B) Daedalus",
+        "C) Hephaestus",
+        "D) Prometheus"
+    ],
+    "answer": "Pathos Verdes III"
+},
+{
+    "question": "Which Spartan warrior remains loyal to Kratos and is known as the Last Spartan?",
+    "options": [
+        "A) Deimos",
+        "B) Lysander",
+        "C) The Last Spartan",
+        "D) Alcaeus"
+    ],
+    "answer": "The Last Spartan"
+},
+{
+    "question": "Who challenges Kratos in the air while wearing wings, leading to a fall into the Underworld?",
+    "options": [
+        "A) Daedalus",
+        "B) Hermes",
+        "C) Icarus",
+        "D) Perseus"
+    ],
+    "answer": "Icarus"
+},
+{
+    "question": "Which Greek hero attempts to stop Kratos inside the Temple of the Fates?",
+    "options": [
+        "A) Perseus",
+        "B) Theseus",
+        "C) Orpheus",
+        "D) Achilles"
+    ],
+    "answer": "Perseus"
+},
+{
+    "question": "What massive sea monster does Kratos battle at the end of God of War II?",
+    "options": [
+        "A) Hydra",
+        "B) Kraken",
+        "C) Leviathan",
+        "D) Scylla"
+    ],
+    "answer": "Kraken"
+},
+{
+    "question": "What creature does Kratos ride to reach the Sisters of Fate?",
+    "options": [
+        "A) Pegasus",
+        "B) Phoenix",
+        "C) Griffin",
+        "D) Harpy"
+    ],
+    "answer": "Phoenix"
+},
+{
+    "question": "Who are the beings that control the destiny of all in God of War II?",
+    "options": [
+        "A) The Furies",
+        "B) The Muses",
+        "C) The Sisters of Fate",
+        "D) The Norns"
+    ],
+    "answer": "The Sisters of Fate"
+},
+{
+    "question": "Which Olympian god does Kratos kill first in God of War III?",
+    "options": [
+        "A) Poseidon",
+        "B) Hermes",
+        "C) Hades",
+        "D) Helios"
+    ],
+    "answer": "Poseidon"
+},
+{
+    "question": "Which god rules the Underworld and battles Kratos with chains and a helmet?",
+    "options": [
+        "A) Thanatos",
+        "B) Hades",
+        "C) Ares",
+        "D) Persephone"
+    ],
+    "answer": "Hades"
+},
+{
+    "question": "Which Olympian messenger god does Kratos defeat, taking his speed?",
+    "options": [
+        "A) Hermes",
+        "B) Apollo",
+        "C) Hecate",
+        "D) Helios"
+    ],
+    "answer": "Hermes"
+},
+{
+    "question": "Which sun god does Kratos decapitate and use to reveal hidden paths?",
+    "options": [
+        "A) Apollo",
+        "B) Helios",
+        "C) Hyperion",
+        "D) Eos"
+    ],
+    "answer": "Helios"
+},
+{
+    "question": "Which son of Zeus does Kratos battle in an arena-like fight?",
+    "options": [
+        "A) Ares",
+        "B) Hercules",
+        "C) Perseus",
+        "D) Apollo"
+    ],
+    "answer": "Hercules"
+},
+{
+    "question": "Which goddess becomes bitter and confronts Kratos in her drunken despair?",
+    "options": [
+        "A) Hera",
+        "B) Demeter",
+        "C) Hestia",
+        "D) Aphrodite"
+    ],
+    "answer": "Hera"
+},
+{
+    "question": "Which god is the final Olympian Kratos kills in God of War III?",
+    "options": [
+        "A) Ares",
+        "B) Zeus",
+        "C) Hades",
+        "D) Apollo"
+    ],
+    "answer": "Zeus"
+},
+{
+    "question": "Which goddess is successful in seducing Kratos?",
+    "options": [
+        "A) Hera",
+        "B) Aphrodite",
+        "C) Artemis",
+        "D) Persephone"
+    ],
+    "answer": "Aphrodite"
+},
+{
+    "question": "Which snake-haired monsters in the God of War series can turn Kratos to stone with their gaze?",
+    "options": [
+        "A) Sirens",
+        "B) Gorgons",
+        "C) Harpies",
+        "D) Furies"
+    ],
+    "answer": "Gorgons"
+},
+{
+    "question": "Which massive one-eyed beasts are recurring mini-bosses across the God of War series?",
+    "options": [
+        "A) Cyclopes",
+        "B) Minotaurs",
+        "C) Centaurs",
+        "D) Satyrs"
+    ],
+    "answer": "Cyclopes"
+},
+{
+    "question": "Which half-man, half-horse enemies often wield huge blades and command soldiers in God of War?",
+    "options": [
+        "A) Centaurs",
+        "B) Minotaurs",
+        "C) Wraiths",
+        "D) Gorgons"
+    ],
+    "answer": "Centaurs"
+},
+{
+    "question": "Which hulking beasts, often armored, are used as guardians in Pandora’s Temple and other locations?",
+    "options": [
+        "A) Minotaurs",
+        "B) Cyclopes",
+        "C) Satyrs",
+        "D) Wraiths"
+    ],
+    "answer": "Minotaurs"
+},
+{
+    "question": "Which spectral enemies wield dual blades and can burrow beneath the ground to ambush Kratos?",
+    "options": [
+        "A) Harpies",
+        "B) Wraiths",
+        "C) Shades",
+        "D) Sirens"
+    ],
+    "answer": "Wraiths"
+},
+{
+    "question": "Which gigantic animated statue serves as the first boss battle in God of War II?",
+    "options": [
+        "A) Colossus of Rhodes",
+        "B) Talos",
+        "C) Cyclops King",
+        "D) Atlas"
+    ],
+    "answer": "Colossus of Rhodes"
+},
+{
+    "question": "Which warlord originally killed Kratos in battle, leading to his pact with Ares?",
+    "options": [
+        "A) Barbarian King Alrik",
+        "B) Perseus",
+        "C) Hercules",
+        "D) Theseus"
+    ],
+    "answer": "Barbarian King Alrik"
+},
+{
+    "question": "Which enemy type in God of War III hatches smaller beasts to attack Kratos during battle?",
+    "options": [
+        "A) Harpy Matron",
+        "B) Cerberus Breeder",
+        "C) Gorgon Queen",
+        "D) Chimera Mother"
+    ],
+    "answer": "Cerberus Breeder"
+},
+{
+    "question": "In Chains of Olympus, which primordial god of dreams casts the world into slumber?",
+    "options": [
+        "A) Morpheus",
+        "B) Thanatos",
+        "C) Hypnos",
+        "D) Erebus"
+    ],
+    "answer": "Morpheus"
+},
+{
+    "question": "In God of War III, which mythical king turns everything he touches into gold, even himself?",
+    "options": [
+        "A) Midas",
+        "B) Minos",
+        "C) Perseus",
+        "D) Orpheus"
+    ],
+    "answer": "Midas"
+},
+{
+    "question": "Which Norse god of thunder is confronted in the Norse era of God of War?",
+    "options": [
+        "A) Baldur",
+        "B) Tyr",
+        "C) Thor",
+        "D) Odin"
+    ],
+    "answer": "Thor"
+},
+{
+    "question": "What is the name of Kratos' wife, whose ashes were bound to his skin as a curse?",
+    "options": [
+        "A) Calliope",
+        "B) Lysandra",
+        "C) Pandora",
+        "D) Persephone"
+    ],
+    "answer": "Lysandra"
+},
+{
+    "question": "What is the name of Kratos' daughter, whom he tragically lost?",
+    "options": [
+        "A) Calliope",
+        "B) Pandora",
+        "C) Hera",
+        "D) Electra"
+    ],
+    "answer": "Calliope"
+},
+{
+    "question": "Which god serves as the smith of Olympus and forges weapons in God of War III?",
+    "options": [
+        "A) Hephaestus",
+        "B) Hermes",
+        "C) Helios",
+        "D) Apollo"
+    ],
+    "answer": "Hephaestus"
+},
+{
+    "question": "What is the home of the Olympian gods and a central battleground in God of War III?",
+    "options": [
+        "A) Mount Olympus",
+        "B) Delphi",
+        "C) Athens",
+        "D) Sparta"
+    ],
+    "answer": "Mount Olympus"
+},
+{
+    "question": "Where does Kratos repeatedly journey when stripped of his godly powers or slain?",
+    "options": [
+        "A) Elysium",
+        "B) Underworld",
+        "C) Tartarus",
+        "D) Asphodel"
+    ],
+    "answer": "Underworld"
+},
+{
+    "question": "Why is Kratos able to escape the Underworld multiple times throughout the series?",
+    "options": [
+        "A) The gods free him",
+        "B) Death cannot hold those with purpose",
+        "C) He bribes Hades",
+        "D) He controls the River Styx"
+    ],
+    "answer": "Death cannot hold those with purpose"
+},
+{
+    "question": "Who is the mysterious gravedigger that aids Kratos?",
+    "options": [
+        "A) Hermes",
+        "B) Hades",
+        "C) Zeus",
+        "D) Thanatos"
+    ],
+    "answer": "Zeus"
+},
+{
+    "question": "Which hybrid monsters in God of War III combine traits of lion, goat, and serpent?",
+    "options": [
+        "A) Gorgons",
+        "B) Chimeras",
+        "C) Harpies",
+        "D) Satyrs"
+    ],
+    "answer": "Chimeras"
+},
+{
+    "question": "Which Titan is Kratos' ally at the beginning of God of War III?",
+    "options": [
+        "A) Atlas",
+        "B) Gaia",
+        "C) Cronos",
+        "D) Hyperion"
+    ],
+    "answer": "Gaia"
+},
+{
+    "question": "Which Titan is imprisoned in the Great Chain of Tartarus?",
+    "options": [
+        "A) Atlas",
+        "B) Prometheus",
+        "C) Cronos",
+        "D) Oceanus"
+    ],
+    "answer": "Cronos"
+},
+{
+    "question": "What was the Great War in God of War lore?",
+    "options": [
+        "A) A battle between mortals and gods",
+        "B) The conflict where the gods defeated the Titans",
+        "C) A war between Athens and Sparta",
+        "D) A rebellion against Zeus led by Hades"
+    ],
+    "answer": "The conflict where the gods defeated the Titans"
+}
 ]
