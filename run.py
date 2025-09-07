@@ -16,6 +16,15 @@ def rules():
     print("5. Try to get the highest score you can!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
+def about():
+    """Display information about the quiz."""
+    print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
+    print("The Fandom Quiz challenges your knowledge across different fandoms,")
+    print("starting with Jak and Daxter trivia.")
+    print("It was created as part of a Python project to test programming and UX skills.")
+    print("Future versions may include more categories and interactive features!")
+    input(Fore.CYAN + "\nPress Enter to return to the menu...")
+
 def menu():
     while True:
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
@@ -27,6 +36,8 @@ def menu():
 
         if choice == "1":
             rules()
+        elif choice == "2":
+            about()
         elif choice == "4":
             print(Fore.YELLOW + "Goodbye!")
             sys.exit(0)
