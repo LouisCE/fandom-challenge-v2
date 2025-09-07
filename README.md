@@ -31,6 +31,16 @@ Fandom Challenge is a Python terminal-based quiz game that runs in the Code Inst
 - Score tracking and end-of-quiz results.
 - Replay option to try again.
 
+## Future Enhancements
+
+Planned improvements include:
+
+- Adding more quiz categories and questions.
+- Implementing a timer for each question.
+- Adding ASCII art or simple terminal graphics for visual engagement.
+- Integrating keyboard shortcuts for faster input.
+- Implementing leaderboard features (including user initials, top 10 scores and completion times).
+
 ## Technologies Used
 
 - **Python 3:** Core programming language.
