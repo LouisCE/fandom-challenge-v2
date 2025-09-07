@@ -50,8 +50,17 @@ def play_quiz(questions):
         else:
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
 
-    # Final score
+
+    # Final score and result message
     print(Fore.CYAN + f"\nYou scored {score}/{len(questions)}!")
+
+    # Result messages based on performance
+    if score < 7:
+        print(Fore.YELLOW + "You can do better. Try again.")  # Under 7
+    elif score in [7, 8]:
+        print(Fore.GREEN + "Good job! You know your stuff.")  # 7 or 8
+    else:  # 9 or above
+        print(Fore.MAGENTA + "Congratulations! You're a superfan!")  # 9+
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
