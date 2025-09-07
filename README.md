@@ -10,6 +10,13 @@ Fandom Challenge is a Python terminal-based quiz game that runs in the Code Inst
 - Score tracking and end-of-quiz results.
 - Replay option to try again.
 
+## Technologies Used
+
+- **Python 3:** Core programming language.
+- **Colorama:** For colored terminal output.
+- **Heroku:** Deployment platform.
+- **GitHub:** Version control and source code hosting.
+
 ## Deployment
 
 This project was deployed using Heroku:
