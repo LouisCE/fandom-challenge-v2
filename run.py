@@ -64,13 +64,13 @@ def select_quiz():
         choice = input("Choose an option (1-4): ").strip()
 
         if choice == "1":
-            print(Fore.YELLOW + "Jak and Daxter quiz coming soon!")
+            play_quiz(JAK_QUESTIONS) # Calls play_quiz
         elif choice == "2":
-            print(Fore.YELLOW + "Ratchet & Clank quiz coming soon!")
+            play_quiz(RATCHET_QUESTIONS)
         elif choice == "3":
-            print(Fore.YELLOW + "God of War quiz coming soon!")
+            play_quiz(GOD_OF_WAR_QUESTIONS)
         elif choice == "4":
-            return  # back to main menu
+            return  # Back to main menu
         else:
             print(Fore.RED + "Invalid choice. Please enter 1, 2, 3, or 4.")
 
