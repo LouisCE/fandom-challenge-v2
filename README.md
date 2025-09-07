@@ -12,6 +12,17 @@ Fandom Challenge is a Python terminal-based quiz game that runs in the Code Inst
 - Answer options are randomised each time to ensure true knowledge is tested.
 - Replay quizzes for better results and enhanced replayability.
 
+## User Stories
+
+1. As a new player, I want to run the quiz easily from the terminal.
+2. As a player, I want the quiz to randomise questions so each game feels fresh.
+3. As a player, I want answer options to appear in different orders to prevent memorisation.
+4. As a player, I want immediate feedback after answering so I know if I was correct or incorrect.
+5. As a player, I want to see my final score and high scores at the end.
+6. As a player, I want different outcomes depending on my performance.
+7. As a returning player, I want my high scores to persist between sessions for long-term progress.
+8. As a player, I want to be able to replay the quiz without restarting the program.
+
 ## Features
 
 - Choose from multiple quiz categories (Jak and Daxter, Ratchet & Clank, God of War).
