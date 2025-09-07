@@ -25,6 +25,27 @@ def about():
     print("Future versions may include more categories and interactive features!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
+def select_quiz():
+    """Sub-menu for selecting which quiz to play."""
+    while True:
+        print(Fore.CYAN + "\n=== SELECT A QUIZ ===")
+        print("1 - Jak and Daxter")
+        print("2 - Ratchet & Clank")
+        print("3 - God of War")
+        print("4 - Back to main menu")
+        choice = input("Choose an option (1-4): ").strip()
+
+        if choice == "1":
+            print(Fore.YELLOW + "Jak and Daxter quiz coming soon!")
+        elif choice == "2":
+            print(Fore.YELLOW + "Ratchet & Clank quiz coming soon!")
+        elif choice == "3":
+            print(Fore.YELLOW + "God of War quiz coming soon!")
+        elif choice == "4":
+            return  # back to main menu
+        else:
+            print(Fore.RED + "Invalid choice. Please enter 1, 2, 3, or 4.")
+
 def menu():
     while True:
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
@@ -38,6 +59,8 @@ def menu():
             rules()
         elif choice == "2":
             about()
+        elif choice == "3":
+            select_quiz()
         elif choice == "4":
             print(Fore.YELLOW + "Goodbye!")
             sys.exit(0)
