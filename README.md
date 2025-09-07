@@ -17,4 +17,9 @@ This project was deployed using Heroku:
 6. Deploy the main branch manually, or enable automatic deploys.
 
 The live deployed app can be found here:  
-[Fandom Challenge on Heroku](https://fandom-challenge-v2-a2c443c8af3e.herokuapp.com/)
+[Fandom Challenge V2 on Heroku](https://fandom-challenge-v2-a2c443c8af3e.herokuapp.com/)
+
+## Credits
+
+- Developed by LouisCE for Code Institute Portfolio Project 3.
+- Thanks to Code Institute for the deployment template.
