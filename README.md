@@ -38,6 +38,15 @@ Fandom Challenge is a Python terminal-based quiz game that runs in the Code Inst
 - **Heroku:** Deployment platform.
 - **GitHub:** Version control and source code hosting.
 
+## Testing
+
+Testing included:
+
+- Manual testing of input handling and score calculation.
+- Verifying randomisation of questions and answer order.
+- Deployment testing on Heroku terminal.
+- Error handling for invalid input or empty answers.
+
 ## Deployment
 
 This project was deployed using Heroku:
