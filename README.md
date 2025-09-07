@@ -57,6 +57,43 @@ Testing included:
 - Deployment testing on Heroku terminal.
 - Error handling for invalid input or empty answers.
 
+### Bug Testing Log
+
+**Quiz Display Issues:**
+- **Bug:** Quiz displayed all questions instead of 10 random.
+  - **Observed Behavior:** All questions in the dataset appeared each time a quiz was played.
+  - **Cause:** `for` loop iterated over `questions` instead of `selected_questions`.
+  - **Resolution:** Changed the loop to `for i, q in enumerate(selected_questions, start=1)`.
+
+**Answer Recognition Bugs:**
+- **Bug:** Player answers always marked wrong.
+  - **Observed Behavior:** Correct answers were not recognized; even valid choices returned "Wrong!".
+  - **Cause:** Original code compared full option strings including old A/B/C/D prefixes.
+  - **Resolution:** Stripped original letter prefix using `clean_options = [opt[3:].strip() ...]` and shuffled these clean options.
+
+- **Bug:** Invalid choice error for valid input.
+  - **Observed Behavior:** Input like 'A', 'B', etc., sometimes triggered "Invalid choice. Skipping question.".
+  - **Cause:** Options were shuffled but mapping to labels was inconsistent.
+  - **Resolution:** Added `option_mapping` dictionary mapping new labels A-D to shuffled options and checked input against this mapping.
+
+**Superfan Message Bug:**
+- **Bug:** Superfan ASCII displayed even for low scores.
+  - **Observed Behavior:** Even scoring 5/10 triggered the superfan message.
+  - **Cause:** ASCII print was outside the score check `else` block.
+  - **Resolution:** Moved the ASCII celebration inside the `else` block that only executes for `score >= 9`.
+
+**Score/Variable Errors:**
+- **Bug:** `NameError: name 'score' is not defined`.
+  - **Observed Behavior:** Crash when trying to print final score.
+  - **Cause:** Some print statements were accidentally placed outside `play_quiz()` function.
+  - **Resolution:** Ensured all `score` references are within the function scope and correctly indented.
+
+**Indentation Issues:**
+- **Bug:** Indentation errors.
+  - **Observed Behavior:** `IndentationError: expected an indented block`.
+  - **Cause:** Some blocks (loops, if/else) were not properly indented after major rewriting.
+  - **Resolution:** Fixed all indentation consistently: 4 spaces per level, nested blocks 8+ spaces.
+
 ## Deployment
 
 This project was deployed using Heroku:
