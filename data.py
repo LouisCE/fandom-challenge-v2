@@ -10,7 +10,7 @@ JAK_QUESTIONS = [
             "C) Haven City",
             "D) Volcanic Crater"
         ],
-        "answer": "B"
+        "answer": "Sandover Village"
     },
     {
         "question": "What substance causes Daxter to transform into an ottsel?",
@@ -20,7 +20,7 @@ JAK_QUESTIONS = [
             "C) Green Eco",
             "D) Red Eco"
         ],
-        "answer": "A"
+        "answer": "Dark Eco"
     },
     {
         "question": "Which character acts as Jak's mentor and caretaker in Sandover Village?",
@@ -30,7 +30,7 @@ JAK_QUESTIONS = [
             "C) Gol Acheron",
             "D) Onin"
         ],
-        "answer": "A"
+        "answer": "Samos the Sage"
     },
     {
         "question": "In Jak II, which city does Jak get transported to?",
@@ -40,7 +40,7 @@ JAK_QUESTIONS = [
             "C) Rock Village",
             "D) The Precursor Core"
         ],
-        "answer": "B"
+        "answer": "Haven City"
     },
     {
         "question": "Who is the main antagonist of Jak II?",
@@ -50,7 +50,7 @@ JAK_QUESTIONS = [
             "C) Baron Praxis",
             "D) Erol"
         ],
-        "answer": "C"
+        "answer": "Kor"
     },
     {
         "question": "Which ability does Jak gain after being infused with Dark Eco in Jak II?",
@@ -60,7 +60,7 @@ JAK_QUESTIONS = [
             "C) Eco Shield",
             "D) Eco Blast"
         ],
-        "answer": "A"
+        "answer": "Dark Jak form"
     },
     {
         "question": "What is the name of the racing event featured in Jak X?",
@@ -70,7 +70,7 @@ JAK_QUESTIONS = [
             "C) Eco Challenge",
             "D) Death Drome"
         ],
-        "answer": "B"
+        "answer": "Kras City Grand Championship"
     },
     {
         "question": "Who builds most of Jak's vehicles and gadgets?",
@@ -80,7 +80,7 @@ JAK_QUESTIONS = [
             "C) Vin",
             "D) Torn"
         ],
-        "answer": "A"
+        "answer": "Keira"
     },
     {
         "question": "What type of eco is primarily associated with healing?",
@@ -90,7 +90,7 @@ JAK_QUESTIONS = [
             "C) Green Eco",
             "D) Red Eco"
         ],
-        "answer": "C"
+        "answer": "Green Eco"
     },
     {
         "question": "In Jak 3, who exiles Jak to the Wasteland?",
@@ -100,7 +100,7 @@ JAK_QUESTIONS = [
             "C) Onin",
             "D) Damas"
         ],
-        "answer": "B"
+        "answer": "Count Veger"
     }
 ]
 
@@ -116,7 +116,7 @@ RATCHET_QUESTIONS = [
             "C) Drek",
             "D) Skid McMarx"
         ],
-        "answer": "A"
+        "answer": "Clank"
     },
     {
         "question": "Which planet is Ratchet originally from?",
@@ -126,7 +126,7 @@ RATCHET_QUESTIONS = [
             "C) Fastoon",
             "D) Endako"
         ],
-        "answer": "B"
+        "answer": "Veldin"
     },
     {
         "question": "Who is the main villain in the first Ratchet & Clank game?",
@@ -136,7 +136,7 @@ RATCHET_QUESTIONS = [
             "C) Chairman Drek",
             "D) Emperor Tachyon"
         ],
-        "answer": "C"
+        "answer": "Chairman Drek"
     },
     {
         "question": "What is the name of the robot who becomes a recurring villain starting in 'Up Your Arsenal'?",
@@ -146,7 +146,7 @@ RATCHET_QUESTIONS = [
             "C) Dr. Nefarious",
             "D) Mr. Zurkon"
         ],
-        "answer": "C"
+        "answer": "Dr. Nefarious"
     },
     {
         "question": "Which weapon is known for transforming enemies into farm animals?",
@@ -156,7 +156,7 @@ RATCHET_QUESTIONS = [
             "C) Chimp-o-Matic",
             "D) Groovitron"
         ],
-        "answer": "B"
+        "answer": "Sheepinator"
     },
     {
         "question": "What gadget allows Ratchet and Clank to swing across gaps?",
@@ -166,7 +166,7 @@ RATCHET_QUESTIONS = [
             "C) Hydrodisplacer",
             "D) Thrusterpack"
         ],
-        "answer": "A"
+        "answer": "Swingshot"
     },
     {
         "question": "In 'A Crack in Time,' what special ability does Clank gain?",
@@ -176,17 +176,17 @@ RATCHET_QUESTIONS = [
             "C) Teleportation",
             "D) Shape-shifting"
         ],
-        "answer": "A"
+        "answer": "Control of time"
     },
     {
-        "question": "Which Lombax villain is featured in 'Tools of Destruction'?",
+        "question": "Which villain is featured in 'Tools of Destruction'?",
         "options": [
             "A) Percival Tachyon",
             "B) Dr. Nefarious",
             "C) General Alister",
             "D) Vorn Garblak"
         ],
-        "answer": "A"
+        "answer": "Percival Tachyon"
     },
     {
         "question": "Which weapon famously dances enemies to death?",
@@ -196,7 +196,7 @@ RATCHET_QUESTIONS = [
             "C) Plasma Coil",
             "D) Pixelizer"
         ],
-        "answer": "B"
+        "answer": "Groovitron"
     },
     {
         "question": "What is the name of the arena battles Ratchet often competes in?",
@@ -206,7 +206,7 @@ RATCHET_QUESTIONS = [
             "C) Megacorp Gauntlet",
             "D) Annihilation Nation"
         ],
-        "answer": "D"
+        "answer": "Annihilation Nation"
     }
 ]
 
@@ -221,7 +221,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Poseidon",
             "D) Hades"
         ],
-        "answer": "A"
+        "answer": "Zeus"
     },
     {
         "question": "Which god tricks Kratos into killing his own family?",
@@ -231,7 +231,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Zeus",
             "D) Hermes"
         ],
-        "answer": "B"
+        "answer": "Ares"
     },
     {
         "question": "What weapons are Kratos most famously associated with?",
@@ -241,7 +241,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Leviathan Axe",
             "D) Spear of Destiny"
         ],
-        "answer": "B"
+        "answer": "Blades of Chaos"
     },
     {
         "question": "Which Titan helps Kratos in God of War II?",
@@ -251,7 +251,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Cronos",
             "D) Hyperion"
         ],
-        "answer": "B"
+        "answer": "Gaia"
     },
     {
         "question": "Who betrays Kratos at the start of God of War II?",
@@ -261,7 +261,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Zeus",
             "D) Apollo"
         ],
-        "answer": "C"
+        "answer": "Zeus"
     },
     {
         "question": "What is the name of Kratos' brother?",
@@ -271,7 +271,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Theseus",
             "D) Orkos"
         ],
-        "answer": "B"
+        "answer": "Deimos"
     },
     {
         "question": "Who serves as the goddess of wisdom and often guides Kratos?",
@@ -281,7 +281,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Athena",
             "D) Artemis"
         ],
-        "answer": "C"
+        "answer": "Athena"
     },
     {
         "question": "In Ghost of Sparta, who kidnaps Kratos' mother?",
@@ -291,7 +291,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Poseidon",
             "D) Hades"
         ],
-        "answer": "B"
+        "answer": "Thanatos"
     },
     {
         "question": "What is the Blade of Olympus primarily used for?",
@@ -301,7 +301,7 @@ GOD_OF_WAR_QUESTIONS = [
             "C) To open Pandora's Box",
             "D) To slay mortals"
         ],
-        "answer": "B"
+        "answer": "To store Kratos' godly power"
     },
     {
         "question": "Who ultimately kills Zeus in God of War III?",
@@ -311,6 +311,6 @@ GOD_OF_WAR_QUESTIONS = [
             "C) Athena",
             "D) Hercules"
         ],
-        "answer": "B"
+        "answer": "Kratos"
     }
 ]
