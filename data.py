@@ -101,6 +101,416 @@ JAK_QUESTIONS = [
             "D) Damas"
         ],
         "answer": "Count Veger"
+    },
+    {
+        "question": "Who is Jak's loyal sidekick in all the games?",
+        "options": [
+            "A) Daxter",
+            "B) Samos",
+            "C) Keira",
+            "D) Torn"
+        ],
+        "answer": "Daxter"
+    },
+    {
+        "question": "Which eco type gives Jak the ability to shoot energy blasts?",
+        "options": [
+            "A) Yellow Eco",
+            "B) Light Eco",
+            "C) Blue Eco",
+            "D) Green Eco"
+        ],
+        "answer": "Yellow Eco"
+    },
+    {
+        "question": "In Jak II, who is the brutal ruler of Haven City?",
+        "options": [
+            "A) Baron Praxis",
+            "B) Kor",
+            "C) Count Veger",
+            "D) Erol"
+        ],
+        "answer": "Baron Praxis"
+    },
+    {
+        "question": "Which character provides tech support and builds Jak's vehicles?",
+        "options": [
+            "A) Torn",
+            "B) Keira",
+            "C) Samos",
+            "D) Daxter"
+        ],
+        "answer": "Keira"
+    },
+    {
+        "question": "Which type of eco enhances Jak's speed and agility?",
+        "options": [
+            "A) Red Eco",
+            "B) Blue Eco",
+            "C) Yellow Eco",
+            "D) Green Eco"
+        ],
+        "answer": "Blue Eco"
+    },
+    {
+        "question": "What is the name of the secret Precursor artifact in Jak II?",
+        "options": [
+            "A) Eco Crystal",
+            "B) Precursor Stone",
+            "C) Power Cell",
+            "D) Precursor Orb"
+        ],
+        "answer": "Precursor Stone"
+    },
+    {
+        "question": "Which antagonist is known for hunting Jak across the Wasteland in Jak 3?",
+        "options": [
+            "A) Kor",
+            "B) Erol",
+            "C) Praxis",
+            "D) Onin"
+        ],
+        "answer": "Erol"
+    },
+    {
+        "question": "Which eco is known to have destructive explosive properties?",
+        "options": [
+            "A) Red Eco",
+            "B) Blue Eco",
+            "C) Green Eco",
+            "D) Yellow Eco"
+        ],
+        "answer": "Red Eco"
+    },
+    {
+        "question": "Who is Jak's main love interest throughout the series?",
+        "options": [
+            "A) Keira",
+            "B) Torn",
+            "C) Daxter",
+            "D) Ashelin"
+        ],
+        "answer": "Keira"
+    },
+    {
+        "question": "Which character is the commander of Haven City's Krimzon Guard?",
+        "options": [
+            "A) Baron Praxis",
+            "B) Kor",
+            "C) Erol",
+            "D) Count Veger"
+        ],
+        "answer": "Erol"
+    },
+    {
+        "question": "What weapon mod allows Jak to fire rapid energy shots?",
+        "options": [
+            "A) Scattergun",
+            "B) Blaster Mod",
+            "C) Vulcan Fury",
+            "D) Peacemaker"
+        ],
+        "answer": "Vulcan Fury"
+    },
+    {
+        "question": "How many times can Jak jump in succession?",
+        "options": [
+            "A) Single",
+            "B) Double",
+            "C) Triple",
+            "D) Quadruple"
+        ],
+        "answer": "Triple"
+    },
+    {
+        "question": "Who betrayed Haven City by conspiring with Metal Heads?",
+        "options": [
+            "A) Baron Praxis",
+            "B) Krew",
+            "C) Kor",
+            "D) Count Veger"
+        ],
+        "answer": "Krew"
+    },
+    {
+        "question": "Why was Jak banished from Haven City?",
+        "options": [
+            "A) Accused of Eco theft",
+            "B) Refusing to join the Krimzon Guard",
+            "C) Being infused with Dark Eco",
+            "D) Being associated with Krew"
+        ],
+        "answer": "Being associated with Krew"
+    },
+    {
+        "question": "Who is Jak's father?",
+        "options": [
+            "A) Baron Praxis",
+            "B) Damas",
+            "C) Samos",
+            "D) Torn"
+        ],
+        "answer": "Damas"
+    },
+    {
+        "question": "What is the last weapon Jak receives in Jak III?",
+        "options": [
+            "A) Needle Lazer",
+            "B) Peace Maker",
+            "C) Mass Inverter",
+            "D) Super Nova"
+        ],
+        "answer": "Super Nova"
+    },
+    {
+        "question": "Which weapon fires lasers that bounce off walls?",
+        "options": [
+            "A) Blaster Mod",
+            "B) Beam Reflexor",
+            "C) Gyro Burster",
+            "D) Vulcan Fury"
+        ],
+        "answer": "Beam Reflexor"
+    },
+    {
+        "question": "Which weapon uses Dark Eco to increase damage?",
+        "options": [
+            "A) Peace Maker",
+            "B) Super Nova",
+            "C) Blaster Mod",
+            "D) Vulcan Fury"
+        ],
+        "answer": "Peace Maker"
+    },
+    {
+        "question": "What is the general value of one Power Cell in Precursor Orbs?",
+        "options": [
+            "A) 50 Orbs",
+            "B) 70 Orbs",
+            "C) 90 Orbs",
+            "D) 100 Orbs"
+        ],
+        "answer": "90 Orbs"
+    },
+    {
+        "question": "How many Power Cells are there in Jak and Daxter: The Precursor Legacy?",
+        "options": [
+            "A) 99",
+            "B) 100",
+            "C) 101",
+            "D) 111"
+        ],
+        "answer": "101"
+    },
+    {
+        "question": "How long did Jak spend in prison in Jak II?",
+        "options": [
+            "A) 1 year",
+            "B) 2 years",
+            "C) 3 years",
+            "D) 6 months"
+        ],
+        "answer": "2 years"
+    },
+    {
+        "question": "What nickname does Daxter give himself?",
+        "options": [
+            "A) Orange Thunder",
+            "B) Orange Lightning",
+            "C) Mighty Ottsel",
+            "D) The Flash"
+        ],
+        "answer": "Orange Lightning"
+    },
+    {
+        "question": "Who is revealed to be the Baron's daughter?",
+        "options": [
+            "A) Keira",
+            "B) Ashelin",
+            "C) Torn",
+            "D) Samos"
+        ],
+        "answer": "Ashelin"
+    },
+    {
+        "question": "Who is the Shadow leader of the Underground?",
+        "options": [
+            "A) Daxter",
+            "B) Torn",
+            "C) Samos",
+            "D) Jak"
+        ],
+        "answer": "Samos"
+    },
+    {
+        "question": "Which weapon does Jak receive after destroying the Precursor Robot in Jak III?",
+        "options": [
+            "A) Vulcan Fury",
+            "B) Arc Wielder",
+            "C) Peace Maker",
+            "D) Super Nova"
+        ],
+        "answer": "Arc Wielder"
+    },
+    {
+        "question": "How do Jak and Daxter ultimately defeat Gol and Maia in The Precursor Legacy?",
+        "options": [
+            "A) By using Dark Eco",
+            "B) By channeling Light Eco",
+            "C) By collapsing the Precursor Core",
+            "D) By pushing them into lava"
+        ],
+        "answer": "By channeling Light Eco"
+    },
+    {
+        "question": "What is revealed to be the true nature of the Precursors?",
+        "options": [
+            "A) Time Travelers",
+            "B) Ottsels",
+            "C) Energy Beings",
+            "D) Ancient Robots"
+        ],
+        "answer": "Ottsels"
+    },
+    {
+        "question": "How did Jak and Daxter earn their membership in the Underground?",
+        "options": [
+            "A) By defeating a Metal Head horde",
+            "B) By retrieving the Baron's banner in Dead Town",
+            "C) By rescuing Torn",
+            "D) By sabotaging the Palace"
+        ],
+        "answer": "By retrieving the Baron's banner in Dead Town"
+    },
+    {
+        "question": "What is Jak's true name revealed to be?",
+        "options": [
+            "A) Mar",
+            "B) Praxis",
+            "C) Damas",
+            "D) Toran"
+        ],
+        "answer": "Mar"
+    },
+    {
+        "question": "Who becomes Commander of the New Krimzon Guard?",
+        "options": [
+            "A) Jak",
+            "B) Torn",
+            "C) Ashelin",
+            "D) Sig"
+        ],
+        "answer": "Torn"
+    },
+    {
+        "question": "Where did the KG Robots originate from in Jak 3?",
+        "options": [
+            "A) The Precursor Temple",
+            "B) The Metal Head Nest",
+            "C) The KG War Factory",
+            "D) The Wasteland Ruins"
+        ],
+        "answer": "The KG War Factory"
+    },
+    {
+        "question": "Which monster attacked Rock Village in The Precursor Legacy?",
+        "options": [
+            "A) Metal-pede",
+            "B) Lurker Shark",
+            "C) Klaww",
+            "D) Kor Beast"
+        ],
+        "answer": "Klaww"
+    },
+    {
+        "question": "Who rewards Jak with a Power Cell for restoring energy to the village?",
+        "options": [
+            "A) The Mayor",
+            "B) The Gambler",
+            "C) The Oracle",
+            "D) The Warrior"
+        ],
+        "answer": "The Mayor"
+    },
+    {
+        "question": "Why did the sewers of Haven City become infested with Metal Heads?",
+        "options": [
+            "A) The Baron opened the nest",
+            "B) Jak destroyed the defence turrets",
+            "C) Torn sabotaged the defenses",
+            "D) Kor unleashed them"
+        ],
+        "answer": "Jak destroyed the defence turrets"
+    },
+    {
+        "question": "What time travel device was built by Keira?",
+        "options": [
+            "A) The Eco Amplifier",
+            "B) The Rift Rider",
+            "C) The Precursor Key",
+            "D) The Warp Gate"
+        ],
+        "answer": "The Rift Rider"
+    },
+    {
+        "question": "What is considered the biggest sport in Haven City?",
+        "options": [
+            "A) Zoomer Ball",
+            "B) Racing",
+            "C) Arena Combat",
+            "D) Metal Head Hunting"
+        ],
+        "answer": "Racing"
+    },
+    {
+        "question": "Who is the undisputed Grand Champion of NYFE racing in Haven City?",
+        "options": [
+            "A) Razer",
+            "B) Torn",
+            "C) Errol",
+            "D) G.T. Blitz"
+        ],
+        "answer": "Errol"
+    },
+    {
+        "question": "Where does Jak’s final battle with Errol take place?",
+        "options": [
+            "A) The Palace",
+            "B) The Wasteland",
+            "C) The War Factory",
+            "D) The Metal Head Nest"
+        ],
+        "answer": "The Wasteland"
+    },
+    {
+        "question": "Which species of Metal Head nearly killed Sig in the Underport?",
+        "options": [
+            "A) Metal-pede",
+            "B) Spyder Gunner",
+            "C) Flyer Metal Head",
+            "D) Armored Behemoth"
+        ],
+        "answer": "Metal-pede"
+    },
+    {
+        "question": "Where does Jak first fight Baron Praxis?",
+        "options": [
+            "A) At the Palace",
+            "B) In the Arena",
+            "C) At the Fortress",
+            "D) In the Tomb of Mar"
+        ],
+        "answer": "At the Palace"
+    },
+    {
+        "question": "What level of security clearance did Jak need to enter the Weapons Lab in Haven City?",
+        "options": [
+            "A) Green",
+            "B) Blue",
+            "C) Purple",
+            "D) Black"
+        ],
+        "answer": "Black"
     }
 ]
 
