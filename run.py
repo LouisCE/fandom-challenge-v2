@@ -61,6 +61,13 @@ def play_quiz(questions):
         print(Fore.GREEN + "Good job! You know your stuff.")  # 7 or 8
     else:  # 9 or above
         print(Fore.MAGENTA + "Congratulations! You're a superfan!")  # 9+
+        # === ASCII Celebration for superfan ===
+    print(Fore.CYAN + """
+       ☆ ☆ ☆ ☆ ☆
+      ☆ SUPERFAN! ☆
+       ☆ ☆ ☆ ☆ ☆
+    """)
+    print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
