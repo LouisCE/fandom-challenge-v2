@@ -1,4 +1,5 @@
 import sys
+import random
 from colorama import Fore, init
 # Import all quiz question sets
 from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
@@ -29,45 +30,57 @@ def about():
 def play_quiz(questions):
     """Run a quiz with the given question set."""
     score = 0
-    for i, q in enumerate(questions, start=1):
+
+    # Select 10 random questions
+    selected_questions = random.sample(questions, 10)
+
+    # Loop through the selected questions
+    for i, q in enumerate(selected_questions, start=1):
         print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
-        for option in q["options"]:
-            print(option)
+
+        # Shuffle options safely
+        options = q["options"][:]  # copy to avoid changing original
+        # Strip original letter prefix
+        clean_options = [opt[3:].strip() if len(opt) > 3 else opt for opt in options]
+        random.shuffle(clean_options)
+
+        # Map labels A-D to shuffled options
+        labels = ["A", "B", "C", "D"]
+        option_mapping = {}
+        for label, option in zip(labels, clean_options):
+            option_mapping[label] = option
+            print(f"{label}) {option}")
 
         # Player input
         answer = input("Your choice (A-D): ").strip().upper()
-
-        # Map A/B/C/D to option text
-        mapping = {"A": 0, "B": 1, "C": 2, "D": 3}
-        if answer not in mapping:
+        if answer not in option_mapping:
             print(Fore.RED + "Invalid choice. Skipping question.")
             continue
 
-        chosen_text = q["options"][mapping[answer]][3:]  # strip "A) "
+        # Check answer
+        chosen_text = option_mapping[answer]
         if chosen_text == q["answer"]:
             print(Fore.GREEN + "Correct!")
             score += 1
         else:
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
 
-
     # Final score and result message
-    print(Fore.CYAN + f"\nYou scored {score}/{len(questions)}!")
+    print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!")
 
-    # Result messages based on performance
     if score < 7:
-        print(Fore.YELLOW + "You can do better. Try again.")  # Under 7
+        print(Fore.YELLOW + "You can do better. Try again.")
     elif score in [7, 8]:
-        print(Fore.GREEN + "Good job! You know your stuff.")  # 7 or 8
+        print(Fore.GREEN + "Good job! You know your stuff.")
     else:  # 9 or above
-        print(Fore.MAGENTA + "Congratulations! You're a superfan!")  # 9+
-        # === ASCII Celebration for superfan ===
-    print(Fore.CYAN + """
+        print(Fore.MAGENTA + "Congratulations! You're a superfan!")
+        # Only show ASCII if superfan
+        print(Fore.CYAN + """
        ☆ ☆ ☆ ☆ ☆
       ☆ SUPERFAN! ☆
        ☆ ☆ ☆ ☆ ☆
-    """)
-    print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
+        """)
+        print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
