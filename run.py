@@ -1,6 +1,7 @@
 import sys
 from colorama import Fore, init
-from data import JAK_QUESTIONS
+# Import all quiz question sets
+from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
 
 # initialise colorama
 init(autoreset=True)
