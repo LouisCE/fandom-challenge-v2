@@ -617,7 +617,427 @@ RATCHET_QUESTIONS = [
             "D) Annihilation Nation"
         ],
         "answer": "Annihilation Nation"
-    }
+    },
+    {
+        "question": "Where was Clank originally created?",
+        "options": [
+            "A) Fastoon",
+            "B) Quartu",
+            "C) Veldin",
+            "D) Kerwan"
+        ],
+        "answer": "Quartu"
+    },
+    {
+        "question": "Why did Chairman Drek want to destroy Ratchet's home planet of Veldin?",
+        "options": [
+            "A) To build a new weapons factory",
+            "B) To occupy the planet’s ideal orbit",
+            "C) To harness its natural resources",
+            "D) To eliminate the Lombaxes"
+        ],
+        "answer": "To occupy the planet’s ideal orbit"
+    },
+    {
+        "question": "What was Chairman Drek’s true motivation for polluting his own homeworld?",
+        "options": [
+            "A) Spite against the Galactic Rangers",
+            "B) He was bribed by Megacorp",
+            "C) Purely for cash",
+            "D) To test new weapons"
+        ],
+        "answer": "Purely for cash"
+    },
+    {
+        "question": "Which pop star robot serves as a parody of Britney Spears in 'Up Your Arsenal'?",
+        "options": [
+            "A) Courtney Gears",
+            "B) Starlight Bot",
+            "C) Disco Droid",
+            "D) Roxx-3000"
+        ],
+        "answer": "Courtney Gears"
+    },
+    {
+        "question": "Which other Lombax is introduced in 'Going Commando'?",
+        "options": [
+            "A) Alister Azimuth",
+            "B) Angela Cross",
+            "C) Rivet",
+            "D) Talwyn Apogee"
+        ],
+        "answer": "Angela Cross"
+    },
+    {
+        "question": "How do you acquire the RYNO in the 2016 Ratchet & Clank remake?",
+        "options": [
+            "A) Collect all Gold Bolts",
+            "B) Defeat every boss without dying",
+            "C) Find all nine RYNO holocards",
+            "D) Purchase from Slim Cognito"
+        ],
+        "answer": "Find all nine RYNO holocards"
+    },
+    {
+        "question": "In 'Going Commando,' what are the genetically unstable creatures created by Megacorp?",
+        "options": [
+            "A) Amoeboids",
+            "B) Protopets",
+            "C) Blarg Beasts",
+            "D) Snagglebeasts"
+        ],
+        "answer": "Protopets"
+    },
+    {
+        "question": "What is the true purpose of the Great Clock in 'A Crack in Time'?",
+        "options": [
+            "A) To destroy universes",
+            "B) To control the flow of time",
+            "C) To locate Lombaxes",
+            "D) To create wormholes"
+        ],
+        "answer": "To control the flow of time"
+    },
+    {
+        "question": "What is the biggest trick in hoverboarding competitions?",
+        "options": [
+            "A) Turbo Tornado",
+            "B) Twisty McMarx",
+            "C) Insomniac Flip",
+            "D) Lombax Spin"
+        ],
+        "answer": "Twisty McMarx"
+    },
+    {
+        "question": "Which gadget was infamously tested on Captain Qwark?",
+        "options": [
+            "A) Sheepinator",
+            "B) Swingshot",
+            "C) B20 Crotchitizer",
+            "D) Bio-Blaster"
+        ],
+        "answer": "B20 Crotchitizer"
+    },
+    {
+        "question": "What is the name of the massive device Chairman Drek uses to destroy entire planets?",
+        "options": [
+            "A) Deplanetizer",
+            "B) Planet Buster Maximus",
+            "C) Warhead Omega",
+            "D) Star Smasher"
+        ],
+        "answer": "Deplanetizer"
+    },
+    {
+        "question": "How many life sentences did Vendra Prog recieve in 'Into the Nexus'?",
+        "options": [
+            "A) Double",
+            "B) Triple",
+            "C) Quadruple",
+            "D) Quintuple"
+        ],
+        "answer": "Quintuple"
+    },
+    {
+        "question": "After drinking Ultra Nanotech, how many hit points does Ratchet have?",
+        "options": [
+            "A) Six",
+            "B) Seven",
+            "C) Eight",
+            "D) Ten"
+        ],
+        "answer": "Eight"
+    },
+    {
+        "question": "In 'Going Commando,' what makes Protopets such a threat?",
+        "options": [
+            "A) They explode when threatened",
+            "B) They rapidly multiply out of control",
+            "C) They are immune to all weapons",
+            "D) They can disguise themselves as allies"
+        ],
+        "answer": "They rapidly multiply out of control"
+    },
+    {
+        "question": "What is Thugs-4-Less' infamous business motto?",
+        "options": [
+            "A) The first hit is free",
+            "B) Seven hits, and the eighth is free",
+            "C) We never miss twice",
+            "D) Loyalty comes with bullets"
+        ],
+        "answer": "Seven hits, and the eighth is free"
+    },
+    {
+        "question": "What is Raritanium mainly used for in the series?",
+        "options": [
+            "A) Upgrading weapons",
+            "B) Crafting new planets",
+            "C) Powering hoverboards",
+            "D) Unlocking story missions"
+        ],
+        "answer": "Upgrading weapons"
+    },
+    {
+        "question": "How long does it take for Ratchet to get his Gadgetron employee discount?",
+        "options": [
+            "A) 6 months",
+            "B) 1 year",
+            "C) 2 years",
+            "D) 5 years"
+        ],
+        "answer": "2 years"
+    },
+    {
+        "question": "Who is the main villain of 'Tools of Destruction'?",
+        "options": [
+            "A) Chairman Drek",
+            "B) Emperor Tachyon",
+            "C) Dr. Nefarious",
+            "D) Lord Vorselon"
+        ],
+        "answer": "Emperor Tachyon"
+    },
+    {
+        "question": "Which game sees Ratchet forced to fight for survival in gladiatorial arenas?",
+        "options": [
+            "A) Ratchet & Clank: Deadlocked",
+            "B) Ratchet & Clank: Quest for Booty",
+            "C) Ratchet & Clank: Rift Apart",
+            "D) Ratchet & Clank: Into the Nexus"
+        ],
+        "answer": "Ratchet & Clank: Deadlocked"
+    },
+    {
+        "question": "Which short spin-off adventure directly followed 'Tools of Destruction'?",
+        "options": [
+            "A) Into the Nexus",
+            "B) Quest for Booty",
+            "C) Size Matters",
+            "D) Secret Agent Clank"
+        ],
+        "answer": "Quest for Booty"
+    },
+    {
+        "question": "Which Ratchet & Clank game introduced alternate dimensions and Rivet?",
+        "options": [
+            "A) Into the Nexus",
+            "B) A Crack in Time",
+            "C) Rift Apart",
+            "D) All 4 One"
+        ],
+        "answer": "Rift Apart"
+    },
+    {
+        "question": "Which hoverboard does Skid McMarx give to Ratchet that 'can’t even be bought'?",
+        "options": [
+            "A) X-1000",
+            "B) Z-3000",
+            "C) SkyRunner",
+            "D) HoverX"
+        ],
+        "answer": "Z-3000"
+    },
+    {
+        "question": "What was Dr. Nefarious' ultimate goal for the galaxy?",
+        "options": [
+            "A) To enslave the Lombaxes",
+            "B) To turn all organic life into robots",
+            "C) To control the Great Clock",
+            "D) To merge all dimensions"
+        ],
+        "answer": "To turn all organic life into robots"
+    },
+    {
+        "question": "Which villain is a warlord and recurring foe introduced in 'A Crack in Time'?",
+        "options": [
+            "A) Lord Vorselon",
+            "B) Percival Tachyon",
+            "C) Klunk",
+            "D) Max Apogee"
+        ],
+        "answer": "Lord Vorselon"
+    },
+    {
+        "question": "What is the Dimensionator primarily capable of?",
+        "options": [
+            "A) Destroying planets",
+            "B) Opening rifts between dimensions",
+            "C) Creating infinite energy",
+            "D) Controlling time"
+        ],
+        "answer": "Opening rifts between dimensions"
+    },
+    {
+        "question": "Who was the ghostly pirate captain featured in 'Quest for Booty'?",
+        "options": [
+            "A) Captain Angstrom Darkwater",
+            "B) Captain Romulus Slag",
+            "C) Captain Qwark",
+            "D) Captain Blackstar"
+        ],
+        "answer": "Captain Angstrom Darkwater"
+    },
+    {
+        "question": "Why did Ratchet and Clank have a falling out in the first game?",
+        "options": [
+            "A) Ratchet blamed Clank for trusting Qwark",
+            "B) Clank chose to stay with the Zoni",
+            "C) Ratchet wanted to search for his Lombax family alone",
+            "D) Clank refused to destroy the Dimensionator"
+        ],
+        "answer": "Ratchet blamed Clank for trusting Qwark"
+    },
+    {
+        "question": "Who is the youngest member of the Galactic Rangers in 'Ratchet & Clank' (2016)?",
+        "options": [
+            "A) Elaris",
+            "B) Cora Veralux",
+            "C) Brax Lectrus",
+            "D) Captain Qwark"
+        ],
+        "answer": "Cora Veralux"
+    },
+    {
+        "question": "What is the name of Ratchet’s iconic melee weapon?",
+        "options": [
+            "A) Omniwrench",
+            "B) Hyperblade",
+            "C) Plasma Cutter",
+            "D) Fusion Hammer"
+        ],
+        "answer": "Omniwrench"
+    },
+    {
+        "question": "Which of these best describes Captain Qwark?",
+        "options": [
+            "A) A heroic leader who always wins",
+            "B) A cowardly fraud who craves fame",
+            "C) A Lombax general",
+            "D) A time-manipulating villain"
+        ],
+        "answer": "A cowardly fraud who craves fame"
+    },
+    {
+        "question": "What role does the Plumber often play in the series?",
+        "options": [
+            "A) Mentor with cryptic advice",
+            "B) Secret Lombax elder",
+            "C) Inventor of the RYNO",
+            "D) Galactic Ranger commander"
+        ],
+        "answer": "Mentor with cryptic advice"
+    },
+    {
+        "question": "What are the Zoni known for?",
+        "options": [
+            "A) Guardians of time and the Great Clock",
+            "B) Builders of the Dimensionator",
+            "C) Pirates of Polaris",
+            "D) Traders of Raritanium"
+        ],
+        "answer": "Guardians of time and the Great Clock"
+    },
+    {
+        "question": "Why does Ratchet visit Pokitaru in the first game?",
+        "options": [
+            "A) To meet Skid McMarx",
+            "B) To buy the Thrusterpack",
+            "C) To pick up the O2 Mask",
+            "D) To defeat Chairman Drek"
+        ],
+        "answer": "To pick up the O2 Mask"
+    },
+    {
+        "question": "After crashing on Oltanis, what does Captain Qwark do?",
+        "options": [
+            "A) Becomes a Galactic Ranger again",
+            "B) Sells Gadgetron devices as 'Steve'",
+            "C) Builds his own army",
+            "D) Teams up with Ratchet and Clank"
+        ],
+        "answer": "Sells Gadgetron devices as 'Steve'"
+    },
+    {
+        "question": "Which cheesy soap opera always seems to play when Dr. Nefarious gets angry?",
+        "options": [
+            "A) Lance and Janice",
+            "B) Mark and Lorna",
+            "C) Drek’s Dynasty",
+            "D) Qwark Forever"
+        ],
+        "answer": "Lance and Janice"
+    },
+    {
+        "question": "Who is Slim Cognito in the Ratchet & Clank series?",
+        "options": [
+            "A) A black-market weapons dealer",
+            "B) A Lombax scientist",
+            "C) A Galactic Ranger pilot",
+            "D) A robot comedian"
+        ],
+        "answer": "A black-market weapons dealer"
+    },
+    {
+        "question": "Who is Abercrombie Fizzwidget in 'Ratchet & Clank: Going Commando'?",
+        "options": [
+            "A) The eccentric CEO of Megacorp",
+            "B) A famous scientist from Kerwan",
+            "C) A weapons dealer from Bogon",
+            "D) A Galactic Ranger commander"
+        ],
+        "answer": "The eccentric CEO of Megacorp"
+},
+{
+    "question": "In 'Ratchet: Gladiator' (Deadlocked), who is the champion exterminator?",
+    "options": [
+        "A) Ace Hardlight",
+        "B) The Eviscerator",
+        "C) Reactor",
+        "D) Shellshock"
+    ],
+    "answer": "Chainblade and the B2 Brawler"
+},
+{
+    "question": "What is 'Secret Agent Clank'?",
+    "options": [
+        "A) A hit holovid series starring Clank as a spy",
+        "B) A high-tech gadget made by Gadgetron",
+        "C) A secret identity used by Captain Qwark",
+        "D) The name of Ratchet's ship"
+    ],
+    "answer": "A hit holovid series starring Clank as a spy"
+},
+{
+    "question": "How does Ratchet infiltrate the Deplanetizer in 'Ratchet & Clank' (2016)?",
+    "options": [
+        "A) By using the Grav-Tether",
+        "B) By disguising himself with the Hologuise",
+        "C) By sneaking in through the exhaust vents",
+        "D) By shrinking himself with the Shrink Ray"
+    ],
+    "answer": "By disguising himself with the Hologuise"
+},
+{
+    "question": "What alien race does Chairman Drek belong to?",
+    "options": [
+        "A) Lombax",
+        "B) Blarg",
+        "C) Markazian",
+        "D) Zoni"
+    ],
+    "answer": "Blarg"
+},
+{
+    "question": "What creature is the boss fight on Umbris?",
+    "options": [
+        "A) Thugs-4-Less Leader",
+        "B) Blargian Snagglebeast",
+        "C) Mutated Protopet",
+        "D) Alien Queen"
+    ],
+    "answer": "Blargian Snagglebeast"
+}
 ]
 
 GOD_OF_WAR_QUESTIONS = [
