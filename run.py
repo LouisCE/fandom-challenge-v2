@@ -3,7 +3,7 @@ from colorama import Fore, init
 # Import all quiz question sets
 from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
 
-# initialise colorama
+# Initialise colorama
 init(autoreset=True)
 print(Fore.GREEN + "Colorama test passed!")
 
@@ -25,6 +25,33 @@ def about():
     print("It was created as part of a Python project to test programming and UX skills.")
     print("Future versions may include more categories and interactive features!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
+
+def play_quiz(questions):
+    """Run a quiz with the given question set."""
+    score = 0
+    for i, q in enumerate(questions, start=1):
+        print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
+        for option in q["options"]:
+            print(option)
+
+        # Player input
+        answer = input("Your choice (A-D): ").strip().upper()
+
+        # Map A/B/C/D to option text
+        mapping = {"A": 0, "B": 1, "C": 2, "D": 3}
+        if answer not in mapping:
+            print(Fore.RED + "Invalid choice. Skipping question.")
+            continue
+
+        chosen_text = q["options"][mapping[answer]][3:]  # strip "A) "
+        if chosen_text == q["answer"]:
+            print(Fore.GREEN + "Correct!")
+            score += 1
+        else:
+            print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
+
+    # Final score
+    print(Fore.CYAN + f"\nYou scored {score}/{len(questions)}!")
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
