@@ -2,6 +2,14 @@
 
 Fandom Challenge is a Python terminal-based quiz game that runs in the Code Institute mock terminal on Heroku. Players can test their knowledge of different gaming franchises (Jak and Daxter, Ratchet & Clank, and God of War) through multiple-choice questions.
 
+## Features
+
+- Choose from multiple quiz categories (Jak and Daxter, Ratchet & Clank, God of War).
+- Randomised questions within each quiz.
+- Color-coded feedback for correct and incorrect answers.
+- Score tracking and end-of-quiz results.
+- Replay option to try again.
+
 ## Deployment
 
 This project was deployed using Heroku:
