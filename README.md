@@ -29,6 +29,19 @@ This project demonstrates core Python programming concepts such as loops, condit
 7. As a returning player, I want my high scores to persist between sessions for long-term progress.
 8. As a player, I want to be able to replay the quiz without restarting the program.
 
+## Website Goals and Objectives
+
+- Build an interactive, terminal-based quiz game that is fun and engaging for fans of popular gaming franchises.
+- Provide a simple, text-based interface that is easy to understand and navigate.
+- Allow players to select a category and receive a randomised set of questions for variety and replayability.
+- Shuffle answer options for each question to prevent predictability and keep the quiz challenging.
+- Validate user input to handle errors gracefully and maintain a smooth game flow.
+- Track and display player scores, rewarding high performers with a special celebratory ASCII message.
+- Write clean, well-structured Python code that demonstrates key programming concepts such as loops, functions, lists, dictionaries, and conditionals.
+- Ensure the game runs reliably in the Code Institute mock terminal on Heroku, providing consistent performance.
+- Use version control (Git/GitHub) for development, tracking progress and enabling easy maintenance.
+- Test thoroughly to confirm that question randomisation, input validation, scoring, and ASCII feedback all function as expected.
+
 ## Features
 
 - Choose from multiple quiz categories (Jak and Daxter, Ratchet & Clank, God of War).
