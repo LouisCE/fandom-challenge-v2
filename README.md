@@ -42,6 +42,31 @@ This project demonstrates core Python programming concepts such as loops, condit
 - Use version control (Git/GitHub) for development, tracking progress and enabling easy maintenance.
 - Test thoroughly to confirm that question randomisation, input validation, scoring, and ASCII feedback all function as expected.
 
+## Design Choices
+
+### Typography & Display
+
+As this project runs entirely in a Python terminal, there is no traditional web typography or UI. Instead, design choices focus on readability, clarity, and creating a visually engaging experience through text alone.  
+
+To enhance the presentation, the project uses **ASCII art** at key moments, such as the celebratory message for high-scoring players. This adds personality, variety, and a “retro terminal game” feel.  
+
+### Colour Scheme
+
+To create a more dynamic and immersive terminal experience, the project makes use of the **Colorama** library. This enables coloured text output in the terminal, helping to:
+
+- **Differentiate categories** by displaying them in distinct colours.
+- **Highlight correct and incorrect answers** with green and red for instant feedback.
+- **Draw attention to the score and celebratory messages** with bright, contrasting colours.
+- **Break up blocks of plain text** and make the interface more engaging to read.
+
+The choice of colours was guided by readability and accessibility within a terminal environment. Bright colours are used sparingly for emphasis, while most text remains in neutral tones to avoid overwhelming the player.
+
+### Atmosphere
+
+Together, the combination of ASCII art and Colorama colours provides a strong sense of atmosphere. Despite the limitations of a text-only interface, these design elements help transform the quiz from a plain terminal application into a more **interactive, fun, and fandom-themed experience**.
+
+*Note: Unlike a web-based project, this design did not rely on a strict predefined palette or typography system. Instead, colour choices and ASCII styling evolved naturally during development, guided by readability and player experience.*
+
 ## Features
 
 - Choose from multiple quiz categories (Jak and Daxter, Ratchet & Clank, God of War).
