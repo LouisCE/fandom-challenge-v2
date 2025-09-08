@@ -108,6 +108,24 @@ Planned improvements include:
 - **Heroku:** Deployment platform.
 - **GitHub:** Version control and source code hosting.
 
+## Data Model
+
+The quiz is structured around simple Python data types, making the logic clear and easy to extend:
+
+- **Questions and Answers:**
+  Each quiz question is stored in a **dictionary** containing the question text, a list of possible answers, and the correct answer. These dictionaries are grouped into lists by category (Jak and Daxter, Ratchet & Clank, God of War).
+
+- **Randomisation:**
+  The `random` module is used to shuffle both the **questions** and the **answer order** each round. This ensures replayability and prevents players from memorising answer positions.
+
+- **User Input and Validation:**
+  Player choices are mapped to a dictionary of options (`A-D`) so input can be validated consistently. Invalid entries trigger error handling that prompts the user to try again instead of breaking the program.
+
+- **Score Tracking:**
+  The player’s score is tracked with a simple integer counter that increments whenever a correct answer is given. At the end of the quiz, this score is compared against thresholds to determine the final message (including the ASCII “superfan” celebration for high scores).
+
+This lightweight model was chosen deliberately: it avoids unnecessary complexity, keeps the code readable, and allows new categories or questions to be added easily in the future.
+
 ## Testing
 
 Testing included:
