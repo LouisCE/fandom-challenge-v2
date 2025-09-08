@@ -67,6 +67,22 @@ Together, the combination of ASCII art and Colorama colours provides a strong se
 
 *Note: Unlike a web-based project, this design did not rely on a strict predefined palette or typography system. Instead, colour choices and ASCII styling evolved naturally during development, guided by readability and player experience.*
 
+## How to Play
+
+Fandom Challenge V2 is a multiple-choice quiz game based on popular gaming franchises.
+
+1. When the game starts, the player is asked to **choose a category** from the available options (Jak and Daxter, Ratchet & Clank, or God of War).
+2. The program then **randomly selects a set of questions** from the chosen category to create a unique quiz each round.
+3. For each question, **four possible answers** (A-D) are displayed. The answer order is shuffled every time to prevent predictability and player memorisation from previous attempts.
+4. The player types the letter (**A, B, C, or D**) that corresponds to their chosen answer.
+   - If they get the answer right, the player recieves a "Correct!" message highlighted in **green**.
+   - If they get the answer incorrect, the player recieves a "Wrong!" message shown in **red**, and the correct option is revealed.
+5. The quiz continues until all ten selected questions have been answered.
+6. At the end, the player receives their **final score out of 10**.
+   - If the player scores **9 or above**, they are rewarded with a celebratory **ASCII art message**.
+
+This simple but engaging gameplay loop makes the quiz fun, replayable and easy to understand.
+
 ## Features
 
 - Choose from multiple quiz categories (Jak and Daxter, Ratchet & Clank, God of War).
