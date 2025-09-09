@@ -93,6 +93,27 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 - Score tracking and end-of-quiz results.
 - Replay option to try again.
 
+### Existing Features
+
+#### Main Menu
+- When the program launches, users are greeted with the **main menu**, offering four options:
+  1. **Rules:** Explains how the quiz works.
+  2. **About:** Displays information about the project.
+  3. **Start Quiz:** Opens the quiz selection menu.
+  4. **Exit:** Ends the program.
+- The menu uses **Colorama colours** to improve readability and guide the user’s choices.
+
+![Main Menu](docs/screenshot-main-menu.png)
+
+#### Rules Screen
+- Clearly outlines the rules of the quiz:
+  - Multiple-choice format (A-D).
+  - One correct answer per question.
+  - Score shown at the end.
+- Keeps users informed before they begin.
+
+![Rules](docs/screenshot-rules.png)
+
 ## Future Enhancements
 
 Planned improvements include:
