@@ -191,5 +191,24 @@ The live deployed app can be found here:
 
 ## Credits
 
-- Developed by LouisCE for Code Institute Portfolio Project 3.
-- Thanks to Code Institute for the deployment template.
+I would like to thank the following people and resources for their support and guidance throughout this project:
+
+- **Tim (mentor):** For his valuable feedback, encouragement, and guidance throughout development. We had three scheduled calls: at project inception, midway through development and at project completion. He advised me to do a quiz for this project and to avoid grid systems to keep things simple. He also taught me about the importance of keeping the user in a loop until they enter a valid response to ensure that the project won't break.
+
+- **Code Institute:** for the deployment template.
+
+- **Code Institute LMS:** For teaching me Python, and web design principles through detailed walkthroughs and exercises.
+
+- **Code Institute sample README.md for Project 3:** Used as inspiration for structuring the **How to Play** and **Data Model** sections in this README.
+
+[Code Institute sample README.md for Project 3](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
+
+- **ChatGPT:** Assisted in brainstorming initial draft questions for `data.py`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
+
+- **Markdown learning resources:**  
+  - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
+  - [Markdown Live Preview](https://markdownlivepreview.com/)
+
+  - Developed by LouisCE for Code Institute Portfolio Project 3.
+
+Thank you all for your help and guidance.
