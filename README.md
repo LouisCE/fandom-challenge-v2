@@ -131,6 +131,28 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 
 ![Quiz Selection](docs/screenshot-quiz-selection.png)
 
+### Gameplay (Quiz)
+- Each quiz:
+  - Displays a **question number (Q1-Q10)**.
+  - Shuffles the multiple-choice answers so they appear in a different order each run.
+  - Accepts answers (A–D) in a case-insensitive format.
+- Features:
+  - **Correct answers** are displayed in green.
+  - **Incorrect answers** are shown in red, with the correct answer revealed.
+- Prevents crashes by validating input: if the user enters something invalid, the game warns them and skips the question.
+
+![Gameplay](docs/screenshot-quiz.png)
+
+### Scoring & Feedback
+- At the end of each quiz, the program shows the **final score out of 10**.
+- Feedback is tailored based on performance:
+  - **Under 7**: "You can do better. Try again."
+  - **7 or 8**: "Good job! You know your stuff."
+  - **9 or above**: "Congratulations! You're a superfan!"
+- High-performing players also see **ASCII art celebratory graphics**, adding extra atmosphere.
+
+![Results](docs/screenshot-results.png)
+
 ## Future Enhancements
 
 Planned improvements include:
