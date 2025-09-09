@@ -8,6 +8,8 @@ Players begin by selecting a category, after which the program randomly generate
 
 This project demonstrates core Python programming concepts such as loops, conditionals, functions, lists, dictionaries, randomisation and user input validation. It also showcases the ability to build an interactive terminal application that balances fun gameplay with reliable, well-structured code.
 
+![Responsive design preview of Fandom Challenge V2 website](docs/am-i-responsive.png)
+
 ## User Goals
 
 - Enjoy a fun and engaging terminal-based quiz experience.
