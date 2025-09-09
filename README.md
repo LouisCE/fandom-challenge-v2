@@ -153,6 +153,22 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 
 ![Results](docs/screenshot-results.png)
 
+### Colour Feedback
+- Thanks to the **Colorama** library:
+  - Menus are cyan for easy navigation.
+  - Correct answers display in green.
+  - Wrong answers display in red.
+  - Final messages use yellow, green, or magenta depending on score.
+- Colours improve clarity and help break up text in the terminal.
+
+![Colour Feedback](docs/screenshot-colours.png)
+
+### Exit Screen
+- Selecting “Exit” closes the program safely with a **friendly farewell message**.
+- Uses yellow text to clearly signal that the game has ended.
+
+![Exit](docs/screenshot-exit.png)
+
 ## Future Enhancements
 
 Planned improvements include:
