@@ -114,6 +114,23 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 
 ![Rules](docs/screenshot-rules.png)
 
+### About Screen
+- Displays background information about the project and its fandom theme.
+- Explains the inspiration and purpose of the quiz.
+- Provides a short, engaging break from the gameplay.
+
+![About](docs/screenshot-about.png)
+
+### Quiz Selection
+- Users can choose from three fandom categories:
+  - **Jak and Daxter**
+  - **Ratchet & Clank**
+  - **God of War**
+- Each category loads a randomised quiz of **10 questions**.
+- Users can also return to the main menu at any time.
+
+![Quiz Selection](docs/screenshot-quiz-selection.png)
+
 ## Future Enhancements
 
 Planned improvements include:
