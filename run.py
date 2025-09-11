@@ -53,15 +53,20 @@ def play_quiz(questions):
 
         # Keep asking until valid input
         while True:
-            answer = input("Your choice (A-D): ").strip().upper()
-            if answer in option_mapping:
-                break
-            print(Fore.RED + "Invalid choice. Please enter A, B, C, or D.")
+            answer = input("Your choice (A-D) or X to return to quiz menu: ").strip().upper()
 
-        # Reprint the question and options so it’s clear
-            print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
-            for label, option in option_mapping.items():
-                print(f"{label}) {option}")
+            if answer == "X":
+                print(Fore.YELLOW + "Returning to quiz selection menu...")
+                return  # exit play_quiz() immediately
+
+            if answer in option_mapping:
+                break  # valid A-D answer, continue
+            else:
+                print(Fore.RED + "Invalid choice. Please enter A, B, C, D, or X.")
+                # Reprint question + options so user can see them again
+                print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
+                for label, option in option_mapping.items():
+                    print(f"{label}) {option}")
 
         # Check answer
         chosen_text = option_mapping[answer]
