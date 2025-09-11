@@ -51,11 +51,17 @@ def play_quiz(questions):
             option_mapping[label] = option
             print(f"{label}) {option}")
 
-        # Player input
-        answer = input("Your choice (A-D): ").strip().upper()
-        if answer not in option_mapping:
-            print(Fore.RED + "Invalid choice. Skipping question.")
-            continue
+        # Keep asking until valid input
+        while True:
+            answer = input("Your choice (A-D): ").strip().upper()
+            if answer in option_mapping:
+                break
+            print(Fore.RED + "Invalid choice. Please enter A, B, C, or D.")
+
+        # Reprint the question and options so it’s clear
+            print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
+            for label, option in option_mapping.items():
+                print(f"{label}) {option}")
 
         # Check answer
         chosen_text = option_mapping[answer]
