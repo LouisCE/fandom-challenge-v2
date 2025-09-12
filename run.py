@@ -1,5 +1,6 @@
 import sys
 import random
+import re
 from colorama import Fore, init
 # Import all quiz question sets
 from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
@@ -9,13 +10,15 @@ from google.oauth2.service_account import Credentials
 from datetime import datetime
 
 # Google Sheets setup
-SCOPES = [
+SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
-CREDS = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
-client = gspread.authorize(CREDS)
-sheet = client.open("fandom-challenge-v2-data").sheet1
+CREDS = Credentials.from_service_account_file("quiz_creds.json")
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
 
 # Leaderboard functions
 def save_score(username, score, time_taken):
