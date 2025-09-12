@@ -13,8 +13,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive"
 ]
-creds = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
-client = gspread.authorize(creds)
+CREDS = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
+client = gspread.authorize(CREDS)
 sheet = client.open("fandom-challenge-v2-data").sheet1
 
 # Leaderboard functions
