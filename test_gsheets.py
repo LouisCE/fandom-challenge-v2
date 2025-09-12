@@ -8,10 +8,10 @@ SCOPES = [
 ]
 
 # Load credentials from the JSON key file and apply scopes
-creds = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
+CREDS = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
 
 # Authorise the gspread client
-client = gspread.authorize(creds)
+client = gspread.authorize(CREDS)
 
 # Open spreadsheet by name
 sheet = client.open("fandom-challenge-v2-data").sheet1
