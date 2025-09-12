@@ -4,6 +4,19 @@ from colorama import Fore, init
 # Import all quiz question sets
 from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
 
+import gspread
+from google.oauth2.service_account import Credentials
+from datetime import datetime
+
+# Google Sheets setup
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive"
+]
+creds = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
+client = gspread.authorize(creds)
+sheet = client.open("fandom-challenge-v2-data").sheet1
+
 # Initialise colorama
 init(autoreset=True)
 print(Fore.GREEN + "Colorama test passed!")
