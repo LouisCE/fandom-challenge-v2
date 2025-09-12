@@ -17,6 +17,37 @@ creds = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPES)
 client = gspread.authorize(creds)
 sheet = client.open("fandom-challenge-v2-data").sheet1
 
+# Leaderboard functions
+def save_score(username, score, time_taken):
+    """Append a quiz result to Google Sheet."""
+    try:
+        sheet.append_row([username, score, time_taken, datetime.now().strftime("%Y-%m-%d %H:%M:%S")])
+    except Exception as e:
+        print("Leaderboard unavailable. Score not saved to cloud.")
+        print("Error:", e)
+
+def display_leaderboard(top_n=10):
+    """Fetch, sort, and display the top scores from Google Sheet."""
+    try:
+        records = sheet.get_all_records()
+        if not records:
+            print("No scores yet!")
+            return
+
+        sorted_records = sorted(
+            records,
+            key=lambda x: (-x["Score"], x["Time taken"])
+        )
+
+        print(f"\n{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}{'Date'}")
+        print("-" * 45)
+        for i, rec in enumerate(sorted_records[:top_n], start=1):
+            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Time taken']:<8}{rec['Date']}")
+        print()
+    except Exception as e:
+        print("Leaderboard unavailable.")
+        print("Error:", e)
+
 # Initialise colorama
 init(autoreset=True)
 print(Fore.GREEN + "Colorama test passed!")
