@@ -9,22 +9,37 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 
+import os
+import json
+
 # Google Sheets setup
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
-CREDS = Credentials.from_service_account_file("quiz_creds.json")
+
+if os.environ.get("CREDS"):
+    # Load creds from Heroku config var
+    creds_json = json.loads(os.environ["CREDS"])
+    CREDS = Credentials.from_service_account_info(creds_json, scopes=SCOPE)
+else:
+    # Fallback for local development with file
+    CREDS = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPE)
+
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
 
 # Leaderboard functions
-def save_score(username, score, time_taken):
+def save_score(username, score):
     """Append a quiz result to Google Sheet."""
     try:
-        sheet.append_row([username, score, time_taken, datetime.now().strftime("%Y-%m-%d %H:%M:%S")])
+        SHEET.worksheet("leaderboard").append_row([
+            username,
+            score,
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        ])
     except Exception as e:
         print("Leaderboard unavailable. Score not saved to cloud.")
         print("Error:", e)
@@ -32,20 +47,20 @@ def save_score(username, score, time_taken):
 def display_leaderboard(top_n=10):
     """Fetch, sort, and display the top scores from Google Sheet."""
     try:
-        records = sheet.get_all_records()
+        records = SHEET.worksheet("leaderboard").get_all_records()
         if not records:
             print("No scores yet!")
             return
 
         sorted_records = sorted(
             records,
-            key=lambda x: (-x["Score"], x["Time taken"])
+            key=lambda x: -x["Score"]  # sort just by score
         )
 
-        print(f"\n{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}{'Date'}")
-        print("-" * 45)
+        print(f"\n{'Rank':<5}{'User':<12}{'Score':<6}{'Date'}")
+        print("-" * 40)
         for i, rec in enumerate(sorted_records[:top_n], start=1):
-            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Time taken']:<8}{rec['Date']}")
+            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Date']}")
         print()
     except Exception as e:
         print("Leaderboard unavailable.")
@@ -134,11 +149,27 @@ def play_quiz(questions):
         print(Fore.MAGENTA + "Congratulations! You're a superfan!")
         # Only show ASCII if superfan
         print(Fore.CYAN + """
-       ☆ ☆ ☆ ☆ ☆
-      ☆ SUPERFAN! ☆
-       ☆ ☆ ☆ ☆ ☆
+           ☆ ☆ ☆ ☆ ☆
+          ☆ SUPERFAN! ☆
+           ☆ ☆ ☆ ☆ ☆
         """)
         print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
+
+    # Leaderboard username prompt
+    while True:
+        username = input("Enter your 3-letter username to save score or X to return to quiz menu ").strip().upper()
+    
+        if username == "X":
+            print(Fore.YELLOW + "Score not saved. Returning to quiz selection menu...")
+            return  # exit play_quiz() immediately
+    
+        if re.fullmatch(r"[A-Z]{3}", username):
+            break  # valid 3-letter username, continue
+        print(Fore.RED + "Invalid username. Enter exactly 3 letters (A-Z) or X to cancel.")
+
+    # Save score and display leaderboard
+    save_score(username, score)
+    display_leaderboard()
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
