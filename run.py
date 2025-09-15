@@ -32,13 +32,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
 
 # Leaderboard functions
-def save_score(username, score, quiz_name):
-    """Append a quiz result to the correct quiz leaderboard."""
+def save_score(username, score, quiz_name, time_taken):
+    """Append a quiz result with time to the correct leaderboard."""
     try:
         SHEET.worksheet(f"{quiz_name}_leaderboard").append_row([
             username,
-            score
-            # Later: add time_taken as a 3rd column
+            score,
+            time_taken
         ])
     except Exception as e:
         print("Leaderboard unavailable. Score not saved to cloud.")
@@ -53,14 +53,23 @@ def display_leaderboard(quiz_name, top_n=10):
             print("No scores yet!")
             return
 
-        # Sort by descending score
-        sorted_records = sorted(records, key=lambda x: -x["Score"])
+        def safe_int(value, default=0):
+            try:
+                return int(value)
+            except (ValueError, TypeError):
+                return default
+
+        # Sort by descending score, then ascending time
+        sorted_records = sorted(
+            records,
+            key=lambda x: (-safe_int(x.get("Score")), safe_int(x.get("Time")))
+        )
 
         print(f"\n=== {quiz_name.upper()} LEADERBOARD ===")
-        print(f"{'Rank':<5}{'User':<12}{'Score':<6}")
-        print("-" * 30)
+        print(f"{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}")
+        print("-" * 40)
         for i, rec in enumerate(sorted_records[:top_n], start=1):
-            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}")
+            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Time']:<8}")
         print()
     except Exception as e:
         print("Leaderboard unavailable.")
@@ -92,6 +101,7 @@ def about():
 def play_quiz(questions, quiz_name):
     """Run a quiz with the given question set."""
     score = 0
+    start_time = datetime.now()  # record quiz start
 
     # Select 10 random questions
     selected_questions = random.sample(questions, 10)
@@ -138,8 +148,12 @@ def play_quiz(questions, quiz_name):
         else:
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
 
+    end_time = datetime.now()
+    time_taken = (end_time - start_time).seconds  # Time in seconds        
+
     # Final score and result message
     print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!")
+    print(Fore.YELLOW + f"Time taken: {time_taken} seconds")
 
     if score < 7:
         print(Fore.YELLOW + "You can do better. Try again.")
@@ -168,7 +182,7 @@ def play_quiz(questions, quiz_name):
         print(Fore.RED + "Invalid username. Enter exactly 3 letters (A-Z) or X to cancel.")
 
     # Save score and display leaderboard
-    save_score(username, score, quiz_name)
+    save_score(username, score, quiz_name, time_taken)
     display_leaderboard(quiz_name)
 
 def select_quiz():
