@@ -32,35 +32,35 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
 
 # Leaderboard functions
-def save_score(username, score):
-    """Append a quiz result to Google Sheet."""
+def save_score(username, score, quiz_name):
+    """Append a quiz result to the correct quiz leaderboard."""
     try:
-        SHEET.worksheet("leaderboard").append_row([
+        SHEET.worksheet(f"{quiz_name}_leaderboard").append_row([
             username,
-            score,
-            datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            score
+            # Later: add time_taken as a 3rd column
         ])
     except Exception as e:
         print("Leaderboard unavailable. Score not saved to cloud.")
         print("Error:", e)
 
-def display_leaderboard(top_n=10):
-    """Fetch, sort, and display the top scores from Google Sheet."""
+
+def display_leaderboard(quiz_name, top_n=10):
+    """Fetch, sort, and display the top scores for a specific quiz."""
     try:
-        records = SHEET.worksheet("leaderboard").get_all_records()
+        records = SHEET.worksheet(f"{quiz_name}_leaderboard").get_all_records()
         if not records:
             print("No scores yet!")
             return
 
-        sorted_records = sorted(
-            records,
-            key=lambda x: -x["Score"]  # sort just by score
-        )
+        # Sort by descending score
+        sorted_records = sorted(records, key=lambda x: -x["Score"])
 
-        print(f"\n{'Rank':<5}{'User':<12}{'Score':<6}{'Date'}")
-        print("-" * 40)
+        print(f"\n=== {quiz_name.upper()} LEADERBOARD ===")
+        print(f"{'Rank':<5}{'User':<12}{'Score':<6}")
+        print("-" * 30)
         for i, rec in enumerate(sorted_records[:top_n], start=1):
-            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Date']}")
+            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}")
         print()
     except Exception as e:
         print("Leaderboard unavailable.")
@@ -89,7 +89,7 @@ def about():
     print("Future versions may include more categories and interactive features!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
-def play_quiz(questions):
+def play_quiz(questions, quiz_name):
     """Run a quiz with the given question set."""
     score = 0
 
@@ -168,8 +168,8 @@ def play_quiz(questions):
         print(Fore.RED + "Invalid username. Enter exactly 3 letters (A-Z) or X to cancel.")
 
     # Save score and display leaderboard
-    save_score(username, score)
-    display_leaderboard()
+    save_score(username, score, quiz_name)
+    display_leaderboard(quiz_name)
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
@@ -182,11 +182,11 @@ def select_quiz():
         choice = input("Choose an option (1-4): ").strip()
 
         if choice == "1":
-            play_quiz(JAK_QUESTIONS) # Calls play_quiz
+            play_quiz(JAK_QUESTIONS, "jak") # Calls play_quiz
         elif choice == "2":
-            play_quiz(RATCHET_QUESTIONS)
+            play_quiz(RATCHET_QUESTIONS, "ratchet")
         elif choice == "3":
-            play_quiz(GOD_OF_WAR_QUESTIONS)
+            play_quiz(GOD_OF_WAR_QUESTIONS, "gow")
         elif choice == "4":
             return  # Back to main menu
         else:
