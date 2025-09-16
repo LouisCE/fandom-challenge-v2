@@ -163,6 +163,23 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 ![Results](docs/good-job-result.png)
 ![Results](docs/superfan-result.png)
 
+#### Leaderboard
+- After completing a quiz, players can view the **leaderboard** showing the top ten scores.
+- Features:
+  - Each quiz category (**Jak and Daxter**, **Ratchet & Clank**, **God of War**) has its **own dedicated leaderboard**.
+  - Stores and displays the **highest scores across sessions** for that category.
+  - Updates automatically when a new high score is achieved.
+  - A **timer** runs in the background, adding urgency and challenge.
+  - **Leaderboard ranking rules**:
+    - Score takes priority in the rankings. Higher scores get higher rankings.
+    - In the event of equal scores, faster completion times are ranked higher, acting as a tiebreaker.
+  - Encourages replayability by letting players compete with themselves and others for the fastest and highest-scoring runs.
+- Adds an extra layer of challenge and motivation beyond just completing the quiz.
+
+![Jak and Daxter Leaderboard](docs/jak-leaderboard.png)
+![Ratchet & Clank Leaderboard](docs/ratchet-leaderboard.png)
+![God of War Leaderboard](docs/gow-leaderboard.png)
+
 #### Colour Feedback
 - Thanks to the **Colorama** library:
   - Menus are cyan for easy navigation.
