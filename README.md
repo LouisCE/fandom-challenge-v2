@@ -109,7 +109,7 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   4. **Exit:** Ends the program.
 - The menu uses **Colorama colours** to improve readability and guide the user’s choices.
 
-![Main Menu](docs/screenshot-main-menu.png)
+![Main Menu](docs/main-menu.png)
 
 #### Rules Screen
 - Clearly outlines the rules of the quiz:
@@ -118,16 +118,16 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   - Score shown at the end.
 - Keeps users informed before they begin.
 
-![Rules](docs/screenshot-rules.png)
+![Rules](docs/rules.png)
 
-### About Screen
+#### About Screen
 - Displays background information about the project and its fandom theme.
 - Explains the inspiration and purpose of the quiz.
 - Provides a short, engaging break from the gameplay.
 
-![About](docs/screenshot-about.png)
+![About](docs/about.png)
 
-### Quiz Selection
+#### Quiz Selection
 - Users can choose from three fandom categories:
   - **Jak and Daxter**
   - **Ratchet & Clank**
@@ -135,9 +135,9 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 - Each category loads a randomised quiz of **10 questions**.
 - Users can also return to the main menu at any time.
 
-![Quiz Selection](docs/screenshot-quiz-selection.png)
+![Quiz Selection](docs/quiz-selection.png)
 
-### Gameplay (Quiz)
+#### Gameplay (Quiz)
 - Each quiz:
   - Displays a **question number (Q1-Q10)**.
   - Shuffles the multiple-choice answers so they appear in a different order each run.
@@ -145,11 +145,13 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 - Features:
   - **Correct answers** are displayed in green.
   - **Incorrect answers** are shown in red, with the correct answer revealed.
-- Prevents crashes by validating input: if the user enters something invalid, the game warns them and skips the question.
+- Prevents crashes by validating input: if the user enters something invalid, the game warns them and tells them to enter something valid.
 
-![Gameplay](docs/screenshot-quiz.png)
+![Gameplay](docs/jak-quiz.png)
+![Gameplay](docs/ratchet-quiz.png)
+![Gameplay](docs/gow-quiz.png)
 
-### Scoring & Feedback
+#### Scoring & Feedback
 - At the end of each quiz, the program shows the **final score out of 10**.
 - Feedback is tailored based on performance:
   - **Under 7**: "You can do better. Try again."
@@ -157,9 +159,11 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   - **9 or above**: "Congratulations! You're a superfan!"
 - High-performing players also see **ASCII art celebratory graphics**, adding extra atmosphere.
 
-![Results](docs/screenshot-results.png)
+![Results](docs/try-again-result.png)
+![Results](docs/good-job-result.png)
+![Results](docs/superfan-result.png)
 
-### Colour Feedback
+#### Colour Feedback
 - Thanks to the **Colorama** library:
   - Menus are cyan for easy navigation.
   - Correct answers display in green.
@@ -167,13 +171,14 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   - Final messages use yellow, green, or magenta depending on score.
 - Colours improve clarity and help break up text in the terminal.
 
-![Colour Feedback](docs/screenshot-colours.png)
+![Colour Feedback](docs/correct-answer.png)
+![Colour Feedback](docs/wrong-answer.png)
 
-### Exit Screen
+#### Exit Screen
 - Selecting “Exit” closes the program safely with a **friendly farewell message**.
 - Uses yellow text to clearly signal that the game has ended.
 
-![Exit](docs/screenshot-exit.png)
+![Exit](docs/exit.png)
 
 ## Future Enhancements
 
