@@ -214,7 +214,9 @@ Planned improvements include:
 - **Heroku:** Deployment platform.
 - **GitHub:** Version control and source code hosting.
 
-## Data Model
+## Database Design
+
+### Data Model
 
 The quiz is structured around simple Python data types, making the logic clear and easy to extend:
 
@@ -230,7 +232,34 @@ The quiz is structured around simple Python data types, making the logic clear a
 - **Score Tracking:**
   The player’s score is tracked with a simple integer counter that increments whenever a correct answer is given. At the end of the quiz, this score is compared against thresholds to determine the final message (including the ASCII “superfan” celebration for high scores).
 
+#### Flowchart
+
 This lightweight model was chosen deliberately: it avoids unnecessary complexity, keeps the code readable, and allows new categories or questions to be added easily in the future.
+
+To plan out the logic of the Fandom Challenge V2 quiz, a flowchart was created to show the main cycle of the application. It covers everything from starting the quiz, selecting a category, answering questions, and finally saving results to the leaderboard.
+
+The flowchart was designed directly in Markdown using the [Mermaid](https://mermaid.live) library. Mermaid has the advantage of being lightweight and interactive in GitHub, so the diagram can be viewed directly inside the README without requiring a separate image file.
+
+```mermaid
+flowchart TD
+    A[Start Quiz] --> B[Select Category]
+    B --> C[Display Random Question]
+    C --> D[Player Answers]
+    D --> E{Correct?}
+    E -->|Yes| F[Increase Score]
+    E -->|No| G[No Score Change]
+    F --> H[Next Question]
+    G --> H[Next Question]
+    H --> I{Questions Left?}
+    I -->|Yes| C
+    I -->|No| J[Calculate Time]
+    J --> K[Update Leaderboard]
+    K --> L[Show Results]
+```
+
+For maximum compatibility, a static screenshot of the flowchart is also provided below. This ensures that the diagram can be viewed correctly in environments where Mermaid is not supported (such as GitHub Pages or local Markdown previews).
+
+![Mermaid Flowchart Screenshot](assets/images/mermaid-flowchart.png)
 
 ## Testing
 
