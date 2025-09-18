@@ -83,10 +83,11 @@ def rules():
     """Display quiz rules to the player."""
     print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
     print("1. You will be asked a series of questions.")
-    print("2. Each question has 4 options. Only one is correct.")
-    print("3. Type the number of your chosen answer and press Enter.")
-    print("4. Your score will be shown at the end of the quiz.")
-    print("5. Try to get the highest score you can!")
+    print("2. Each question has four options: A, B, C, and D.")
+    print("3. The questions and answer positions are randomised each time.")
+    print("4. Type the letter of your chosen answer and press Enter.")
+    print("5. Your score will be shown at the end of the quiz.")
+    print("6. Try to get the highest score you can!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
 def about():
