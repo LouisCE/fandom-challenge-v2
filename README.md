@@ -307,6 +307,25 @@ Testing included:
   - **Cause:** Some blocks (loops, if/else) were not properly indented after major rewriting.
   - **Resolution:** Fixed all indentation consistently: 4 spaces per level, nested blocks 8+ spaces.
 
+### User Story Testing
+
+All user stories were tested during development and confirmed to pass successfully.
+
+| User Story | How It Was Addressed | Pass |
+|------------|----------------------|------|
+| As a new player, I want there to be a 'Rules' section so that I can learn how to play and begin without confusion. | `rules()` function displays clear step-by-step instructions before playing. | Yes |
+| As a player, I want there to be an 'About' section so that I can learn more about the quiz and its purpose. | `about()` function provides project background, fandoms included, and a link to the repo. | Yes |
+| As a player, I want freedom to choose between multiple different quizzes so that I can test my knowledge on multiple different fandoms. | Main menu allows choosing between Jak and Daxter, Ratchet & Clank, and God of War categories. | Yes |
+| As a player, I want the quiz to randomise questions each game so that every playthrough feels fresh and not repetitive. | Question order is shuffled each run using Python’s `random` module. | Yes |
+| As a player, I want answer options to appear in different orders so that I can’t rely on memorisation to get answers right. | Answer options are randomised before each question is displayed. | Yes |
+| As a player, I want immediate feedback after answering so that I know if I was correct or incorrect right away as well as what the right answer is. | After each guess, program prints whether the answer was correct and even shows the correct answer if they got it wrong. | Yes |
+| As a player, I want to see my final score at the end so that I can measure my performance for that session. | At the end of the quiz, total correct answers are displayed out of the total number of questions. | Yes |
+| As a player, I want different outcomes depending on my score so that the game feels more rewarding and dynamic. | Score thresholds trigger different feedback messages, e.g., "Congratulations! You're a superfan!" for 9/10 or above. | Yes |
+| As a player, I want to be able to play another quiz without restarting the program so that I can quickly try again if I want to improve. | Options loop back to quiz menu during and after a quiz, allowing the player to select another category or retry. | Yes |
+| As a player, I want a timer to run in the background so that I feel more challenge and urgency while answering. | Completion time is tracked and recorded on the leaderboard, adding pressure and urgency to each question. | Yes |
+| As a player, I want the timer to affect leaderboard rankings so that the game rewards quick thinking in addition to accuracy. | Leaderboard scores are calculated with correctness as the primary factor and time taken as a secondary tiebreaker. | Yes |
+| As a competitive player, I want to see a persistent leaderboard of high scores so that I can compare my results with others or past runs. | Google Sheets integration stores and retrieves high scores across sessions. | Yes |
+
 ## Deployment
 
 This project was deployed using Heroku:
