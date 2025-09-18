@@ -92,10 +92,14 @@ def rules():
 def about():
     """Display information about the quiz."""
     print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
-    print("The Fandom Quiz challenges your knowledge across different fandoms,")
-    print("starting with Jak and Daxter trivia.")
-    print("It was created as part of a Python project to test programming and UX skills.")
+    print("Welcome to Fandom Challenge!")
+    print("Test your knowledge with quizzes from your favourite fandoms.")
+    print("Each quiz is randomised and challenges both your knowledge and speed.")
+    print("\nCurrent categories include Jak and Daxter, Ratchet & Clank, and God of War.")
+    print("This version was developed by Louis as part of a Python project to test programming and UX skills.")
     print("Future versions may include more categories and interactive features!")
+    print("\nView the original project on GitHub:")
+    print("https://github.com/LouisCE/fandom-challenge-v2")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
 def play_quiz(questions, quiz_name):
