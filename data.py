@@ -186,9 +186,9 @@ JAK_QUESTIONS = [
         "question": "Who is Jak's main love interest throughout the series?",
         "options": [
             "A) Keira",
-            "B) Torn",
-            "C) Daxter",
-            "D) Ashelin"
+            "B) Ashelin",
+            "C) Tess",
+            "D) Rayn"
         ],
         "answer": "Keira"
     },
@@ -273,22 +273,22 @@ JAK_QUESTIONS = [
         "answer": "Beam Reflexor"
     },
     {
-        "question": "Which weapon uses Dark Eco to increase damage?",
+        "question": "Which weapon uses Dark Eco?",
         "options": [
             "A) Peace Maker",
-            "B) Super Nova",
-            "C) Blaster Mod",
-            "D) Vulcan Fury"
+            "B) Plasmite RPG",
+            "C) Gyro Burster",
+            "D) Needle Laser"
         ],
         "answer": "Peace Maker"
     },
     {
         "question": "What is the general value of one Power Cell in Precursor Orbs?",
         "options": [
-            "A) 50 Orbs",
-            "B) 70 Orbs",
-            "C) 90 Orbs",
-            "D) 100 Orbs"
+            "A) 70 Orbs",
+            "B) 90 Orbs",
+            "C) 100 Orbs",
+            "D) 120 Orbs"
         ],
         "answer": "90 Orbs"
     },
@@ -301,6 +301,16 @@ JAK_QUESTIONS = [
             "D) 111"
         ],
         "answer": "101"
+    },
+    {
+        "question": "How many Precursor Orbs are there in Jak and Daxter: The Precursor Legacy?",
+        "options": [
+            "A) 1,000",
+            "B) 1,500",
+            "C) 2,000",
+            "D) 2,500"
+        ],
+        "answer": "2,000"
     },
     {
         "question": "How long did Jak spend in prison in Jak II?",
@@ -599,7 +609,7 @@ RATCHET_QUESTIONS = [
         "answer": "Percival Tachyon"
     },
     {
-        "question": "Which weapon famously dances enemies to death?",
+        "question": "Which weapon famously causes enemies to dance uncontrollably?",
         "options": [
             "A) RYNO",
             "B) Groovitron",
@@ -609,7 +619,7 @@ RATCHET_QUESTIONS = [
         "answer": "Groovitron"
     },
     {
-        "question": "What is the name of the arena battles Ratchet often competes in?",
+        "question": "What is the name of the arena battles Ratchet often competes in 'Up Your Arsenal'?",
         "options": [
             "A) DreadZone",
             "B) Insomniac Arena",
@@ -629,7 +639,7 @@ RATCHET_QUESTIONS = [
         "answer": "Quartu"
     },
     {
-        "question": "Why did Chairman Drek want to destroy Ratchet's home planet of Veldin?",
+        "question": "Why did Chairman Drek want to destroy Veldin?",
         "options": [
             "A) To build a new weapons factory",
             "B) To occupy the planet’s ideal orbit",
@@ -692,14 +702,14 @@ RATCHET_QUESTIONS = [
         "question": "What is the true purpose of the Great Clock in 'A Crack in Time'?",
         "options": [
             "A) To destroy universes",
-            "B) To control the flow of time",
+            "B) To stabilise the flow of time",
             "C) To locate Lombaxes",
             "D) To create wormholes"
         ],
-        "answer": "To control the flow of time"
+        "answer": "To stabilise the flow of time"
     },
     {
-        "question": "What is the biggest trick in hoverboarding competitions?",
+        "question": "What is the biggest trick in hoverboarding?",
         "options": [
             "A) Turbo Tornado",
             "B) Twisty McMarx",
@@ -996,7 +1006,7 @@ RATCHET_QUESTIONS = [
         "C) Reactor",
         "D) Shellshock"
     ],
-    "answer": "Chainblade and the B2 Brawler"
+    "answer": "Ace Hardlight"
 },
 {
     "question": "What is 'Secret Agent Clank'?",
@@ -1124,7 +1134,7 @@ GOD_OF_WAR_QUESTIONS = [
         "answer": "Thanatos"
     },
     {
-        "question": "What is the Blade of Olympus primarily used for?",
+        "question": "What was the Blade of Olympus used for in God of War II?",
         "options": [
             "A) To defeat Titans",
             "B) To store Kratos' godly power",
@@ -1174,7 +1184,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Blades of Chaos"
 },
 {
-    "question": "What powerful foe does Kratos face in Pandora's Temple that is clad in armor?",
+    "question": "What boss enemy does Kratos face in Pandora's Temple?",
     "options": [
         "A) Armoured Minotaur",
         "B) Cyclops Titan",
@@ -1209,7 +1219,7 @@ GOD_OF_WAR_QUESTIONS = [
         "A) Hades",
         "B) Zeus",
         "C) Ares",
-        "D) Perseus"
+        "D) Cronos"
     ],
     "answer": "Ares"
 },
@@ -1224,7 +1234,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Pathos Verdes III"
 },
 {
-    "question": "Which Spartan warrior remains loyal to Kratos and is known as the Last Spartan?",
+    "question": "Which Spartan warrior remains loyal to Kratos until his final moment?",
     "options": [
         "A) Deimos",
         "B) Lysander",
@@ -1254,7 +1264,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Perseus"
 },
 {
-    "question": "What massive sea monster does Kratos battle at the end of God of War II?",
+    "question": "What massive sea monster does Kratos battle in God of War II?",
     "options": [
         "A) Hydra",
         "B) Kraken",
@@ -1264,7 +1274,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Kraken"
 },
 {
-    "question": "What creature does Kratos ride to reach the Sisters of Fate?",
+    "question": "What mythological creature is known for resurrecting from ashes?",
     "options": [
         "A) Pegasus",
         "B) Phoenix",
@@ -1294,7 +1304,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Poseidon"
 },
 {
-    "question": "Which god rules the Underworld and battles Kratos with chains and a helmet?",
+    "question": "Which god rules the Underworld?",
     "options": [
         "A) Thanatos",
         "B) Hades",
@@ -1334,7 +1344,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Hercules"
 },
 {
-    "question": "Which goddess becomes bitter and confronts Kratos in her drunken despair?",
+    "question": "Which goddess confronts Kratos in drunken despair?",
     "options": [
         "A) Hera",
         "B) Demeter",
@@ -1374,7 +1384,7 @@ GOD_OF_WAR_QUESTIONS = [
     "answer": "Gorgons"
 },
 {
-    "question": "Which massive one-eyed beasts are recurring mini-bosses across the God of War series?",
+    "question": "Which massive one-eyed beasts are recurring mini-bosses throughout the God of War series?",
     "options": [
         "A) Cyclopes",
         "B) Minotaurs",
