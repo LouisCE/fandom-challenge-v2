@@ -24,18 +24,18 @@ This project demonstrates core Python programming concepts such as loops, condit
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a new player | I want to run the quiz easily from the terminal | so that I can start playing without setup issues. |
+| As a new player | I want there to be a 'Rules' section | so that I can learn how to play and begin without confusion. |
+| As a player | I want there to be an 'About' section | so that I can learn more about the quiz and its purpose. |
+| As a player | I want freedom to choose between multiple different quizzes. | so that I can test my knowledge on multiple different fandoms. |
 | As a player | I want the quiz to randomise questions each game | so that every playthrough feels fresh and not repetitive. |
 | As a player | I want answer options to appear in different orders | so that I can’t rely on memorisation to get answers right. |
-| As a player | I want immediate feedback after answering | so that I know if I was correct or incorrect right away. |
+| As a player | I want immediate feedback after answering | so that I know if I was correct or incorrect right away as well as what the right answer is. |
 | As a player | I want to see my final score at the end | so that I can measure my performance for that session. |
 | As a player | I want different outcomes depending on my score | so that the game feels more rewarding and dynamic. |
-| As a returning player | I want my high scores to persist between sessions | so that I can track my long-term progress. |
-| As a player | I want to be able to replay the quiz without restarting the program | so that I can quickly try again if I want to improve. |
-| As a player | I want to see a leaderboard of high scores | so that I can compare my results with others or past runs. |
-| As a player | I want the leaderboard to update automatically when I achieve a new high score | so that my progress is recorded without extra effort. |
-| As a player | I want a timer for each question | so that I feel more challenge and urgency while answering. |
-| As a player | I want the timer to affect my score if I run out of time | so that the game rewards quick thinking and accuracy. |
+| As a player | I want to be able to play another quiz without restarting the program | so that I can quickly try again if I want to improve. |
+| As a player | I want a timer to run in the background | so that I feel more challenge and urgency while answering. |
+| As a player | I want the timer to affect leaderboard rankings | so that the game rewards quick thinking in addition to accuracy. |
+| As a competitive player | I want to see a persistent leaderboard of high scores | so that I can compare my results with others or past runs. |
 
 ## Website Goals and Objectives
 
