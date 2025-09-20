@@ -13,7 +13,8 @@ JAK_QUESTIONS = [
         "answer": "Sandover Village"
     },
     {
-        "question": "What substance causes Daxter to transform into an ottsel?",
+        "question": "What substance causes Daxter to transform "
+        "into an ottsel?",
         "options": [
             "A) Dark Eco",
             "B) Light Eco",
@@ -23,7 +24,8 @@ JAK_QUESTIONS = [
         "answer": "Dark Eco"
     },
     {
-        "question": "Which character acts as Jak's mentor and caretaker in Sandover Village?",
+        "question": "Which character acts as Jak's mentor and caretaker "
+        "in Sandover Village?",
         "options": [
             "A) Samos the Sage",
             "B) Keira",
@@ -53,7 +55,8 @@ JAK_QUESTIONS = [
         "answer": "Kor"
     },
     {
-        "question": "Which ability does Jak gain after being infused with Dark Eco in Jak II?",
+        "question": "Which ability does Jak gain after being infused with "
+        "Dark Eco in Jak II?",
         "options": [
             "A) Dark Jak form",
             "B) Light Jak form",
@@ -113,7 +116,8 @@ JAK_QUESTIONS = [
         "answer": "Daxter"
     },
     {
-        "question": "Which eco type gives Jak the ability to shoot energy blasts?",
+        "question": "Which eco type gives Jak the ability to shoot "
+        "energy blasts?",
         "options": [
             "A) Yellow Eco",
             "B) Light Eco",
@@ -133,7 +137,8 @@ JAK_QUESTIONS = [
         "answer": "Baron Praxis"
     },
     {
-        "question": "Which character provides tech support and builds Jak's vehicles?",
+        "question": "Which character provides tech support and builds "
+        "Jak's vehicles?",
         "options": [
             "A) Torn",
             "B) Keira",
@@ -153,7 +158,8 @@ JAK_QUESTIONS = [
         "answer": "Blue Eco"
     },
     {
-        "question": "What is the name of the secret Precursor artifact in Jak II?",
+        "question": "What is the name of the secret Precursor artifact in "
+        "Jak II?",
         "options": [
             "A) Eco Crystal",
             "B) Precursor Stone",
@@ -163,7 +169,8 @@ JAK_QUESTIONS = [
         "answer": "Precursor Stone"
     },
     {
-        "question": "Which antagonist is known for hunting Jak across the Wasteland in Jak 3?",
+        "question": "Which antagonist is known for hunting Jak across the "
+        "Wasteland in Jak 3?",
         "options": [
             "A) Kor",
             "B) Erol",
@@ -173,7 +180,8 @@ JAK_QUESTIONS = [
         "answer": "Erol"
     },
     {
-        "question": "Which eco is known to have destructive explosive properties?",
+        "question": "Which eco is known to have destructive explosive "
+        "properties?",
         "options": [
             "A) Red Eco",
             "B) Blue Eco",
@@ -193,7 +201,8 @@ JAK_QUESTIONS = [
         "answer": "Keira"
     },
     {
-        "question": "Which character is the commander of Haven City's Krimzon Guard?",
+        "question": "Which character is the commander of Haven City's "
+        "Krimzon Guard?",
         "options": [
             "A) Baron Praxis",
             "B) Kor",
@@ -283,7 +292,8 @@ JAK_QUESTIONS = [
         "answer": "Peace Maker"
     },
     {
-        "question": "What is the general value of one Power Cell in Precursor Orbs?",
+        "question": "What is the general value of one Power Cell in "
+        "Precursor Orbs?",
         "options": [
             "A) 70 Orbs",
             "B) 90 Orbs",
@@ -293,7 +303,8 @@ JAK_QUESTIONS = [
         "answer": "90 Orbs"
     },
     {
-        "question": "How many Power Cells are there in Jak and Daxter: The Precursor Legacy?",
+        "question": "How many Power Cells are there in Jak and Daxter: "
+        "The Precursor Legacy?",
         "options": [
             "A) 99",
             "B) 100",
@@ -303,7 +314,8 @@ JAK_QUESTIONS = [
         "answer": "101"
     },
     {
-        "question": "How many Precursor Orbs are there in Jak and Daxter: The Precursor Legacy?",
+        "question": "How many Precursor Orbs are there in Jak and Daxter: "
+        "The Precursor Legacy?",
         "options": [
             "A) 1,000",
             "B) 1,500",
@@ -353,7 +365,8 @@ JAK_QUESTIONS = [
         "answer": "Samos"
     },
     {
-        "question": "Which weapon does Jak receive after destroying the Precursor Robot in Jak III?",
+        "question": "Which weapon does Jak receive after destroying the "
+        "Precursor Robot in Jak III?",
         "options": [
             "A) Vulcan Fury",
             "B) Arc Wielder",
@@ -363,7 +376,8 @@ JAK_QUESTIONS = [
         "answer": "Arc Wielder"
     },
     {
-        "question": "How do Jak and Daxter ultimately defeat Gol and Maia in The Precursor Legacy?",
+        "question": "How do Jak and Daxter ultimately defeat Gol and Maia in "
+        "The Precursor Legacy?",
         "options": [
             "A) By using Dark Eco",
             "B) By channeling Light Eco",
@@ -373,7 +387,8 @@ JAK_QUESTIONS = [
         "answer": "By channeling Light Eco"
     },
     {
-        "question": "What is revealed to be the true nature of the Precursors?",
+        "question": "What is revealed to be the true nature of the "
+        "Precursors?",
         "options": [
             "A) Time Travelers",
             "B) Ottsels",
@@ -383,7 +398,8 @@ JAK_QUESTIONS = [
         "answer": "Ottsels"
     },
     {
-        "question": "How did Jak and Daxter earn their membership in the Underground?",
+        "question": "How did Jak and Daxter earn their membership in the "
+        "Underground?",
         "options": [
             "A) By defeating a Metal Head horde",
             "B) By retrieving the Baron's banner in Dead Town",
@@ -423,7 +439,8 @@ JAK_QUESTIONS = [
         "answer": "The KG War Factory"
     },
     {
-        "question": "Which monster attacked Rock Village in The Precursor Legacy?",
+        "question": "Which monster attacked Rock Village in "
+        "The Precursor Legacy?",
         "options": [
             "A) Metal-pede",
             "B) Lurker Shark",
@@ -433,7 +450,8 @@ JAK_QUESTIONS = [
         "answer": "Klaww"
     },
     {
-        "question": "Who rewards Jak with a Power Cell for restoring energy to the village?",
+        "question": "Who rewards Jak with a Power Cell for restoring energy "
+        "to the village?",
         "options": [
             "A) The Mayor",
             "B) The Gambler",
@@ -443,7 +461,8 @@ JAK_QUESTIONS = [
         "answer": "The Mayor"
     },
     {
-        "question": "Why did the sewers of Haven City become infested with Metal Heads?",
+        "question": "Why did the sewers of Haven City become infested "
+        "with Metal Heads?",
         "options": [
             "A) The Baron opened the nest",
             "B) Jak destroyed the defence turrets",
@@ -473,7 +492,8 @@ JAK_QUESTIONS = [
         "answer": "Racing"
     },
     {
-        "question": "Who is the undisputed Grand Champion of NYFE racing in Haven City?",
+        "question": "Who is the undisputed Grand Champion of NYFE racing in "
+        "Haven City?",
         "options": [
             "A) Razer",
             "B) Torn",
@@ -493,7 +513,8 @@ JAK_QUESTIONS = [
         "answer": "The Wasteland"
     },
     {
-        "question": "Which species of Metal Head nearly killed Sig in the Underport?",
+        "question": "Which species of Metal Head nearly killed Sig in "
+        "the Underport?",
         "options": [
             "A) Metal-pede",
             "B) Spyder Gunner",
@@ -513,7 +534,8 @@ JAK_QUESTIONS = [
         "answer": "At the Palace"
     },
     {
-        "question": "What level of security clearance did Jak need to enter the Weapons Lab in Haven City?",
+        "question": "What level of security clearance did Jak need to enter "
+        "the Weapons Lab in Haven City?",
         "options": [
             "A) Green",
             "B) Blue",
@@ -549,7 +571,8 @@ RATCHET_QUESTIONS = [
         "answer": "Veldin"
     },
     {
-        "question": "Who is the main villain in the first Ratchet & Clank game?",
+        "question": "Who is the main villain in the first Ratchet & Clank "
+        "game?",
         "options": [
             "A) Dr. Nefarious",
             "B) Captain Qwark",
@@ -559,7 +582,8 @@ RATCHET_QUESTIONS = [
         "answer": "Chairman Drek"
     },
     {
-        "question": "What is the name of the robot who becomes a recurring villain starting in 'Up Your Arsenal'?",
+        "question": "What is the name of the robot who becomes a recurring "
+        "villain starting in 'Up Your Arsenal'?",
         "options": [
             "A) Klunk",
             "B) Lawrence",
@@ -569,7 +593,8 @@ RATCHET_QUESTIONS = [
         "answer": "Dr. Nefarious"
     },
     {
-        "question": "Which weapon is known for transforming enemies into farm animals?",
+        "question": "Which weapon is known for transforming enemies into "
+        "farm animals?",
         "options": [
             "A) Morph-O-Ray",
             "B) Sheepinator",
@@ -579,7 +604,8 @@ RATCHET_QUESTIONS = [
         "answer": "Sheepinator"
     },
     {
-        "question": "What gadget allows Ratchet and Clank to swing across gaps?",
+        "question": "What gadget allows Ratchet and Clank to swing across "
+        "gaps?",
         "options": [
             "A) Swingshot",
             "B) Helipack",
@@ -589,7 +615,8 @@ RATCHET_QUESTIONS = [
         "answer": "Swingshot"
     },
     {
-        "question": "In 'A Crack in Time,' what special ability does Clank gain?",
+        "question": "In 'A Crack in Time,' what special ability does Clank "
+        "gain?",
         "options": [
             "A) Control of time",
             "B) Flight",
@@ -609,7 +636,8 @@ RATCHET_QUESTIONS = [
         "answer": "Percival Tachyon"
     },
     {
-        "question": "Which weapon famously causes enemies to dance uncontrollably?",
+        "question": "Which weapon famously causes enemies to dance "
+        "uncontrollably?",
         "options": [
             "A) RYNO",
             "B) Groovitron",
@@ -619,7 +647,8 @@ RATCHET_QUESTIONS = [
         "answer": "Groovitron"
     },
     {
-        "question": "What is the name of the arena battles Ratchet often competes in 'Up Your Arsenal'?",
+        "question": "What is the name of the arena battles Ratchet often "
+        "competes in 'Up Your Arsenal'?",
         "options": [
             "A) DreadZone",
             "B) Insomniac Arena",
@@ -649,7 +678,8 @@ RATCHET_QUESTIONS = [
         "answer": "To occupy the planet’s ideal orbit"
     },
     {
-        "question": "What was Chairman Drek’s true motivation for polluting his own homeworld?",
+        "question": "What was Chairman Drek’s true motivation for polluting "
+        "his own homeworld?",
         "options": [
             "A) Spite against the Galactic Rangers",
             "B) He was bribed by Megacorp",
@@ -659,7 +689,8 @@ RATCHET_QUESTIONS = [
         "answer": "Purely for cash"
     },
     {
-        "question": "Which pop star robot serves as a parody of Britney Spears in 'Up Your Arsenal'?",
+        "question": "Which pop star robot serves as a parody of Britney "
+        "Spears in 'Up Your Arsenal'?",
         "options": [
             "A) Courtney Gears",
             "B) Starlight Bot",
@@ -679,7 +710,8 @@ RATCHET_QUESTIONS = [
         "answer": "Angela Cross"
     },
     {
-        "question": "How do you acquire the RYNO in the 2016 Ratchet & Clank remake?",
+        "question": "How do you acquire the RYNO in the 2016 Ratchet & Clank "
+        "remake?",
         "options": [
             "A) Collect all Gold Bolts",
             "B) Defeat every boss without dying",
@@ -689,7 +721,8 @@ RATCHET_QUESTIONS = [
         "answer": "Find all nine RYNO holocards"
     },
     {
-        "question": "In 'Going Commando,' what are the genetically unstable creatures created by Megacorp?",
+        "question": "In 'Going Commando,' what are the genetically unstable "
+        "creatures created by Megacorp?",
         "options": [
             "A) Amoeboids",
             "B) Protopets",
@@ -699,7 +732,8 @@ RATCHET_QUESTIONS = [
         "answer": "Protopets"
     },
     {
-        "question": "What is the true purpose of the Great Clock in 'A Crack in Time'?",
+        "question": "What is the true purpose of the Great Clock in "
+        "'A Crack in Time'?",
         "options": [
             "A) To destroy universes",
             "B) To stabilise the flow of time",
@@ -729,7 +763,8 @@ RATCHET_QUESTIONS = [
         "answer": "B20 Crotchitizer"
     },
     {
-        "question": "What is the name of the massive device Chairman Drek uses to destroy entire planets?",
+        "question": "What is the name of the massive device Chairman Drek "
+        "uses to destroy entire planets?",
         "options": [
             "A) Deplanetizer",
             "B) Planet Buster Maximus",
@@ -739,7 +774,8 @@ RATCHET_QUESTIONS = [
         "answer": "Deplanetizer"
     },
     {
-        "question": "How many life sentences did Vendra Prog recieve in 'Into the Nexus'?",
+        "question": "How many life sentences did Vendra Prog recieve in "
+        "'Into the Nexus'?",
         "options": [
             "A) Double",
             "B) Triple",
@@ -749,7 +785,8 @@ RATCHET_QUESTIONS = [
         "answer": "Quintuple"
     },
     {
-        "question": "After drinking Ultra Nanotech, how many hit points does Ratchet have?",
+        "question": "After drinking Ultra Nanotech, how many hit points "
+        "does Ratchet have?",
         "options": [
             "A) Six",
             "B) Seven",
@@ -789,7 +826,8 @@ RATCHET_QUESTIONS = [
         "answer": "Upgrading weapons"
     },
     {
-        "question": "How long does it take for Ratchet to get his Gadgetron employee discount?",
+        "question": "How long does it take for Ratchet to get his "
+        "Gadgetron employee discount?",
         "options": [
             "A) 6 months",
             "B) 1 year",
@@ -809,7 +847,8 @@ RATCHET_QUESTIONS = [
         "answer": "Emperor Tachyon"
     },
     {
-        "question": "Which game sees Ratchet forced to fight for survival in gladiatorial arenas?",
+        "question": "Which game sees Ratchet forced to fight for "
+        "survival in gladiatorial arenas?",
         "options": [
             "A) Ratchet & Clank: Deadlocked",
             "B) Ratchet & Clank: Quest for Booty",
@@ -819,7 +858,8 @@ RATCHET_QUESTIONS = [
         "answer": "Ratchet & Clank: Deadlocked"
     },
     {
-        "question": "Which short spin-off adventure directly followed 'Tools of Destruction'?",
+        "question": "Which short spin-off adventure directly followed "
+        "'Tools of Destruction'?",
         "options": [
             "A) Into the Nexus",
             "B) Quest for Booty",
@@ -829,7 +869,8 @@ RATCHET_QUESTIONS = [
         "answer": "Quest for Booty"
     },
     {
-        "question": "Which Ratchet & Clank game introduced alternate dimensions and Rivet?",
+        "question": "Which Ratchet & Clank game introduced "
+        "alternate dimensions and Rivet?",
         "options": [
             "A) Into the Nexus",
             "B) A Crack in Time",
@@ -839,7 +880,8 @@ RATCHET_QUESTIONS = [
         "answer": "Rift Apart"
     },
     {
-        "question": "Which hoverboard does Skid McMarx give to Ratchet that 'can’t even be bought'?",
+        "question": "Which hoverboard does Skid McMarx give to Ratchet that "
+        "'can’t even be bought'?",
         "options": [
             "A) X-1000",
             "B) Z-3000",
@@ -859,7 +901,8 @@ RATCHET_QUESTIONS = [
         "answer": "To turn all organic life into robots"
     },
     {
-        "question": "Which villain is a warlord and recurring foe introduced in 'A Crack in Time'?",
+        "question": "Which villain is a warlord and recurring foe "
+        "introduced in 'A Crack in Time'?",
         "options": [
             "A) Lord Vorselon",
             "B) Percival Tachyon",
@@ -879,7 +922,8 @@ RATCHET_QUESTIONS = [
         "answer": "Opening rifts between dimensions"
     },
     {
-        "question": "Who was the ghostly pirate captain featured in 'Quest for Booty'?",
+        "question": "Who was the ghostly pirate captain featured in "
+        "'Quest for Booty'?",
         "options": [
             "A) Captain Angstrom Darkwater",
             "B) Captain Romulus Slag",
@@ -889,7 +933,8 @@ RATCHET_QUESTIONS = [
         "answer": "Captain Angstrom Darkwater"
     },
     {
-        "question": "Why did Ratchet and Clank have a falling out in the first game?",
+        "question": "Why did Ratchet and Clank have a falling out in "
+        "the first game?",
         "options": [
             "A) Ratchet blamed Clank for trusting Qwark",
             "B) Clank chose to stay with the Zoni",
@@ -899,7 +944,8 @@ RATCHET_QUESTIONS = [
         "answer": "Ratchet blamed Clank for trusting Qwark"
     },
     {
-        "question": "Who is the youngest member of the Galactic Rangers in 'Ratchet & Clank' (2016)?",
+        "question": "Who is the youngest member of the Galactic Rangers in "
+        "'Ratchet & Clank' (2016)?",
         "options": [
             "A) Elaris",
             "B) Cora Veralux",
@@ -969,7 +1015,8 @@ RATCHET_QUESTIONS = [
         "answer": "Sells Gadgetron devices as 'Steve'"
     },
     {
-        "question": "Which cheesy soap opera always seems to play when Dr. Nefarious gets angry?",
+        "question": "Which cheesy soap opera always seems to play when "
+        "Dr. Nefarious gets angry?",
         "options": [
             "A) Lance and Janice",
             "B) Mark and Lorna",
@@ -989,7 +1036,8 @@ RATCHET_QUESTIONS = [
         "answer": "A black-market weapons dealer"
     },
     {
-        "question": "Who is Abercrombie Fizzwidget in 'Ratchet & Clank: Going Commando'?",
+        "question": "Who is Abercrombie Fizzwidget in "
+        "'Ratchet & Clank: Going Commando'?",
         "options": [
             "A) The eccentric CEO of Megacorp",
             "B) A famous scientist from Kerwan",
@@ -997,58 +1045,60 @@ RATCHET_QUESTIONS = [
             "D) A Galactic Ranger commander"
         ],
         "answer": "The eccentric CEO of Megacorp"
-},
-{
-    "question": "In 'Ratchet: Gladiator' (Deadlocked), who is the champion exterminator?",
-    "options": [
-        "A) Ace Hardlight",
-        "B) The Eviscerator",
-        "C) Reactor",
-        "D) Shellshock"
-    ],
-    "answer": "Ace Hardlight"
-},
-{
-    "question": "What is 'Secret Agent Clank'?",
-    "options": [
-        "A) A hit holovid series starring Clank as a spy",
-        "B) A high-tech gadget made by Gadgetron",
-        "C) A secret identity used by Captain Qwark",
-        "D) The name of Ratchet's ship"
-    ],
-    "answer": "A hit holovid series starring Clank as a spy"
-},
-{
-    "question": "How does Ratchet infiltrate the Deplanetizer in 'Ratchet & Clank' (2016)?",
-    "options": [
-        "A) By using the Grav-Tether",
-        "B) By disguising himself with the Hologuise",
-        "C) By sneaking in through the exhaust vents",
-        "D) By shrinking himself with the Shrink Ray"
-    ],
-    "answer": "By disguising himself with the Hologuise"
-},
-{
-    "question": "What alien race does Chairman Drek belong to?",
-    "options": [
-        "A) Lombax",
-        "B) Blarg",
-        "C) Markazian",
-        "D) Zoni"
-    ],
-    "answer": "Blarg"
-},
-{
-    "question": "What creature is the boss fight on Umbris?",
-    "options": [
-        "A) Thugs-4-Less Leader",
-        "B) Blargian Snagglebeast",
-        "C) Mutated Protopet",
-        "D) Alien Queen"
-    ],
-    "answer": "Blargian Snagglebeast"
-}
-]
+    },
+    {
+        "question": "In 'Ratchet: Gladiator' (Deadlocked), who is the "
+        "champion exterminator?",
+        "options": [
+            "A) Ace Hardlight",
+            "B) The Eviscerator",
+            "C) Reactor",
+            "D) Shellshock"
+        ],
+        "answer": "Ace Hardlight"
+    },
+    {
+        "question": "What is 'Secret Agent Clank'?",
+        "options": [
+            "A) A hit holovid series starring Clank as a spy",
+            "B) A high-tech gadget made by Gadgetron",
+            "C) A secret identity used by Captain Qwark",
+            "D) The name of Ratchet's ship"
+        ],
+        "answer": "A hit holovid series starring Clank as a spy"
+    },
+    {
+        "question": "How does Ratchet infiltrate the Deplanetizer in "
+        "'Ratchet & Clank' (2016)?",
+        "options": [
+            "A) By using the Grav-Tether",
+            "B) By disguising himself with the Hologuise",
+            "C) By sneaking in through the exhaust vents",
+            "D) By shrinking himself with the Shrink Ray"
+        ],
+        "answer": "By disguising himself with the Hologuise"
+    },
+    {
+        "question": "What alien race does Chairman Drek belong to?",
+        "options": [
+            "A) Lombax",
+            "B) Blarg",
+            "C) Markazian",
+            "D) Zoni"
+        ],
+        "answer": "Blarg"
+    },
+    {
+        "question": "What creature is the boss fight on Umbris?",
+        "options": [
+            "A) Thugs-4-Less Leader",
+            "B) Blargian Snagglebeast",
+            "C) Mutated Protopet",
+            "D) Alien Queen"
+        ],
+        "answer": "Blargian Snagglebeast"
+    }
+    ]
 
 GOD_OF_WAR_QUESTIONS = [
     {
@@ -1114,7 +1164,8 @@ GOD_OF_WAR_QUESTIONS = [
         "answer": "Deimos"
     },
     {
-        "question": "Who serves as the goddess of wisdom and often guides Kratos?",
+        "question": "Who serves as the goddess of wisdom and often "
+        "guides Kratos?",
         "options": [
             "A) Hera",
             "B) Aphrodite",
@@ -1154,443 +1205,481 @@ GOD_OF_WAR_QUESTIONS = [
         "answer": "Kratos"
     },
     {
-    "question": "What sea monster serves as the first major boss fight in God of War (2005)?",
-    "options": [
-        "A) The Kraken",
-        "B) The Hydra",
-        "C) Scylla",
-        "D) Cerberus"
-    ],
-    "answer": "The Hydra"
-},
-{
-    "question": "What does Kratos do with the ship's Captain after taking his key during the Hydra battle?",
-    "options": [
-        "A) Throws him overboard",
-        "B) Leaves him trapped in a cage",
-        "C) Drops him into the Hydra's throat",
-        "D) Stabs him with the Blades of Chaos"
-    ],
-    "answer": "Drops him into the Hydra's throat"
-},
-{
-    "question": "Which chained weapons were gifted to Kratos by Ares, binding him to the god of war?",
-    "options": [
-        "A) Blade of Artemis",
-        "B) Blades of Chaos",
-        "C) Blade of Olympus",
-        "D) Nemean Cestus"
-    ],
-    "answer": "Blades of Chaos"
-},
-{
-    "question": "What boss enemy does Kratos face in Pandora's Temple?",
-    "options": [
-        "A) Armoured Minotaur",
-        "B) Cyclops Titan",
-        "C) Stone Talos",
-        "D) Gorgon Queen"
-    ],
-    "answer": "Armoured Minotaur"
-},
-{
-    "question": "What artifact does Kratos seek inside Pandora's Temple to defeat Ares?",
-    "options": [
-        "A) The Amulet of Fates",
-        "B) Pandora's Box",
-        "C) The Blade of Olympus",
-        "D) The Ambrosia of the Gods"
-    ],
-    "answer": "Pandora's Box"
-},
-{
-    "question": "Where does Kratos fall after Ares kills him during God of War (2005)?",
-    "options": [
-        "A) The River Styx",
-        "B) The Underworld",
-        "C) Mount Olympus",
-        "D) Tartarus"
-    ],
-    "answer": "The Underworld"
-},
-{
-    "question": "Who is the main antagonist and final boss of God of War (2005)?",
-    "options": [
-        "A) Hades",
-        "B) Zeus",
-        "C) Ares",
-        "D) Cronos"
-    ],
-    "answer": "Ares"
-},
-{
-    "question": "Who was ordered to build Pandora’s Temple, carrying the task on his back until his death?",
-    "options": [
-        "A) Pathos Verdes III",
-        "B) Daedalus",
-        "C) Hephaestus",
-        "D) Prometheus"
-    ],
-    "answer": "Pathos Verdes III"
-},
-{
-    "question": "Which Spartan warrior remains loyal to Kratos until his final moment?",
-    "options": [
-        "A) Deimos",
-        "B) Lysander",
-        "C) The Last Spartan",
-        "D) Alcaeus"
-    ],
-    "answer": "The Last Spartan"
-},
-{
-    "question": "Who challenges Kratos in the air while wearing wings, leading to a fall into the Underworld?",
-    "options": [
-        "A) Daedalus",
-        "B) Hermes",
-        "C) Icarus",
-        "D) Perseus"
-    ],
-    "answer": "Icarus"
-},
-{
-    "question": "Which Greek hero attempts to stop Kratos inside the Temple of the Fates?",
-    "options": [
-        "A) Perseus",
-        "B) Theseus",
-        "C) Orpheus",
-        "D) Achilles"
-    ],
-    "answer": "Perseus"
-},
-{
-    "question": "What massive sea monster does Kratos battle in God of War II?",
-    "options": [
-        "A) Hydra",
-        "B) Kraken",
-        "C) Leviathan",
-        "D) Scylla"
-    ],
-    "answer": "Kraken"
-},
-{
-    "question": "What mythological creature is known for resurrecting from ashes?",
-    "options": [
-        "A) Pegasus",
-        "B) Phoenix",
-        "C) Griffin",
-        "D) Harpy"
-    ],
-    "answer": "Phoenix"
-},
-{
-    "question": "Who are the beings that control the destiny of all in God of War II?",
-    "options": [
-        "A) The Furies",
-        "B) The Muses",
-        "C) The Sisters of Fate",
-        "D) The Norns"
-    ],
-    "answer": "The Sisters of Fate"
-},
-{
-    "question": "Which Olympian god does Kratos kill first in God of War III?",
-    "options": [
-        "A) Poseidon",
-        "B) Hermes",
-        "C) Hades",
-        "D) Helios"
-    ],
-    "answer": "Poseidon"
-},
-{
-    "question": "Which god rules the Underworld?",
-    "options": [
-        "A) Thanatos",
-        "B) Hades",
-        "C) Ares",
-        "D) Persephone"
-    ],
-    "answer": "Hades"
-},
-{
-    "question": "Which Olympian messenger god does Kratos defeat, taking his speed?",
-    "options": [
-        "A) Hermes",
-        "B) Apollo",
-        "C) Hecate",
-        "D) Helios"
-    ],
-    "answer": "Hermes"
-},
-{
-    "question": "Which sun god does Kratos decapitate and use to reveal hidden paths?",
-    "options": [
-        "A) Apollo",
-        "B) Helios",
-        "C) Hyperion",
-        "D) Eos"
-    ],
-    "answer": "Helios"
-},
-{
-    "question": "Which son of Zeus does Kratos battle in an arena-like fight?",
-    "options": [
-        "A) Ares",
-        "B) Hercules",
-        "C) Perseus",
-        "D) Apollo"
-    ],
-    "answer": "Hercules"
-},
-{
-    "question": "Which goddess confronts Kratos in drunken despair?",
-    "options": [
-        "A) Hera",
-        "B) Demeter",
-        "C) Hestia",
-        "D) Aphrodite"
-    ],
-    "answer": "Hera"
-},
-{
-    "question": "Which god is the final Olympian Kratos kills in God of War III?",
-    "options": [
-        "A) Ares",
-        "B) Zeus",
-        "C) Hades",
-        "D) Apollo"
-    ],
-    "answer": "Zeus"
-},
-{
-    "question": "Which goddess is successful in seducing Kratos?",
-    "options": [
-        "A) Hera",
-        "B) Aphrodite",
-        "C) Artemis",
-        "D) Persephone"
-    ],
-    "answer": "Aphrodite"
-},
-{
-    "question": "Which snake-haired monsters in the God of War series can turn Kratos to stone with their gaze?",
-    "options": [
-        "A) Sirens",
-        "B) Gorgons",
-        "C) Harpies",
-        "D) Furies"
-    ],
-    "answer": "Gorgons"
-},
-{
-    "question": "Which massive one-eyed beasts are recurring mini-bosses throughout the God of War series?",
-    "options": [
-        "A) Cyclopes",
-        "B) Minotaurs",
-        "C) Centaurs",
-        "D) Satyrs"
-    ],
-    "answer": "Cyclopes"
-},
-{
-    "question": "Which half-man, half-horse enemies often wield huge blades and command soldiers in God of War?",
-    "options": [
-        "A) Centaurs",
-        "B) Minotaurs",
-        "C) Wraiths",
-        "D) Gorgons"
-    ],
-    "answer": "Centaurs"
-},
-{
-    "question": "Which hulking beasts, often armored, are used as guardians in Pandora’s Temple and other locations?",
-    "options": [
-        "A) Minotaurs",
-        "B) Cyclopes",
-        "C) Satyrs",
-        "D) Wraiths"
-    ],
-    "answer": "Minotaurs"
-},
-{
-    "question": "Which spectral enemies wield dual blades and can burrow beneath the ground to ambush Kratos?",
-    "options": [
-        "A) Harpies",
-        "B) Wraiths",
-        "C) Shades",
-        "D) Sirens"
-    ],
-    "answer": "Wraiths"
-},
-{
-    "question": "Which gigantic animated statue serves as the first boss battle in God of War II?",
-    "options": [
-        "A) Colossus of Rhodes",
-        "B) Talos",
-        "C) Cyclops King",
-        "D) Atlas"
-    ],
-    "answer": "Colossus of Rhodes"
-},
-{
-    "question": "Which warlord originally killed Kratos in battle, leading to his pact with Ares?",
-    "options": [
-        "A) Barbarian King Alrik",
-        "B) Perseus",
-        "C) Hercules",
-        "D) Theseus"
-    ],
-    "answer": "Barbarian King Alrik"
-},
-{
-    "question": "Which enemy type in God of War III hatches smaller beasts to attack Kratos during battle?",
-    "options": [
-        "A) Harpy Matron",
-        "B) Cerberus Breeder",
-        "C) Gorgon Queen",
-        "D) Chimera Mother"
-    ],
-    "answer": "Cerberus Breeder"
-},
-{
-    "question": "In Chains of Olympus, which primordial god of dreams casts the world into slumber?",
-    "options": [
-        "A) Morpheus",
-        "B) Thanatos",
-        "C) Hypnos",
-        "D) Erebus"
-    ],
-    "answer": "Morpheus"
-},
-{
-    "question": "In God of War III, which mythical king turns everything he touches into gold, even himself?",
-    "options": [
-        "A) Midas",
-        "B) Minos",
-        "C) Perseus",
-        "D) Orpheus"
-    ],
-    "answer": "Midas"
-},
-{
-    "question": "Which Norse god of thunder is confronted in the Norse era of God of War?",
-    "options": [
-        "A) Baldur",
-        "B) Tyr",
-        "C) Thor",
-        "D) Odin"
-    ],
-    "answer": "Thor"
-},
-{
-    "question": "What is the name of Kratos' wife, whose ashes were bound to his skin as a curse?",
-    "options": [
-        "A) Calliope",
-        "B) Lysandra",
-        "C) Pandora",
-        "D) Persephone"
-    ],
-    "answer": "Lysandra"
-},
-{
-    "question": "What is the name of Kratos' daughter, whom he tragically lost?",
-    "options": [
-        "A) Calliope",
-        "B) Pandora",
-        "C) Hera",
-        "D) Electra"
-    ],
-    "answer": "Calliope"
-},
-{
-    "question": "Which god serves as the smith of Olympus and forges weapons in God of War III?",
-    "options": [
-        "A) Hephaestus",
-        "B) Hermes",
-        "C) Helios",
-        "D) Apollo"
-    ],
-    "answer": "Hephaestus"
-},
-{
-    "question": "What is the home of the Olympian gods and a central battleground in God of War III?",
-    "options": [
-        "A) Mount Olympus",
-        "B) Delphi",
-        "C) Athens",
-        "D) Sparta"
-    ],
-    "answer": "Mount Olympus"
-},
-{
-    "question": "Where does Kratos repeatedly journey when stripped of his godly powers or slain?",
-    "options": [
-        "A) Elysium",
-        "B) Underworld",
-        "C) Tartarus",
-        "D) Asphodel"
-    ],
-    "answer": "Underworld"
-},
-{
-    "question": "Why is Kratos able to escape the Underworld multiple times throughout the series?",
-    "options": [
-        "A) The gods free him",
-        "B) Death cannot hold those with purpose",
-        "C) He bribes Hades",
-        "D) He controls the River Styx"
-    ],
-    "answer": "Death cannot hold those with purpose"
-},
-{
-    "question": "Who is the mysterious gravedigger that aids Kratos?",
-    "options": [
-        "A) Hermes",
-        "B) Hades",
-        "C) Zeus",
-        "D) Thanatos"
-    ],
-    "answer": "Zeus"
-},
-{
-    "question": "Which hybrid monsters in God of War III combine traits of lion, goat, and serpent?",
-    "options": [
-        "A) Gorgons",
-        "B) Chimeras",
-        "C) Harpies",
-        "D) Satyrs"
-    ],
-    "answer": "Chimeras"
-},
-{
-    "question": "Which Titan is Kratos' ally at the beginning of God of War III?",
-    "options": [
-        "A) Atlas",
-        "B) Gaia",
-        "C) Cronos",
-        "D) Hyperion"
-    ],
-    "answer": "Gaia"
-},
-{
-    "question": "Which Titan is imprisoned in the Great Chain of Tartarus?",
-    "options": [
-        "A) Atlas",
-        "B) Prometheus",
-        "C) Cronos",
-        "D) Oceanus"
-    ],
-    "answer": "Cronos"
-},
-{
-    "question": "What was the Great War in God of War lore?",
-    "options": [
-        "A) A battle between mortals and gods",
-        "B) The conflict where the gods defeated the Titans",
-        "C) A war between Athens and Sparta",
-        "D) A rebellion against Zeus led by Hades"
-    ],
-    "answer": "The conflict where the gods defeated the Titans"
-}
-]
+        "question": "What sea monster serves as the first major boss fight in "
+        "God of War (2005)?",
+        "options": [
+            "A) The Kraken",
+            "B) The Hydra",
+            "C) Scylla",
+            "D) Cerberus"
+        ],
+        "answer": "The Hydra"
+    },
+    {
+        "question": "What does Kratos do with the ship's Captain after "
+        "taking his key during the Hydra battle?",
+        "options": [
+            "A) Throws him overboard",
+            "B) Leaves him trapped in a cage",
+            "C) Drops him into the Hydra's throat",
+            "D) Stabs him with the Blades of Chaos"
+        ],
+        "answer": "Drops him into the Hydra's throat"
+    },
+    {
+        "question": "Which chained weapons were gifted to Kratos by Ares, "
+        "binding him to the god of war?",
+        "options": [
+            "A) Blade of Artemis",
+            "B) Blades of Chaos",
+            "C) Blade of Olympus",
+            "D) Nemean Cestus"
+        ],
+        "answer": "Blades of Chaos"
+    },
+    {
+        "question": "What boss enemy does Kratos face in Pandora's Temple?",
+        "options": [
+            "A) Armoured Minotaur",
+            "B) Cyclops Titan",
+            "C) Stone Talos",
+            "D) Gorgon Queen"
+        ],
+        "answer": "Armoured Minotaur"
+    },
+    {
+        "question": "What artifact does Kratos seek inside Pandora's Temple "
+        "to defeat Ares?",
+        "options": [
+            "A) The Amulet of Fates",
+            "B) Pandora's Box",
+            "C) The Blade of Olympus",
+            "D) The Ambrosia of the Gods"
+        ],
+        "answer": "Pandora's Box"
+    },
+    {
+        "question": "Where does Kratos fall after Ares kills him during "
+        "God of War (2005)?",
+        "options": [
+            "A) The River Styx",
+            "B) The Underworld",
+            "C) Mount Olympus",
+            "D) Tartarus"
+        ],
+        "answer": "The Underworld"
+    },
+    {
+        "question": "Who is the main antagonist and final boss of "
+        "God of War (2005)?",
+        "options": [
+            "A) Hades",
+            "B) Zeus",
+            "C) Ares",
+            "D) Cronos"
+        ],
+        "answer": "Ares"
+    },
+    {
+        "question": "Who was ordered to build Pandora’s Temple, "
+        "carrying the task on his back until his death?",
+        "options": [
+            "A) Pathos Verdes III",
+            "B) Daedalus",
+            "C) Hephaestus",
+            "D) Prometheus"
+        ],
+        "answer": "Pathos Verdes III"
+    },
+    {
+        "question": "Which Spartan warrior remains loyal to Kratos "
+        "until his final moment?",
+        "options": [
+            "A) Deimos",
+            "B) Lysander",
+            "C) The Last Spartan",
+            "D) Alcaeus"
+        ],
+        "answer": "The Last Spartan"
+    },
+    {
+        "question": "Who challenges Kratos in the air while wearing wings, "
+        "leading to a fall into the Underworld?",
+        "options": [
+            "A) Daedalus",
+            "B) Hermes",
+            "C) Icarus",
+            "D) Perseus"
+        ],
+        "answer": "Icarus"
+    },
+    {
+        "question": "Which Greek hero attempts to stop Kratos inside the "
+        "Temple of the Fates?",
+        "options": [
+            "A) Perseus",
+            "B) Theseus",
+            "C) Orpheus",
+            "D) Achilles"
+        ],
+        "answer": "Perseus"
+    },
+    {
+        "question": "What massive sea monster does Kratos battle in "
+        "God of War II?",
+        "options": [
+            "A) Hydra",
+            "B) Kraken",
+            "C) Leviathan",
+            "D) Scylla"
+        ],
+        "answer": "Kraken"
+    },
+    {
+        "question": "What mythological creature is known for "
+        "resurrecting from ashes?",
+        "options": [
+            "A) Pegasus",
+            "B) Phoenix",
+            "C) Griffin",
+            "D) Harpy"
+        ],
+        "answer": "Phoenix"
+    },
+    {
+        "question": "Who are the beings that control the destiny of all in "
+        "God of War II?",
+        "options": [
+            "A) The Furies",
+            "B) The Muses",
+            "C) The Sisters of Fate",
+            "D) The Norns"
+        ],
+        "answer": "The Sisters of Fate"
+    },
+    {
+        "question": "Which Olympian god does Kratos kill first in "
+        "God of War III?",
+        "options": [
+            "A) Poseidon",
+            "B) Hermes",
+            "C) Hades",
+            "D) Helios"
+        ],
+        "answer": "Poseidon"
+    },
+    {
+        "question": "Which god rules the Underworld?",
+        "options": [
+            "A) Thanatos",
+            "B) Hades",
+            "C) Ares",
+            "D) Persephone"
+        ],
+        "answer": "Hades"
+    },
+    {
+        "question": "Which Olympian messenger god does Kratos defeat, "
+        "taking his speed?",
+        "options": [
+            "A) Hermes",
+            "B) Apollo",
+            "C) Hecate",
+            "D) Helios"
+        ],
+        "answer": "Hermes"
+    },
+    {
+        "question": "Which sun god does Kratos decapitate and use to "
+        "reveal hidden paths?",
+        "options": [
+            "A) Apollo",
+            "B) Helios",
+            "C) Hyperion",
+            "D) Eos"
+        ],
+        "answer": "Helios"
+    },
+    {
+        "question": "Which son of Zeus does Kratos battle in an "
+        "arena-like fight?",
+        "options": [
+            "A) Ares",
+            "B) Hercules",
+            "C) Perseus",
+            "D) Apollo"
+        ],
+        "answer": "Hercules"
+    },
+    {
+        "question": "Which goddess confronts Kratos in drunken despair?",
+        "options": [
+            "A) Hera",
+            "B) Demeter",
+            "C) Hestia",
+            "D) Aphrodite"
+        ],
+        "answer": "Hera"
+    },
+    {
+        "question": "Which god is the final Olympian Kratos kills in "
+        "God of War III?",
+        "options": [
+            "A) Ares",
+            "B) Zeus",
+            "C) Hades",
+            "D) Apollo"
+        ],
+        "answer": "Zeus"
+    },
+    {
+        "question": "Which goddess is successful in seducing Kratos?",
+        "options": [
+            "A) Hera",
+            "B) Aphrodite",
+            "C) Artemis",
+            "D) Persephone"
+        ],
+        "answer": "Aphrodite"
+    },
+    {
+        "question": "Which snake-haired monsters in the God of War series "
+        "can turn Kratos to stone with their gaze?",
+        "options": [
+            "A) Sirens",
+            "B) Gorgons",
+            "C) Harpies",
+            "D) Furies"
+        ],
+        "answer": "Gorgons"
+    },
+    {
+        "question": "Which massive one-eyed beasts are recurring mini-bosses "
+        "throughout the God of War series?",
+        "options": [
+            "A) Cyclopes",
+            "B) Minotaurs",
+            "C) Centaurs",
+            "D) Satyrs"
+        ],
+        "answer": "Cyclopes"
+    },
+    {
+        "question": "Which half-man, half-horse enemies often wield "
+        "huge blades and command soldiers in God of War?",
+        "options": [
+            "A) Centaurs",
+            "B) Minotaurs",
+            "C) Wraiths",
+            "D) Gorgons"
+        ],
+        "answer": "Centaurs"
+    },
+    {
+        "question": "Which hulking beasts, often armored, are used as "
+        "guardians in Pandora’s Temple and other locations?",
+        "options": [
+            "A) Minotaurs",
+            "B) Cyclopes",
+            "C) Satyrs",
+            "D) Wraiths"
+        ],
+        "answer": "Minotaurs"
+    },
+    {
+        "question": "Which spectral enemies wield dual blades and can burrow "
+        "beneath the ground to ambush Kratos?",
+        "options": [
+            "A) Harpies",
+            "B) Wraiths",
+            "C) Shades",
+            "D) Sirens"
+        ],
+        "answer": "Wraiths"
+    },
+    {
+        "question": "Which gigantic animated statue serves as the first boss "
+        "battle in God of War II?",
+        "options": [
+            "A) Colossus of Rhodes",
+            "B) Talos",
+            "C) Cyclops King",
+            "D) Atlas"
+        ],
+        "answer": "Colossus of Rhodes"
+    },
+    {
+        "question": "Which warlord originally killed Kratos in battle, "
+        "leading to his pact with Ares?",
+        "options": [
+            "A) Barbarian King Alrik",
+            "B) Perseus",
+            "C) Hercules",
+            "D) Theseus"
+        ],
+        "answer": "Barbarian King Alrik"
+    },
+    {
+        "question": "Which enemy type in God of War III hatches smaller "
+        "beasts to attack Kratos during battle?",
+        "options": [
+            "A) Harpy Matron",
+            "B) Cerberus Breeder",
+            "C) Gorgon Queen",
+            "D) Chimera Mother"
+        ],
+        "answer": "Cerberus Breeder"
+    },
+    {
+        "question": "In Chains of Olympus, which primordial god of dreams "
+        "casts the world into slumber?",
+        "options": [
+            "A) Morpheus",
+            "B) Thanatos",
+            "C) Hypnos",
+            "D) Erebus"
+        ],
+        "answer": "Morpheus"
+    },
+    {
+        "question": "In God of War III, which mythical king turns "
+        "everything he touches into gold, even himself?",
+        "options": [
+            "A) Midas",
+            "B) Minos",
+            "C) Perseus",
+            "D) Orpheus"
+        ],
+        "answer": "Midas"
+    },
+    {
+        "question": "Which Norse god of thunder is confronted in the Norse "
+        "era of God of War?",
+        "options": [
+            "A) Baldur",
+            "B) Tyr",
+            "C) Thor",
+            "D) Odin"
+        ],
+        "answer": "Thor"
+    },
+    {
+        "question": "What is the name of Kratos' wife, whose ashes were "
+        "bound to his skin as a curse?",
+        "options": [
+            "A) Calliope",
+            "B) Lysandra",
+            "C) Pandora",
+            "D) Persephone"
+        ],
+        "answer": "Lysandra"
+    },
+    {
+        "question": "What is the name of Kratos' daughter, whom he "
+        "tragically lost?",
+        "options": [
+            "A) Calliope",
+            "B) Pandora",
+            "C) Hera",
+            "D) Electra"
+        ],
+        "answer": "Calliope"
+    },
+    {
+        "question": "Which god serves as the smith of Olympus and forges "
+        "weapons in God of War III?",
+        "options": [
+            "A) Hephaestus",
+            "B) Hermes",
+            "C) Helios",
+            "D) Apollo"
+        ],
+        "answer": "Hephaestus"
+    },
+    {
+        "question": "What is the home of the Olympian gods and a central "
+        "battleground in God of War III?",
+        "options": [
+            "A) Mount Olympus",
+            "B) Delphi",
+            "C) Athens",
+            "D) Sparta"
+        ],
+        "answer": "Mount Olympus"
+    },
+    {
+        "question": "Where does Kratos repeatedly journey when stripped of "
+        "his godly powers or slain?",
+        "options": [
+            "A) Elysium",
+            "B) Underworld",
+            "C) Tartarus",
+            "D) Asphodel"
+        ],
+        "answer": "Underworld"
+    },
+    {
+        "question": "Why is Kratos able to escape the Underworld multiple "
+        "times throughout the series?",
+        "options": [
+            "A) The gods free him",
+            "B) Death cannot hold those with purpose",
+            "C) He bribes Hades",
+            "D) He controls the River Styx"
+        ],
+        "answer": "Death cannot hold those with purpose"
+    },
+    {
+        "question": "Who is the mysterious gravedigger that aids Kratos?",
+        "options": [
+            "A) Hermes",
+            "B) Hades",
+            "C) Zeus",
+            "D) Thanatos"
+        ],
+        "answer": "Zeus"
+    },
+    {
+        "question": "Which hybrid monsters in God of War III combine "
+        "traits of lion, goat, and serpent?",
+        "options": [
+            "A) Gorgons",
+            "B) Chimeras",
+            "C) Harpies",
+            "D) Satyrs"
+        ],
+        "answer": "Chimeras"
+    },
+    {
+        "question": "Which Titan is Kratos' ally at the beginning of "
+        "God of War III?",
+        "options": [
+            "A) Atlas",
+            "B) Gaia",
+            "C) Cronos",
+            "D) Hyperion"
+        ],
+        "answer": "Gaia"
+    },
+    {
+        "question": "Which Titan is imprisoned in the "
+        "Great Chain of Tartarus?",
+        "options": [
+            "A) Atlas",
+            "B) Prometheus",
+            "C) Cronos",
+            "D) Oceanus"
+        ],
+        "answer": "Cronos"
+    },
+    {
+        "question": "What was the Great War in God of War lore?",
+        "options": [
+            "A) A battle between mortals and gods",
+            "B) The conflict where the gods defeated the Titans",
+            "C) A war between Athens and Sparta",
+            "D) A rebellion against Zeus led by Hades"
+        ],
+        "answer": "The conflict where the gods defeated the Titans"
+    }
+    ]
