@@ -25,11 +25,15 @@ if os.environ.get("CREDS"):
     CREDS = Credentials.from_service_account_info(creds_json, scopes=SCOPE)
 else:
     # Fallback for local development with file
-    CREDS = Credentials.from_service_account_file("quiz_creds.json", scopes=SCOPE)
+    CREDS = Credentials.from_service_account_file(
+        "quiz_creds.json",
+        scopes=SCOPE
+    )
 
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
+
 
 # Leaderboard functions
 def save_score(username, score, quiz_name, time_taken):
@@ -69,15 +73,23 @@ def display_leaderboard(quiz_name, top_n=10):
         print(f"{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}")
         print("-" * 40)
         for i, rec in enumerate(sorted_records[:top_n], start=1):
-            print(f"{i:<5}{rec['Username']:<12}{rec['Score']:<6}{rec['Time']:<8}")
+            print(
+                f"{i:<5}"
+                f"{rec['Username']:<12}"
+                f"{rec['Score']:<6}"
+                f"{rec['Time']:<8}"
+            )
         print()
+
     except Exception as e:
         print("Leaderboard unavailable.")
         print("Error:", e)
 
+
 # Initialise colorama
 init(autoreset=True)
 print(Fore.GREEN + "Colorama test passed!")
+
 
 def rules():
     """Display quiz rules to the player."""
@@ -90,18 +102,28 @@ def rules():
     print("6. Try to get the highest score you can!")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
+
 def about():
     """Display information about the quiz."""
     print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
     print("Welcome to Fandom Challenge!")
     print("Test your knowledge with quizzes from your favourite fandoms.")
-    print("Each quiz is randomised and challenges both your knowledge and speed.")
-    print("\nCurrent categories include Jak and Daxter, Ratchet & Clank, and God of War.")
-    print("This version was developed by Louis as part of a Python project to test programming and UX skills.")
-    print("Future versions may include more categories and interactive features!")
+    print(
+        "Each quiz is randomised and challenges "
+        "both your knowledge and speed.")
+    print(
+        "\nCurrent categories include "
+        "Jak and Daxter, Ratchet & Clank, and God of War.")
+    print(
+        "This version was developed by Louis as part of a "
+        "Python project to test programming and UX skills.")
+    print(
+        "Future versions may include more categories and "
+        "interactive features!")
     print("\nView the original project on GitHub:")
     print("https://github.com/LouisCE/fandom-challenge-v2")
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
+
 
 def play_quiz(questions, quiz_name):
     """Run a quiz with the given question set."""
@@ -118,7 +140,9 @@ def play_quiz(questions, quiz_name):
         # Shuffle options safely
         options = q["options"][:]  # copy to avoid changing original
         # Strip original letter prefix
-        clean_options = [opt[3:].strip() if len(opt) > 3 else opt for opt in options]
+        clean_options = [
+            opt[3:].strip() if len(opt) > 3 else opt
+            for opt in options]
         random.shuffle(clean_options)
 
         # Map labels A-D to shuffled options
@@ -130,7 +154,9 @@ def play_quiz(questions, quiz_name):
 
         # Keep asking until valid input
         while True:
-            answer = input("Your choice (A-D) or X to return to quiz menu: ").strip().upper()
+            answer = input(
+                "Your choice (A-D) or X to return to quiz menu: "
+                ).strip().upper()
 
             if answer == "X":
                 print(Fore.YELLOW + "Returning to quiz selection menu...")
@@ -139,7 +165,10 @@ def play_quiz(questions, quiz_name):
             if answer in option_mapping:
                 break  # valid A-D answer, continue
             else:
-                print(Fore.RED + "Invalid choice. Please enter A, B, C, D, or X.")
+                print(
+                    Fore.RED
+                    + "Invalid choice. Please enter A, B, C, D, or X."
+                )
                 # Reprint question + options so user can see them again
                 print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
                 for label, option in option_mapping.items():
@@ -154,7 +183,7 @@ def play_quiz(questions, quiz_name):
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
 
     end_time = datetime.now()
-    time_taken = (end_time - start_time).seconds  # Time in seconds        
+    time_taken = (end_time - start_time).seconds  # Time in seconds
 
     # Final score and result message
     print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!")
@@ -176,19 +205,30 @@ def play_quiz(questions, quiz_name):
 
     # Leaderboard username prompt
     while True:
-        username = input("Enter your 3-letter username to save score or X to return to quiz menu ").strip().upper()
-    
+        username = input(
+            "Enter your 3-letter username to save score "
+            "or X to return to quiz menu "
+        ).strip().upper()
+
         if username == "X":
-            print(Fore.YELLOW + "Score not saved. Returning to quiz selection menu...")
+            print(
+                Fore.YELLOW
+                + "Score not saved. Returning to quiz selection menu..."
+            )
             return  # exit play_quiz() immediately
-    
+
         if re.fullmatch(r"[A-Z]{3}", username):
             break  # valid 3-letter username, continue
-        print(Fore.RED + "Invalid username. Enter exactly 3 letters (A-Z) or X to cancel.")
+        print(
+            Fore.RED
+            + "Invalid username. Enter exactly 3 letters "
+            "(A-Z) or X to cancel."
+        )
 
     # Save score and display leaderboard
     save_score(username, score, quiz_name, time_taken)
     display_leaderboard(quiz_name)
+
 
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
@@ -201,7 +241,7 @@ def select_quiz():
         choice = input("Choose an option (1-4): ").strip()
 
         if choice == "1":
-            play_quiz(JAK_QUESTIONS, "jak") # Calls play_quiz
+            play_quiz(JAK_QUESTIONS, "jak")  # Calls play_quiz
         elif choice == "2":
             play_quiz(RATCHET_QUESTIONS, "ratchet")
         elif choice == "3":
@@ -210,6 +250,7 @@ def select_quiz():
             return  # Back to main menu
         else:
             print(Fore.RED + "Invalid choice. Please enter 1, 2, 3, or 4.")
+
 
 def menu():
     while True:
