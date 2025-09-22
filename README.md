@@ -270,6 +270,44 @@ Testing included:
 - Deployment testing on Heroku terminal.
 - Error handling for invalid input or empty answers.
 
+## Code Validation
+
+### Python
+
+All Python files in this project were validated using the [CI Python Linter](https://pep8ci.herokuapp.com).
+
+#### run.py  
+- **Result:** No errors found after fixes. Initially, `run.py` had multiple PEP8 issues including:
+  - Lines exceeding maximum length (79 characters) (`E501`).
+  - Missing blank lines before functions/classes (`E302`, `E305`).
+  - Incorrect inline comment spacing (`E261`).
+  - Trailing whitespace and incorrect blank lines (`W291`, `W293`).
+- **Resolution:**
+  - Broke long strings into multiple lines within parentheses.
+  - Added required blank lines around functions and classes.
+  - Fixed inline comment spacing and removed trailing whitespace.
+- **Screenshot:**  
+![CI Linter run.py result](testing/runpy-validation.png)
+![CI Linter run.py result](testing/runpy-validation-2.png)
+
+#### data.py  
+- **Result:** No errors found after fixes. Initially, `data.py` had multiple issues including:
+  - Syntax/formatting problems (mismatched string concatenation, missing commas).
+  - Lines exceeding PEP8 maximum length (79 characters) reported by Flake8.
+- **Resolution:**
+  - Corrected all syntax and formatting errors.
+  - Wrapped or split long lines to comply with PEP8 line-length standards.
+  - Re-validated with Flake8 and confirmed zero errors remain.
+- **Screenshot:**  
+![CI Linter data.py result](testing/datapy-validation.png)
+![CI Linter data.py result](testing/datapy-validation-2.png)
+
+#### Summary  
+- All Python files pass PEP8 validation.  
+- Long lines (`E501`) were corrected by breaking strings inside parentheses, ensuring readability and compliance.  
+- No `# noqa` overrides were required.  
+- External libraries (e.g., `colorama`, `gspread`, `google-auth`) were not validated, as they are third-party packages.
+
 ### Bug Testing Log
 
 **Quiz Display Issues:**
