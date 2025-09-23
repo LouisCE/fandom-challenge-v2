@@ -261,6 +261,29 @@ For maximum compatibility, a static screenshot of the flowchart is also provided
 
 ![Mermaid Flowchart Screenshot](assets/images/mermaid-flowchart.png)
 
+#### Classes & Functions
+
+This project is written in a **modular, function-based style**. Instead of using Python classes, the application is built with a series of reusable functions that handle the core quiz logic, menu navigation, leaderboard integration, and Google Sheets communication.
+
+The primary functions in this application are:
+
+- `menu()`
+  - Displays the main menu and directs the user to Rules, About, or Quiz selection.
+- `rules()`
+  - Outputs the quiz rules in the terminal.
+- `about()`
+  - Displays information about the project and its purpose.
+- `select_quiz()`
+  - Provides a sub-menu for choosing between the different fandom quizzes.
+- `play_quiz(questions, quiz_name)`
+  - Runs the full quiz loop: selecting random questions, shuffling answers, validating input, checking answers, and recording results.
+- `save_score(username, score, quiz_name, time_taken)`
+  - Appends the player’s result to the relevant Google Sheets leaderboard worksheet.
+- `display_leaderboard(quiz_name, top_n=10)`
+  - Fetches, sorts, and displays the leaderboard for a chosen quiz.
+- Helper logic (e.g., `safe_int`)
+  - Ensures robust handling of unexpected input when working with Google Sheets records.
+
 ## Testing
 
 Testing included:
@@ -309,6 +332,8 @@ All Python files in this project were validated using the [CI Python Linter](htt
 - External libraries (e.g., `colorama`, `gspread`, `google-auth`) were not validated, as they are third-party packages.
 
 ### Bug Testing Log
+
+I have used manual logs to track bugs during development. Below is a log of the key bugs I fixed during the project:
 
 **Quiz Display Issues:**
 - **Bug:** Quiz displayed all questions instead of 10 random.
