@@ -284,6 +284,21 @@ The primary functions in this application are:
 - Helper logic (e.g., `safe_int`)
   - Ensures robust handling of unexpected input when working with Google Sheets records.
 
+#### Imports
+
+The following Python modules and packages are used:
+
+- `sys` – exits the application cleanly.
+- `random` – randomises both question selection and answer order.
+- `re` – validates usernames with regular expressions.
+- `colorama` – adds coloured text to the terminal for improved UX.
+- `gspread` – used with the Google Sheets API to save scores.
+- `google.oauth2.service_account` – handles Google Sheets API authentication.
+- `datetime` – measures quiz duration for leaderboard sorting.
+- `os` & `json` – handle credentials (local file vs. Heroku environment variables).
+
+Together, these imports allow the program to be **interactive**, **colourful**, and **connected to cloud storage** for saving and displaying leaderboards.
+
 ## Testing
 
 Testing included:
