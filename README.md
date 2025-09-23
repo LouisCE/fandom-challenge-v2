@@ -276,7 +276,7 @@ Testing included:
 
 All Python files in this project were validated using the [CI Python Linter](https://pep8ci.herokuapp.com).
 
-#### run.py  
+#### run.py
 - **Result:** No errors found after fixes. Initially, `run.py` had multiple PEP8 issues including:
   - Lines exceeding maximum length (79 characters) (`E501`).
   - Missing blank lines before functions/classes (`E302`, `E305`).
@@ -290,7 +290,7 @@ All Python files in this project were validated using the [CI Python Linter](htt
 ![CI Linter run.py result](testing/runpy-validation.png)
 ![CI Linter run.py result](testing/runpy-validation-2.png)
 
-#### data.py  
+#### data.py
 - **Result:** No errors found after fixes. Initially, `data.py` had multiple issues including:
   - Syntax/formatting problems (mismatched string concatenation, missing commas).
   - Lines exceeding PEP8 maximum length (79 characters) reported by Flake8.
@@ -344,6 +344,24 @@ All Python files in this project were validated using the [CI Python Linter](htt
   - **Observed Behavior:** `IndentationError: expected an indented block`.
   - **Cause:** Some blocks (loops, if/else) were not properly indented after major rewriting.
   - **Resolution:** Fixed all indentation consistently: 4 spaces per level, nested blocks 8+ spaces.
+
+## Defensive Programming
+
+Defensive programming was carefully implemented and tested in the **Fandom Challenge V2** project to ensure the quiz handles invalid inputs gracefully and prevents errors or data corruption.
+
+| Feature | Expectation | Test | Result | Screenshot |
+| --- | --- | --- | --- | --- |
+| Menu Navigation | User should only be able to select valid menu options (1–4). | Entered invalid options such as letters and numbers outside range. | Invalid input was caught, error message displayed, and menu reprinted. | ![screenshot](testing/menu-invalid.png) |
+| Quiz Answer Input | User should only be able to enter A–D (or X to quit). | Entered lowercase letters, numbers, and special characters. | All invalid entries rejected with a clear error message; options reprinted. | ![screenshot](testing/answer-invalid.png) |
+| Username Input | Usernames must be exactly 3 letters (A–Z). | Tested empty input, numbers, 2 letters, and 4 letters. | Invalid usernames rejected with explanation; valid 3-letter username accepted. | ![screenshot](testing/username-invalid.png) |
+| Leaderboard Save | Scores should only save if Google Sheets is available. | Simulated loss of connection to Google Sheets. | Program displayed error message without crashing; score not saved. | ![screenshot](testing/leaderboard-fail.png) |
+| Randomisation | Questions and answer order should be different each game. | Played multiple quizzes in a row. | Verified that questions and option order were shuffled each time. | ![screenshot](testing/randomisation.png) ![screenshot](testing/randomisation-2.png) |
+
+### Summary
+- **Invalid input handling:** Menus, answers, and usernames all reject invalid input until valid entries are provided.
+- **Data integrity:** Scores only saved if the Google Sheets connection succeeds, with fallback to local play.
+- **Randomisation:** Ensures fairness and prevents memorising answer positions.
+- **User experience:** Helpful error messages guide players back on track without crashing the program.
 
 ### User Story Testing
 
