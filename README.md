@@ -520,6 +520,28 @@ To run the project locally:
 4. Run the program:
    python3 run.py
 
+#### Cloning
+
+You can clone this repository by following these steps:
+
+1. Go to the [Fandom Challenge V2 GitHub repository](https://www.github.com/LouisCE/fandom-challenge-v2).
+2. Locate and click on the green **Code** button near the top of the repository.
+3. Choose your preferred method (HTTPS, SSH, or GitHub CLI) and copy the URL.
+4. Open your IDE terminal or Git Bash.
+5. Navigate to the directory where you want the clone to be created.
+6. Run the following command (using HTTPS):
+
+   ```bash
+   git clone https://www.github.com/LouisCE/fandom-challenge-v2.git
+
+7. Press Enter and a local copy will be created.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://www.github.com/LouisCE/fandom-challenge-v2)
+
+Note: To use Gitpod, you’ll need the Gitpod [browser extension](https://www.gitpod.io/docs/configure/user-settings/browser-extension) installed.
+
 ## Credits
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
