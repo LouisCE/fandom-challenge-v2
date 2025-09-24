@@ -542,6 +542,16 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 Note: To use Gitpod, you’ll need the Gitpod [browser extension](https://www.gitpod.io/docs/configure/user-settings/browser-extension) installed.
 
+#### Forking
+
+By forking the GitHub repository, you create a copy of the original project in your own GitHub account. This allows you to make changes without affecting the original.
+
+Steps to fork this project:
+
+1. Log in to GitHub and go to the [Fandom Challenge V2 repository](https://www.github.com/LouisCE/fandom-challenge-v2).
+2. At the top right of the page, click the **Fork** button.
+3. A copy of the repository will now be available under your GitHub account, where you can make edits independently of the original.
+
 ## Credits
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
