@@ -474,6 +474,39 @@ The live deployed app can be found here:
 - Python must be listed **before** Node.js in the buildpacks.  
 - The app uses the Code Institute template, which requires both Python and Node.js.
 
+### Google Sheets API
+
+This project uses [Google Sheets](https://docs.google.com/spreadsheets) as a lightweight cloud-based database to store and retrieve quiz leaderboard data.
+
+Each quiz has its own dedicated worksheet inside the main Google Sheet named `fandom-challenge-v2-data`. For example:
+- `jak_leaderboard`
+- `ratchet_leaderboard`
+- `gow_leaderboard`
+
+When a player finishes a quiz, their username, score, and time taken are appended to the relevant leaderboard sheet. The leaderboards are then read back, sorted, and displayed directly in the terminal.
+
+#### Credentials Setup
+
+To connect your own copy of this project to Google Sheets, you will need API credentials in `.JSON` format from the [Google Cloud Platform](https://console.cloud.google.com).
+
+1. From the dashboard, click on **Select a project**, then **NEW PROJECT**.
+2. Give the project a name, then click **CREATE**.
+3. Select the project to enter its dashboard.
+4. From the left-hand menu, choose **APIs & Services** > **Library**.
+5. Enable both:
+   - **Google Drive API**
+   - **Google Sheets API**
+6. Navigate to **APIs & Services** > **Credentials**.
+7. Click **Create Credentials** and select **Service Account**.
+8. Assign a name, click **Create**, then under **Role** choose **Basic** > **Editor**.
+9. Continue, then click **Done**.
+10. Open the new service account → **Keys** → **Add Key** → **Create new key** → choose `JSON`.
+11. Download the credentials file.
+    - For local development: rename it `quiz_creds.json` and place it in your project root.
+    - For deployment (e.g., Heroku): copy the contents into a Config Var named `CREDS`.
+12. Open your Google Sheet (`fandom-challenge-v2-data`) and share it with the `client_email` from the `quiz_creds.json`, granting **Editor** access.
+13. Ensure your `quiz_creds.json` file is added to `.gitignore` so it is not pushed to GitHub.
+
 ## Credits
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
