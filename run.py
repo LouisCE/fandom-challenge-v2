@@ -88,7 +88,6 @@ def display_leaderboard(quiz_name, top_n=10):
 
 # Initialise colorama
 init(autoreset=True)
-print(Fore.GREEN + "Colorama test passed!")
 
 
 def rules():
