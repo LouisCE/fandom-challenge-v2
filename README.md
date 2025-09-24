@@ -424,20 +424,55 @@ All user stories were tested during development and confirmed to pass successful
 
 ## Deployment
 
-This project was deployed using Heroku:
+This project was developed using the [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template), which provides a terminal view for Python applications in the browser.  
+This improves accessibility by allowing users to run the project directly online without needing to install Python locally.
 
-1. Fork or clone this repository.
-2. Create a new Heroku app.
-3. In the **Settings** tab, add the following buildpacks in order:
-   - `heroku/python`
-   - `heroku/nodejs`
-4. Set a config var:
-   - `PORT` = `8000`
-5. Connect the Heroku app to your GitHub repository.
-6. Deploy the main branch manually, or enable automatic deploys.
+The live deployed site can be found here:  
+[Fandom Challenge V2 on Heroku](https://fandom-challenge-v2-a2c443c8af3e.herokuapp.com)
 
+### Heroku Deployment
+
+This project is hosted on [Heroku](https://www.heroku.com), a cloud platform that runs applications directly from GitHub repositories.  
 The live deployed app can be found here:  
 [Fandom Challenge V2 on Heroku](https://fandom-challenge-v2-a2c443c8af3e.herokuapp.com/)
+
+#### Steps to Deploy
+
+1. **Create a new Heroku app**
+   - From the Heroku dashboard, click **New > Create new app**.
+   - Choose a unique name and select your closest region (EU or USA).
+
+2. **Set Config Vars**
+   - Go to **Settings > Reveal Config Vars** and add:
+     - `PORT` = `8000`
+     - `CREDS` = Paste the JSON content of your Google Cloud service account credentials.
+
+3. **Add Buildpacks**
+   - In **Settings > Buildpacks**, add the following in this order:
+     - `heroku/python`
+     - `heroku/nodejs` (required by the Code Institute template).
+   - Make sure Python is listed first.
+
+4. **Push Required Files**
+   - Ensure the following are in your repository:
+     - `requirements.txt` – lists Python dependencies.
+     - `Procfile` – tells Heroku how to run the app (`worker: python run.py`).
+     - `.python-version` – specifies the Python version (e.g., `3.12`).
+
+5. **Connect to GitHub**
+   - Under **Deploy > Deployment method**, select GitHub and connect your repository.
+
+6. **Deploy**
+   - Either enable **Automatic Deploys** (recommended) or deploy manually using:
+     ```bash
+     git push heroku main
+     ```
+
+#### Notes
+
+- The `CREDS` config var replaces the local `quiz_creds.json` file.  
+- Python must be listed **before** Node.js in the buildpacks.  
+- The app uses the Code Institute template, which requires both Python and Node.js.
 
 ## Credits
 
