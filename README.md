@@ -552,6 +552,26 @@ Steps to fork this project:
 2. At the top right of the page, click the **Fork** button.
 3. A copy of the repository will now be available under your GitHub account, where you can make edits independently of the original.
 
+### Local vs Deployment
+
+There are no major functional differences between running the project locally and using the deployed Heroku app.
+The only difference lies in **how Google Sheets credentials are handled**:
+
+- **Local Development**
+  - Requires a `quiz_creds.json` file in the project root.
+  - This file contains the Google Cloud service account credentials in JSON format.
+  - The `run.py` script loads credentials from this file when run locally.
+
+- **Heroku Deployment**
+  - Instead of a file, the same JSON is stored in the `CREDS` config var in Heroku’s environment settings.
+  - The app reads this environment variable, parses it with `json.loads()`, and authenticates with Google Sheets.
+  - No physical credentials file is needed in the deployed app.
+
+Aside from this difference in credentials handling, both versions of the project work identically:
+- The menu system runs the same.
+- Quizzes are randomised in the same way.
+- Scores are saved to the same Google Sheet leaderboards.
+
 ## Credits
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
