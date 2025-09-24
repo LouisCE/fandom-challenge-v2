@@ -507,6 +507,19 @@ To connect your own copy of this project to Google Sheets, you will need API cre
 12. Open your Google Sheet (`fandom-challenge-v2-data`) and share it with the `client_email` from the `quiz_creds.json`, granting **Editor** access.
 13. Ensure your `quiz_creds.json` file is added to `.gitignore` so it is not pushed to GitHub.
 
+### Local Development
+
+To run the project locally:
+
+1. Clone or fork the repository.
+2. Install the required dependencies:
+
+   ```bash
+   pip3 install -r requirements.txt
+3. Add your quiz_creds.json file to the project root.
+4. Run the program:
+   python3 run.py
+
 ## Credits
 
 I would like to thank the following people and resources for their support and guidance throughout this project:
