@@ -1,3 +1,4 @@
+# Jak and Daxter quiz questions
 JAK_QUESTIONS = [
     {
         "question": (
@@ -546,6 +547,7 @@ JAK_QUESTIONS = [
     }
 ]
 
+# Ratchet & Clank quiz questions
 RATCHET_QUESTIONS = [
     {
         "question": (
@@ -1100,6 +1102,7 @@ RATCHET_QUESTIONS = [
     }
     ]
 
+# God of War quiz questions
 GOD_OF_WAR_QUESTIONS = [
     {
         "question": (
