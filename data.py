@@ -1,3 +1,18 @@
+"""
+data.py
+
+This file stores all quiz question sets for the Fandom Challenge V2 project.
+Each question is stored as a dictionary with three keys:
+- "question": The quiz question text.
+- "options": A list of four multiple-choice answers.
+- "answer": The correct answer as a string.
+
+Question sets are grouped by category into separate lists:
+- JAK_QUESTIONS
+- RATCHET_QUESTIONS
+- GOD_OF_WAR_QUESTIONS
+"""
+
 # Jak and Daxter quiz questions
 JAK_QUESTIONS = [
     {
