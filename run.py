@@ -1,16 +1,18 @@
+# Standard library imports
 import sys
-import random
-import re
-from colorama import Fore, init
-# Import all quiz question sets from external data file
-from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
-
-import gspread
-from google.oauth2.service_account import Credentials
-from datetime import datetime
-
 import os
 import json
+import random
+import re
+from datetime import datetime
+
+# Third-party imports
+from colorama import Fore, init
+import gspread
+from google.oauth2.service_account import Credentials
+
+# Import all quiz question sets from external data file
+from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
 
 # Google Sheets configuration
 
