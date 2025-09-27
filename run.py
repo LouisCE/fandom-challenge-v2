@@ -2,7 +2,7 @@ import sys
 import random
 import re
 from colorama import Fore, init
-# Import all quiz question sets
+# Import all quiz question sets from external data file
 from data import JAK_QUESTIONS, RATCHET_QUESTIONS, GOD_OF_WAR_QUESTIONS
 
 import gspread
@@ -12,24 +12,28 @@ from datetime import datetime
 import os
 import json
 
-# Google Sheets setup
+# Google Sheets configuration
+
+# Define the Google API scopes for authentication
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
 
+# Load credentials from environment (Heroku) or local JSON file
 if os.environ.get("CREDS"):
-    # Load creds from Heroku config var
+    # On Heroku: JSON stored in CREDS config var
     creds_json = json.loads(os.environ["CREDS"])
     CREDS = Credentials.from_service_account_info(creds_json, scopes=SCOPE)
 else:
-    # Fallback for local development with file
+    # Local development fallback: quiz_creds.json file
     CREDS = Credentials.from_service_account_file(
         "quiz_creds.json",
         scopes=SCOPE
     )
 
+# Authenticate and open the project’s Google Sheet
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
@@ -45,10 +49,12 @@ def save_score(username, score, quiz_name, time_taken):
             time_taken
         ])
     except Exception as e:
+        # If Google Sheets is unavailable, allow local play to continue
         print("Leaderboard unavailable. Score not saved to cloud.")
         print("Error:", e)
 
 
+# Retrieve and display the leaderboard for a given quiz
 def display_leaderboard(quiz_name, top_n=10):
     """Fetch, sort, and display the top scores for a specific quiz."""
     try:
@@ -57,18 +63,20 @@ def display_leaderboard(quiz_name, top_n=10):
             print("No scores yet!")
             return
 
+        # Helper to convert values safely to int
         def safe_int(value, default=0):
             try:
                 return int(value)
             except (ValueError, TypeError):
                 return default
 
-        # Sort by descending score, then ascending time
+        # Sort by score (descending), then time (ascending)
         sorted_records = sorted(
             records,
             key=lambda x: (-safe_int(x.get("Score")), safe_int(x.get("Time")))
         )
 
+        # Print formatted leaderboard
         print(f"\n=== {quiz_name.upper()} LEADERBOARD ===")
         print(f"{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}")
         print("-" * 40)
@@ -85,11 +93,14 @@ def display_leaderboard(quiz_name, top_n=10):
         print("Leaderboard unavailable.")
         print("Error:", e)
 
+# Utility and menu functions
 
-# Initialise colorama
+
+# Initialise colorama for coloured console text
 init(autoreset=True)
 
 
+# Show the quiz rules to the user
 def rules():
     """Display quiz rules to the player."""
     print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
@@ -102,6 +113,7 @@ def rules():
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
 
+# Show information about the project
 def about():
     """Display information about the quiz."""
     print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
@@ -124,34 +136,36 @@ def about():
     input(Fore.CYAN + "\nPress Enter to return to the menu...")
 
 
+# Core Quiz Logic
+
+# Run the main quiz loop for a given category
 def play_quiz(questions, quiz_name):
     """Run a quiz with the given question set."""
     score = 0
-    start_time = datetime.now()  # record quiz start
+    start_time = datetime.now()  # Record quiz start time
 
-    # Select 10 random questions
+    # Select ten random questions from the pool
     selected_questions = random.sample(questions, 10)
 
     # Loop through the selected questions
     for i, q in enumerate(selected_questions, start=1):
         print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
 
-        # Shuffle options safely
-        options = q["options"][:]  # copy to avoid changing original
-        # Strip original letter prefix
+        # Copy and shuffle options to prevent altering original dataset
+        options = q["options"][:]
         clean_options = [
             opt[3:].strip() if len(opt) > 3 else opt
             for opt in options]
         random.shuffle(clean_options)
 
-        # Map labels A-D to shuffled options
+        # Assign A-D labels to shuffled options
         labels = ["A", "B", "C", "D"]
         option_mapping = {}
         for label, option in zip(labels, clean_options):
             option_mapping[label] = option
             print(f"{label}) {option}")
 
-        # Keep asking until valid input
+        # Input loop: keep asking until valid
         while True:
             answer = input(
                 "Your choice (A-D) or X to return to quiz menu: "
@@ -173,7 +187,7 @@ def play_quiz(questions, quiz_name):
                 for label, option in option_mapping.items():
                     print(f"{label}) {option}")
 
-        # Check answer
+        # Check if chosen option matches the correct answer
         chosen_text = option_mapping[answer]
         if chosen_text == q["answer"]:
             print(Fore.GREEN + "Correct!")
@@ -181,13 +195,15 @@ def play_quiz(questions, quiz_name):
         else:
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
 
+    # Quiz finished: calculate total time
     end_time = datetime.now()
     time_taken = (end_time - start_time).seconds  # Time in seconds
 
-    # Final score and result message
+    # Display final score and result message
     print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!")
     print(Fore.YELLOW + f"Time taken: {time_taken} seconds")
 
+    # Feedback based on score
     if score < 7:
         print(Fore.YELLOW + "You can do better. Try again.")
     elif score in [7, 8]:
@@ -202,7 +218,7 @@ def play_quiz(questions, quiz_name):
         """)
         print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
 
-    # Leaderboard username prompt
+    # Prompt to save score to leaderboard
     while True:
         username = input(
             "Enter your 3-letter username to save score "
@@ -229,6 +245,7 @@ def play_quiz(questions, quiz_name):
     display_leaderboard(quiz_name)
 
 
+# Sub-menu for choosing which quiz category to play
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
     while True:
@@ -251,6 +268,9 @@ def select_quiz():
             print(Fore.RED + "Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
+# Main menu and entry point
+
+# Main menu that controls navigation between features
 def menu():
     while True:
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
@@ -274,4 +294,5 @@ def menu():
 
 
 if __name__ == "__main__":
+    # Program starts here
     menu()
