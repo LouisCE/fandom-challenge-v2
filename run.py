@@ -1,3 +1,16 @@
+"""
+run.py
+
+Main entry point for the Fandom Challenge V2 project.
+
+Features:
+- Handles menu navigation (Rules, About, Quiz).
+- Runs quiz gameplay loop with randomised questions.
+- Saves and displays leaderboard scores via Google Sheets.
+- Uses Colorama for coloured console output.
+- Designed to run locally or on Heroku with environment-based creds.
+"""
+
 # Standard library imports
 import sys
 import os
