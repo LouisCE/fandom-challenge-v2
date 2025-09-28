@@ -232,9 +232,19 @@ The quiz is structured around simple Python data types, making the logic clear a
 - **Score Tracking:**
   The player’s score is tracked with a simple integer counter that increments whenever a correct answer is given. At the end of the quiz, this score is compared against thresholds to determine the final message (including the ASCII “superfan” celebration for high scores).
 
-#### Flowchart
+#### Flowchart (Lucidchart)
 
 This lightweight model was chosen deliberately: it avoids unnecessary complexity, keeps the code readable, and allows new categories or questions to be added easily in the future.
+
+To follow best practice, a flowchart was created to showcase the progression of my Python app.  
+I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker) to design my app flowchart.
+
+The diagram provides a **high-level overview** of the program logic.  
+It focuses on the main user journey (menu navigation, quiz gameplay, and leaderboard flow) rather than every small detail, in order to keep the structure clear and easy to follow.
+
+![Flowchart of app menu and quiz navigation](docs/lucidchart.png)
+
+#### Flowchart (Mermaid)
 
 To plan out the logic of the Fandom Challenge V2 quiz, a flowchart was created to show the main cycle of the application. It covers everything from starting the quiz, selecting a category, answering questions, and finally saving results to the leaderboard.
 
@@ -257,9 +267,9 @@ flowchart TD
     K --> L[Show Results]
 ```
 
-For maximum compatibility, a static screenshot of the flowchart is also provided below. This ensures that the diagram can be viewed correctly in environments where Mermaid is not supported (such as GitHub Pages or local Markdown previews).
+For maximum compatibility, a static screenshot of the flowchart is also provided below. This ensures that the diagram can be viewed correctly in environments where Mermaid is not supported.
 
-![Mermaid Flowchart Screenshot](assets/images/mermaid-flowchart.png)
+![Mermaid Flowchart Screenshot](docs/mermaid.png)
 
 #### Classes & Functions
 
