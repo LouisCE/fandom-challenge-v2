@@ -207,12 +207,20 @@ Planned improvements include:
 - Integrating keyboard shortcuts for faster input.
 - Implementing leaderboard features (including user initials, top 10 scores and completion times).
 
-## Technologies Used
+## Tools & Technologies Used
 
-- **Python 3:** Core programming language.
-- **Colorama:** For colored terminal output.
-- **Heroku:** Deployment platform.
-- **GitHub:** Version control and source code hosting.
+| Tool / Tech | Use |
+| --- | --- |
+| [![badge](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) | Version control. (`git add`, `git commit`, `git push`) |
+| [![badge](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) | Secure online code storage. |
+| [![badge](https://img.shields.io/badge/VSCode-grey?logo=htmx&logoColor=007ACC)](https://code.visualstudio.com) | Local IDE for development. |
+| [![badge](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) | Back-end programming language. |
+| ![badge](https://img.shields.io/badge/Colorama-grey?logo=python&logoColor=3776AB) | Python library for coloured terminal output. |
+| [![badge](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) | Hosting the deployed back-end site. |
+| [![badge](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) | Storing data from my Python app. |
+| [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help generating quiz questions and answer options. |
+| [![badge](https://img.shields.io/badge/Lucidchart-grey?logo=lucid&logoColor=F97B2C)](https://www.lucidchart.com) | Flow diagrams for mapping the app's logic. |
+| [![badge](https://img.shields.io/badge/Mermaid-grey?logo=mermaid&logoColor=FF3670)](https://mermaid.live) | Generate an interactive diagram for the data/schema. |
 
 ## Database Design
 
