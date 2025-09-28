@@ -304,18 +304,29 @@ The primary functions in this application are:
 
 #### Imports
 
-The following Python modules and packages are used:
+This project uses a combination of standard Python modules, third-party packages, and local imports to provide quiz functionality, leaderboard management, and enhanced terminal output.
 
-- `sys` – exits the application cleanly.
-- `random` – randomises both question selection and answer order.
-- `re` – validates usernames with regular expressions.
-- `colorama` – adds coloured text to the terminal for improved UX.
-- `gspread` – used with the Google Sheets API to save scores.
-- `google.oauth2.service_account` – handles Google Sheets API authentication.
-- `datetime` – measures quiz duration for leaderboard sorting.
-- `os` & `json` – handle credentials (local file vs. Heroku environment variables).
+**Standard Library Imports**
+- `sys`: provides system-specific functions, used to exit the program cleanly.
+- `os`: accesses environment variables for credentials and handles file operations.
+- `json`: loads Google Sheets credentials stored in JSON format.
+- `random`: selects random quiz questions and shuffles answer choices.
+- `re`: validates user input using regular expressions.
+- `datetime`: tracks the time taken to complete a quiz.
 
-Together, these imports allow the program to be **interactive**, **colourful**, and **connected to cloud storage** for saving and displaying leaderboards.
+**Third-Party Imports**
+- `colorama`: adds coloured console output to improve the user interface.
+- `gspread`: connects with the Google Sheets API to save and retrieve leaderboard data.
+- `google.oauth2.service_account`: authenticates with Google Sheets using service account credentials.
+
+**Local Imports**
+- `data`: contains quiz question sets (`JAK_QUESTIONS`, `RATCHET_QUESTIONS`, `GOD_OF_WAR_QUESTIONS`) stored externally for organisation and readability.
+
+These imports support the main features of the project, including:
+- Menu navigation (`menu`, `rules`, `about`, `select_quiz`, `play_quiz`).
+- Quiz gameplay with randomised questions and shuffled answers.
+- Leaderboard saving and retrieval using Google Sheets.
+- Coloured terminal output for an improved user experience.
 
 ## Testing
 
