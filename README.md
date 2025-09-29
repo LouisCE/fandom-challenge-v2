@@ -328,6 +328,37 @@ These imports support the main features of the project, including:
 - Leaderboard saving and retrieval using Google Sheets.
 - Coloured terminal output for an improved user experience.
 
+## Agile Development Process
+
+This project was developed using Agile methodologies to ensure structured progress, clear tracking of tasks, and iterative improvement.
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/LouisCE/fandom-challenge-v2/projects) served as an Agile tool for this project.  
+Through GitHub Projects, Epics, User Stories, Issues and Milestone tasks were planned, implemented, and tracked on a Kanban-style project board. This allowed for organised task flow and progress tracking throughout development.
+
+![GitHub Projects screenshot](docs/gh-projects.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/LouisCE/fandom-challenge-v2/issues) was used to document user stories and tasks.
+Although Issues were mainly created towards the end of the project for documentation purposes rather than continuous tracking, they still provide a clear record of requirements and features.
+
+| Link | Screenshot |
+| --- | --- |
+| [![Open Issues](https://img.shields.io/github/issues-search/LouisCE/fandom-challenge-v2?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://github.com/LouisCE/fandom-challenge-v2/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) | ![Open Issues screenshot](docs/gh-issues-open.png) |
+| [![Closed Issues](https://img.shields.io/github/issues-search/LouisCE/fandom-challenge-v2?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://github.com/LouisCE/fandom-challenge-v2/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) | ![Closed Issues screenshot](docs/gh-issues-closed.png) |
+
+### MoSCoW Prioritisation
+
+To manage development priorities, the project applied the MoSCoW prioritisation technique to decompose Epics into User Stories and rank them by importance:
+
+- **Must Have:** Essential features required for the project to be functional and pass assessment (4 stories).
+- **Should Have:** Valuable features that add significant value but are not critical (4 stories).
+- **Could Have:** Optional features with a smaller impact if omitted (4 stories).
+
+This approach ensured focus on delivering core functionality first while allowing flexibility for enhancement.
+
 ## Testing
 
 Testing included:
