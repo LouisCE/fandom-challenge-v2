@@ -205,7 +205,6 @@ Planned improvements include:
 - Implementing a timer for each question.
 - Adding ASCII art or simple terminal graphics for visual engagement.
 - Integrating keyboard shortcuts for faster input.
-- Implementing leaderboard features (including user initials, top 10 scores and completion times).
 
 ## Tools & Technologies Used
 
@@ -405,6 +404,50 @@ All Python files in this project were validated using the [CI Python Linter](htt
 - Long lines (`E501`) were corrected by breaking strings inside parentheses, ensuring readability and compliance.  
 - No `# noqa` overrides were required.  
 - External libraries (e.g., `colorama`, `gspread`, `google-auth`) were not validated, as they are third-party packages.
+
+## Lighthouse Audit
+
+Lighthouse testing is not required for PP3 since this project runs in a Python terminal. However, I carried out audits on my deployed Heroku app in **Chrome’s Incognito Mode** to reduce extension interference and check for any significant issues.
+
+As expected, mobile scores are slightly lower due to **external render-blocking resources** and **third-party cookies**, which are known limitations of the Code Institute mock terminal. Desktop results are higher and show no critical usability issues.
+
+### Lighthouse (Mobile)
+
+| Metric                     | Score / Value |
+|-----------------------------|---------------|
+| **Performance**             | 94            |
+| **Accessibility**           | 95            |
+| **Best Practices**          | 100            |
+| **SEO**                     | 90            |
+| First Contentful Paint      | 2.5 s          |
+| Largest Contentful Paint    | 2.5 s          |
+| Total Blocking Time         | 0 ms         |
+| Cumulative Layout Shift     | 0            |
+| Speed Index                 | 2.5 s          |
+
+*Note: Mobile scores are reduced due to third-party cookies and external render-blocking resources outside of my control.*
+
+![Google Lighthouse mobile](testing/lighthouse-mobile.png)
+![Google Lighthouse mobile performance metrics](testing/lighthouse-mobile-2.png)
+![Google Lighthouse mobile performance metrics](testing/lighthouse-mobile-3.png)
+
+### Lighthouse (Desktop)
+
+| Metric                     | Score / Value |
+|-----------------------------|---------------|
+| **Performance**             | 100            |
+| **Accessibility**           | 95            |
+| **Best Practices**          | 100            |
+| **SEO**                     | 90            |
+| First Contentful Paint      | 0.7 s          |
+| Largest Contentful Paint    | 0.7 s          |
+| Total Blocking Time         | 0 ms         |
+| Cumulative Layout Shift     | 0            |
+| Speed Index                 | 0.7 s          |
+
+![Google Lighthouse desktop](testing/lighthouse-desktop.png)
+![Google Lighthouse desktop performance metrics](testing/lighthouse-desktop-2.png)
+![Google Lighthouse desktop performance metrics](testing/lighthouse-desktop-3.png)
 
 ### Bug Testing Log
 
