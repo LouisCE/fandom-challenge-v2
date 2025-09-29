@@ -224,14 +224,13 @@ def play_quiz(questions, quiz_name):
     elif score in [7, 8]:
         print(Fore.GREEN + "Good job! You know your stuff.")
     else:  # 9 or above
-        print(Fore.MAGENTA + "Congratulations! You're a superfan!")
+        print(Fore.MAGENTA + "Congratulations! You're a superfan! 🎉")
         # Only show ASCII if superfan
         print(Fore.CYAN + """
            ☆ ☆ ☆ ☆ ☆
           ☆ SUPERFAN! ☆
            ☆ ☆ ☆ ☆ ☆
         """)
-        print(Fore.MAGENTA + "Amazing job! 🎉 Keep up the great work!")
 
     # Prompt to save score to leaderboard
     while True:
