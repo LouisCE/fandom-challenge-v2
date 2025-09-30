@@ -177,9 +177,11 @@ def play_quiz(questions, quiz_name):
 
         # Assign A-D labels to shuffled options
         labels = ["A", "B", "C", "D"]
-        option_mapping = {}
-        for label, option in zip(labels, clean_options):
-            option_mapping[label] = option
+        option_mapping = {label: option for label, option in zip(
+            labels, clean_options)}
+
+        # Print the shuffled options
+        for label, option in option_mapping.items():
             print(f"{label}) {option}")
 
         # Input loop: keep asking until valid
@@ -187,6 +189,7 @@ def play_quiz(questions, quiz_name):
             answer = input(
                 "Your choice (A-D) or X to return to quiz menu: "
                 ).strip().upper()
+            clear()
 
             if answer == "X":
                 print(Fore.YELLOW + "Returning to quiz selection menu...")
@@ -195,9 +198,12 @@ def play_quiz(questions, quiz_name):
             if answer in option_mapping:
                 break  # valid A-D answer, continue
             else:
-                print(
-                    Fore.RED
-                    + "Invalid choice. Please enter A, B, C, D, or X.")
+                print(Fore.RED +
+                      "Invalid choice. Please enter A, B, C, D, or X.")
+                # Re-show the question and options
+                print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
+                for label, option in option_mapping.items():
+                    print(f"{label}) {option}")
 
         # Check if chosen option matches the correct answer
         chosen_text = option_mapping[answer]
@@ -268,13 +274,13 @@ def play_quiz(questions, quiz_name):
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
     while True:
-        clear()  # Reset before showing quiz list
         print(Fore.CYAN + "\n=== SELECT A QUIZ ===")
         print("1 - Jak and Daxter")
         print("2 - Ratchet & Clank")
         print("3 - God of War")
         print("4 - Back to main menu")
         choice = input("Choose an option (1-4): ").strip()
+        clear()  # Reset before showing quiz list
 
         if choice == "1":
             play_quiz(JAK_QUESTIONS, "jak")  # Calls play_quiz
@@ -293,13 +299,13 @@ def select_quiz():
 # Main menu that controls navigation between features
 def menu():
     while True:
-        clear()  # Reset terminal before showing menu
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
         print("1 - Rules")
         print("2 - About")
         print("3 - Start Quiz")
         print("4 - Exit")
         choice = input("Choose an option (1-4): ").strip()
+        clear()  # Reset terminal before showing menu
 
         if choice == "1":
             rules()
