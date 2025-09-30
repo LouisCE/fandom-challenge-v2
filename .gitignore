@@ -6,5 +6,5 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
-quiz_creds.json
+creds.json
 .venv
