@@ -686,8 +686,8 @@ Aside from this difference in credentials handling, both versions of the project
 
 | Issue | Screenshot |
 | --- | --- |
-| **Colorama rendering** — Colours appear bolder when running locally in VS Code compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
-| **CTRL+C termination** — If a user presses `CTRL`+`C` in the terminal, the application stops immediately and an error message is displayed. This is expected behaviour for Python programs running in a terminal. | ![screenshot](documentation/ctrl-c.png) |
+| **Colorama rendering** — Colours (particularly the magenta/purple colour used for the questions) appear bolder when running locally in VS Code compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
+| **CTRL+C termination** — If a user presses `CTRL`+`C` in the terminal, the application stops immediately and an error message is displayed. This is expected behaviour for Python programs running in a terminal. | ![screenshot](docs/ctrl-c.png) |
 
 These are minor display or environment-related issues tied to the Heroku/CI mock terminal. They do not affect quiz gameplay or functionality. After thorough testing, no critical bugs remain.
 
