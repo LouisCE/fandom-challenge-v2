@@ -37,16 +37,10 @@ SCOPE = [
 ]
 
 # Load credentials from environment (Heroku) or local JSON file
-if os.environ.get("CREDS"):
-    # On Heroku: JSON stored in CREDS config var
-    creds_json = json.loads(os.environ["CREDS"])
-    CREDS = Credentials.from_service_account_info(creds_json, scopes=SCOPE)
-else:
-    # Local development fallback: quiz_creds.json file
-    CREDS = Credentials.from_service_account_file(
-        "quiz_creds.json",
-        scopes=SCOPE
-    )
+# On Heroku: JSON stored in CREDS config var
+
+# Local development fallback: quiz_creds.json file
+CREDS = Credentials.from_service_account_file("creds.json")
 
 # Authenticate and open the project’s Google Sheet
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
