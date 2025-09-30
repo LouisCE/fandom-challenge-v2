@@ -399,11 +399,18 @@ All Python files in this project were validated using the [CI Python Linter](htt
 ![CI Linter data.py result](testing/datapy-validation.png)
 ![CI Linter data.py result](testing/datapy-validation-2.png)
 
-#### Summary  
-- All Python files pass PEP8 validation.  
+#### test_gsheets.py
+- **Purpose:** A helper script used during development to confirm successful connection and read/write access to the Google Sheets API.
+- **Result:** Passed PEP8 validation with no issues.
+- **Screenshot:**
+![CI Linter test_gsheets.py result](testing/testgsheets-validation.png)
+
+#### Summary
+- All Python files pass PEP8 validation.
 - Long lines (`E501`) were corrected by breaking strings inside parentheses, ensuring readability and compliance.  
-- No `# noqa` overrides were required.  
+- No `# noqa` overrides were required.
 - External libraries (e.g., `colorama`, `gspread`, `google-auth`) were not validated, as they are third-party packages.
+- `test_gsheets.py` was a development-only helper script used to verify that Google Sheets authentication and read/write worked correctly. It is not imported or used by `run.py`, and does not form part of the deployed application.
 
 ## Lighthouse Audit
 
