@@ -46,6 +46,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("fandom-challenge-v2-data")
 
 
+def clear():
+    """
+    Clear the terminal to keep output tidy.
+    """
+    print("\033c", end="")
+
+
 # Leaderboard functions
 def save_score(username, score, quiz_name, time_taken):
     """Append a quiz result with time to the correct leaderboard."""
@@ -110,6 +117,7 @@ init(autoreset=True)
 # Show the quiz rules to the user
 def rules():
     """Display quiz rules to the player."""
+    clear()
     print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
     print("1. You will be asked a series of questions.")
     print("2. Each question has four options: A, B, C, and D.")
@@ -123,6 +131,7 @@ def rules():
 # Show information about the project
 def about():
     """Display information about the quiz."""
+    clear()
     print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
     print("Welcome to Fandom Challenge!")
     print("Test your knowledge with quizzes from your favourite fandoms.")
@@ -148,6 +157,7 @@ def about():
 # Run the main quiz loop for a given category
 def play_quiz(questions, quiz_name):
     """Run a quiz with the given question set."""
+    clear()
     score = 0
     start_time = datetime.now()  # Record quiz start time
 
@@ -187,12 +197,7 @@ def play_quiz(questions, quiz_name):
             else:
                 print(
                     Fore.RED
-                    + "Invalid choice. Please enter A, B, C, D, or X."
-                )
-                # Reprint question + options so user can see them again
-                print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
-                for label, option in option_mapping.items():
-                    print(f"{label}) {option}")
+                    + "Invalid choice. Please enter A, B, C, D, or X.")
 
         # Check if chosen option matches the correct answer
         chosen_text = option_mapping[answer]
@@ -201,6 +206,10 @@ def play_quiz(questions, quiz_name):
             score += 1
         else:
             print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
+
+        # Pause so user can see result, then clear for next question
+        input(Fore.CYAN + "\nPress Enter to continue...")
+        clear()
 
     # Quiz finished: calculate total time
     end_time = datetime.now()
@@ -248,13 +257,18 @@ def play_quiz(questions, quiz_name):
 
     # Save score and display leaderboard
     save_score(username, score, quiz_name, time_taken)
+    clear()  # make leaderboard its own screen
     display_leaderboard(quiz_name)
+
+    # Pause so leaderboard stays visible
+    input(Fore.CYAN + "\nPress Enter to return to the quiz menu...")
 
 
 # Sub-menu for choosing which quiz category to play
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
     while True:
+        clear()  # Reset before showing quiz list
         print(Fore.CYAN + "\n=== SELECT A QUIZ ===")
         print("1 - Jak and Daxter")
         print("2 - Ratchet & Clank")
@@ -279,6 +293,7 @@ def select_quiz():
 # Main menu that controls navigation between features
 def menu():
     while True:
+        clear()  # Reset terminal before showing menu
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
         print("1 - Rules")
         print("2 - About")
