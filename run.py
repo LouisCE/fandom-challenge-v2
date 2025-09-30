@@ -13,8 +13,6 @@ Features:
 
 # Standard library imports
 import sys
-import os
-import json
 import random
 import re
 from datetime import datetime
