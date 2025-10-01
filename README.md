@@ -207,6 +207,14 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 - The program uses a custom `clear()` function to **refresh the terminal view** between screens.
 - This prevents clutter, ensures that each menu or question is shown cleanly, and makes the experience feel polished.
 
+#### Timed Pauses
+- Implemented using Python’s `time.sleep()` to add short delays.
+- Benefits:
+  - Prevents text from appearing all at once in overwhelming blocks.
+  - Creates a **smoother pacing** during rules, about, and feedback screens.
+  - Enhances readability by giving players time to absorb information.
+  - Plays to the strengths of the limited Heroku terminal and enhances the user experience by creating the illusion of loading text, similar to an old-school computer terminal.
+
 #### Exit Screen
 - Selecting “Exit” closes the program safely with a **friendly farewell message**.
 - Uses yellow text to clearly signal that the game has ended.
