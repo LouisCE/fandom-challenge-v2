@@ -215,6 +215,11 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   - Enhances readability by giving players time to absorb information.
   - Plays to the strengths of the limited Heroku terminal and enhances the user experience by creating the illusion of loading text, similar to an old-school computer terminal.
 
+#### f-Strings and Formatting
+- The game now uses **f-strings** to display messages dynamically and clearly.
+- Improves readability of both code and player feedback messages (e.g. showing the correct answer).
+- Helps maintain a clean, modern Python coding style.
+
 #### Exit Screen
 - Selecting “Exit” closes the program safely with a **friendly farewell message**.
 - Uses yellow text to clearly signal that the game has ended.
