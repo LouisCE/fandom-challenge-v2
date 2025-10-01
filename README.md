@@ -106,8 +106,12 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
   1. **Rules:** Explains how the quiz works.
   2. **About:** Displays information about the project.
   3. **Start Quiz:** Opens the quiz selection menu.
-  4. **Exit:** Ends the program.
+  4. **View Jak & Daxter Leaderboard:** Shows the top 10 scores for Jak & Daxter.
+  5. **View Ratchet & Clank Leaderboard:** Shows the top 10 scores for Ratchet & Clank.
+  6. **View God of War Leaderboard:** Shows the top 10 scores for God of War.
+  7. **Exit:** Ends the program.
 - The menu uses **Colorama colours** to improve readability and guide the user’s choices.
+- Leaderboards can now be accessed directly from the main menu, without needing to finish a quiz first.
 
 ![Main Menu](docs/main-menu.png)
 
@@ -680,7 +684,7 @@ Aside from this difference in credentials handling, both versions of the project
 
 | Issue | Screenshot |
 | --- | --- |
-| **Colorama rendering** — Colours (particularly the magenta/purple colour used for the questions) appear bolder when running locally in VS Code compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
+| **Colorama rendering** — Colours (particularly the magenta/purple colour used for the questions) appear bolder and pop more against the dark background when running locally in VS Code compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
 | **CTRL+C termination** — If a user presses `CTRL`+`C` in the terminal, the application stops immediately and an error message is displayed. This is expected behaviour for Python programs running in a terminal. | ![screenshot](docs/ctrl-c.png) |
 
 These are minor display or environment-related issues tied to the Heroku/CI mock terminal. They do not affect quiz gameplay or functionality. After thorough testing, no critical bugs remain.
