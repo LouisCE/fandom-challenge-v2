@@ -525,20 +525,20 @@ I have used manual logs to track bugs during development. Below is a log of the 
   - **Resolution:** Fixed all indentation consistently: 4 spaces per level, nested blocks 8+ spaces.
 
 **Leaderboard Bugs**
-- **Bug:** Leaderboard crashed with `TypeError: '<' not supported between instances of 'int' and 'str'`.  
-  - **Observed Behavior:** Program failed when sorting scores after adding a new "Time" column.  
-  - **Cause:** Older leaderboard rows had missing or inconsistent data types (string vs int).  
-  - **Resolution:** Ensured all values are cast to `int` before sorting; cleaned old rows in Google Sheets.  
+- **Bug:** Leaderboard crashed with `TypeError: '<' not supported between instances of 'int' and 'str'`.
+  - **Observed Behavior:** Program failed when sorting scores after adding a new "Time" column.
+  - **Cause:** Older leaderboard rows had missing or inconsistent data types (string vs int).
+  - **Resolution:** Ensured all values are cast to `int` before sorting; cleaned old rows in Google Sheets.
 
-- **Bug:** Leaderboard unavailable if headers missing.  
-  - **Observed Behavior:** `"Error: 'Score'"` displayed instead of leaderboard.  
-  - **Cause:** Google Sheet was missing header row with "Username", "Score", "Date"/"Time".  
-  - **Resolution:** Added proper headers to Sheet and validated presence before reading.  
+- **Bug:** Leaderboard unavailable if headers missing.
+  - **Observed Behavior:** `"Error: 'Score'"` displayed instead of leaderboard.
+  - **Cause:** Google Sheet was missing header row with "Username", "Score", "Date"/"Time".
+  - **Resolution:** Added proper headers to Sheet and validated presence before reading.
 
 **Deployment Issues (Heroku)**
-- **Bug:** Application crashed with `KeyError` when accessing Google credentials.  
-  - **Observed Behavior:** Deployment worked locally but failed on Heroku.  
-  - **Cause:** Environment variables not set in Heroku Config Vars.  
+- **Bug:** Application crashed with `KeyError` when accessing Google credentials.
+  - **Observed Behavior:** Deployment worked locally but failed on Heroku.
+  - **Cause:** Environment variables not set in Heroku Config Vars.
   - **Resolution:** Added credentials JSON string to `CREDS` config var, updated code to load from `os.environ`.
 
 ## Defensive Programming
