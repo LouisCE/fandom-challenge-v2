@@ -141,6 +141,31 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 
 ![Quiz Selection](docs/quiz-selection.png)
 
+#### Leaderboards
+- Players can now view leaderboards both from the **main menu** and at the **end of a quiz**, making them more accessible and engaging.
+- Each quiz category (**Jak and Daxter**, **Ratchet & Clank**, **God of War**) has its **own dedicated leaderboard**.
+
+**From the Main Menu:**
+- Users can check leaderboards **without needing to complete a quiz first**.
+- Accessible directly via the main menu, letting players compare scores before choosing which category to play.
+- Encourages competition and replay by making scores easy to view anytime.
+
+**At the End of a Quiz:**
+- After completing a quiz, the **top 10 leaderboard** for that category is displayed.
+- Features:
+  - Stores and displays the **highest scores across sessions**.
+  - Updates automatically when a new high score is achieved.
+  - A **timer** runs in the background, adding urgency and challenge.
+  - **Ranking rules**:
+    - Higher scores take priority.
+    - For equal scores, **faster completion times** are ranked higher.
+  - Encourages replayability by rewarding both accuracy and speed.
+
+**Screenshots:**
+![Jak Leaderboard](docs/jak-leaderboard.png)
+![Ratchet Leaderboard](docs/ratchet-leaderboard.png)
+![GoW Leaderboard](docs/gow-leaderboard.png)
+
 #### Gameplay (Quiz)
 - Each quiz:
   - Displays a **question number (Q1-Q10)**.
@@ -166,23 +191,6 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 ![Results](docs/try-again-result.png)
 ![Results](docs/good-job-result.png)
 ![Results](docs/superfan-result.png)
-
-#### Leaderboard
-- After completing a quiz, players can view the **leaderboard** showing the top ten scores.
-- Features:
-  - Each quiz category (**Jak and Daxter**, **Ratchet & Clank**, **God of War**) has its **own dedicated leaderboard**.
-  - Stores and displays the **highest scores across sessions** for that category.
-  - Updates automatically when a new high score is achieved.
-  - A **timer** runs in the background, adding urgency and challenge.
-  - **Leaderboard ranking rules**:
-    - Score takes priority in the rankings. Higher scores get higher rankings.
-    - In the event of equal scores, faster completion times are ranked higher, acting as a tiebreaker.
-  - Encourages replayability by letting players compete with themselves and others for the fastest and highest-scoring runs.
-- Adds an extra layer of challenge and motivation beyond just completing the quiz.
-
-![Jak and Daxter Leaderboard](docs/jak-leaderboard.png)
-![Ratchet & Clank Leaderboard](docs/ratchet-leaderboard.png)
-![God of War Leaderboard](docs/gow-leaderboard.png)
 
 #### Colour Feedback
 - Thanks to the **Colorama** library:
