@@ -333,8 +333,11 @@ def menu():
         print("1 - Rules")
         print("2 - About")
         print("3 - Start Quiz")
-        print("4 - Exit")
-        choice = input("\nChoose an option (1-4): ").strip()
+        print("4 - View Jak & Daxter Leaderboard")
+        print("5 - View Ratchet & Clank Leaderboard")
+        print("6 - View God of War Leaderboard")
+        print("7 - Exit")
+        choice = input("\nChoose an option (1-7): ").strip()
 
         if choice == "1":
             rules()
@@ -343,11 +346,23 @@ def menu():
         elif choice == "3":
             select_quiz()
         elif choice == "4":
+            clear()
+            display_leaderboard("jak")
+            input(Fore.CYAN + "Press Enter to return to main menu...")
+        elif choice == "5":
+            clear()
+            display_leaderboard("ratchet")
+            input(Fore.CYAN + "Press Enter to return to main menu...")
+        elif choice == "6":
+            clear()
+            display_leaderboard("gow")
+            input(Fore.CYAN + "Press Enter to return to main menu...")
+        elif choice == "7":
             print(Fore.YELLOW + "Goodbye!")
             time.sleep(2)
             sys.exit(0)
         else:
-            print(Fore.RED + f"'{choice}' is invalid. Please enter 1-4.")
+            print(Fore.RED + f"'{choice}' is invalid. Please enter 1-7.")
             input(Fore.CYAN + "\nPress Enter to try again...")
 
 
