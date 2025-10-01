@@ -235,6 +235,10 @@ Planned improvements include:
 - Expand on ASCII art and simple terminal graphics for visual engagement.
 - Integrating keyboard shortcuts for faster input.
 
+**Notes:**
+- Some screenshots may not exactly match the current version of the application, as late improvements were made to the `run.py` code. These updates are mostly cosmetic in nature, and overall functionality remains very similar to what is shown.
+- Username entries are not restricted to a single use. This allows players to maintain a consistent "gamer identity" across multiple attempts, giving them the opportunity to dominate several positions on the leaderboard if they choose.
+
 ## Tools & Technologies Used
 
 | Tool / Tech | Use |
@@ -433,7 +437,7 @@ All Python files in this project were validated using the [CI Python Linter](htt
 - Long lines (`E501`) were corrected by breaking strings inside parentheses, ensuring readability and compliance.  
 - No `# noqa` overrides were required.
 - External libraries (e.g., `colorama`, `gspread`, `google-auth`) were not validated, as they are third-party packages.
-- `test_gsheets.py` was a development-only helper script used to verify that Google Sheets authentication and read/write worked correctly. It is not imported or used by `run.py`, and does not form part of the deployed application. Therefore, code validation for `test_gsheets.py` is not neccessary.
+- `test_gsheets.py` was a development-only helper script used to verify that Google Sheets authentication and read/write worked correctly. It is not imported or used by `run.py`, and does not form part of the deployed application. Therefore, code validation for `test_gsheets.py` is not necessary.
 
 ## Lighthouse Audit
 
@@ -728,7 +732,7 @@ I would like to thank the following people and resources for their support and g
 
 [Code Institute sample README.md for Project 3](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
 
-- **Stack Overflow:** [Clear the terminal in Python](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python/50921841#50921841) – Helped me understand how to implement a clear screen function so the terminal stays tidy and uncluttered.
+- **Stack Overflow:** [Clear the terminal in Python](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python/50921841#50921841) - Helped me understand how to implement a clear screen function so the terminal stays tidy and uncluttered.
 
 - **ChatGPT:** Assisted in brainstorming initial draft questions for `data.py`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
 
@@ -736,6 +740,6 @@ I would like to thank the following people and resources for their support and g
   - [Markdown Tutorial Video](https://www.youtube.com/watch?v=HUBNt18RFbo)  
   - [Markdown Live Preview](https://markdownlivepreview.com/)
 
-  - Developed by LouisCE for Code Institute Portfolio Project 3.
+Developed by LouisCE for Code Institute Portfolio Project 3.
 
 Thank you all for your help and guidance.
