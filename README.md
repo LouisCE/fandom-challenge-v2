@@ -524,6 +524,23 @@ I have used manual logs to track bugs during development. Below is a log of the 
   - **Cause:** Some blocks (loops, if/else) were not properly indented after major rewriting.
   - **Resolution:** Fixed all indentation consistently: 4 spaces per level, nested blocks 8+ spaces.
 
+**Leaderboard Bugs**
+- **Bug:** Leaderboard crashed with `TypeError: '<' not supported between instances of 'int' and 'str'`.  
+  - **Observed Behavior:** Program failed when sorting scores after adding a new "Time" column.  
+  - **Cause:** Older leaderboard rows had missing or inconsistent data types (string vs int).  
+  - **Resolution:** Ensured all values are cast to `int` before sorting; cleaned old rows in Google Sheets.  
+
+- **Bug:** Leaderboard unavailable if headers missing.  
+  - **Observed Behavior:** `"Error: 'Score'"` displayed instead of leaderboard.  
+  - **Cause:** Google Sheet was missing header row with "Username", "Score", "Date"/"Time".  
+  - **Resolution:** Added proper headers to Sheet and validated presence before reading.  
+
+**Deployment Issues (Heroku)**
+- **Bug:** Application crashed with `KeyError` when accessing Google credentials.  
+  - **Observed Behavior:** Deployment worked locally but failed on Heroku.  
+  - **Cause:** Environment variables not set in Heroku Config Vars.  
+  - **Resolution:** Added credentials JSON string to `CREDS` config var, updated code to load from `os.environ`.
+
 ## Defensive Programming
 
 Defensive programming was carefully implemented and tested in the **Fandom Challenge V2** project to ensure the quiz handles invalid inputs gracefully and prevents errors or data corruption.
