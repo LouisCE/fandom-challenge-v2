@@ -10,6 +10,8 @@ This project demonstrates core Python programming concepts such as loops, condit
 
 ![Responsive design preview of Fandom Challenge V2 website](docs/am-i-responsive.png)
 
+[Live Site on Heroku](https://fandom-challenge-v2-a2c443c8af3e.herokuapp.com/)
+
 ## User Goals
 
 - Enjoy a fun and engaging terminal-based quiz experience.
