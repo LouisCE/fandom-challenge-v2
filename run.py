@@ -15,6 +15,7 @@ Features:
 import sys
 import random
 import re
+import time
 from datetime import datetime
 
 # Third-party imports
@@ -120,13 +121,20 @@ def rules():
     while True:
         clear()
         print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
+        time.sleep(0.5)
         print("1. You will be asked a series of questions.")
+        time.sleep(0.2)
         print("2. Each question has four options: A, B, C, and D.")
+        time.sleep(0.2)
         print("3. The questions and answer positions are randomised each "
               "time.")
+        time.sleep(0.2)
         print("4. Type the letter of your chosen answer and press Enter.")
+        time.sleep(0.2)
         print("5. Your score will be shown at the end of the quiz.")
+        time.sleep(0.2)
         print("6. Try to get the highest score you can!")
+        time.sleep(0.5)
         if input(Fore.CYAN + "\nPress Enter to return to the menu...") == "":
             clear()
             return
@@ -138,22 +146,31 @@ def about():
     while True:
         clear()
         print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
+        time.sleep(0.5)
         print("Welcome to Fandom Challenge!")
+        time.sleep(0.2)
         print("Test your knowledge with quizzes from your favourite fandoms.")
+        time.sleep(0.2)
         print(
             "Each quiz is randomised and challenges "
             "both your knowledge and speed.")
+        time.sleep(0.3)
         print(
             "\nCurrent categories include "
             "Jak and Daxter, Ratchet & Clank, and God of War.")
+        time.sleep(0.3)
         print(
             "This version was developed by Louis as part of a "
             "Python project to test programming and UX skills.")
+        time.sleep(0.3)
         print(
             "Future versions may include more categories and "
             "interactive features!")
+        time.sleep(0.3)
         print("\nView the original project on GitHub:")
+        time.sleep(0.2)
         print("https://github.com/LouisCE/fandom-challenge-v2")
+        time.sleep(0.5)
         if input(Fore.CYAN + "\nPress Enter to return to the menu...") == "":
             clear()
             return
@@ -200,6 +217,7 @@ def play_quiz(questions, quiz_name):
 
             if answer == "X":
                 print(Fore.YELLOW + "Returning to quiz selection menu...")
+                time.sleep(1)
                 return  # exit play_quiz() immediately
 
             if answer in option_mapping:
@@ -259,6 +277,7 @@ def play_quiz(questions, quiz_name):
                 Fore.YELLOW
                 + "Score not saved. Returning to quiz selection menu..."
             )
+            time.sleep(1)
             return  # exit play_quiz() immediately
 
         if re.fullmatch(r"[A-Z]{3}", username):
@@ -325,6 +344,7 @@ def menu():
             select_quiz()
         elif choice == "4":
             print(Fore.YELLOW + "Goodbye!")
+            time.sleep(2)
             sys.exit(0)
         else:
             print(Fore.RED + f"'{choice}' is invalid. Please enter 1-4.")
