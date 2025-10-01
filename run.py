@@ -92,7 +92,7 @@ def display_leaderboard(quiz_name, top_n=10):
         )
 
         # Print formatted leaderboard
-        print(f"\n=== {quiz_name.upper()} LEADERBOARD ===")
+        print(f"\n=== {quiz_name.upper()} LEADERBOARD ===\n")
         print(f"{'Rank':<5}{'User':<12}{'Score':<6}{'Time(s)':<8}")
         print("-" * 40)
         for i, rec in enumerate(sorted_records[:top_n], start=1):
@@ -120,7 +120,7 @@ def rules():
     """Display quiz rules to the player."""
     while True:
         clear()
-        print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
+        print(Fore.MAGENTA + "\n=== QUIZ RULES ===\n")
         time.sleep(0.5)
         print("1. You will be asked a series of questions.")
         time.sleep(0.2)
@@ -145,7 +145,7 @@ def about():
     """Display information about the quiz."""
     while True:
         clear()
-        print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
+        print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===\n")
         time.sleep(0.5)
         print("Welcome to Fandom Challenge!")
         time.sleep(0.2)
@@ -190,7 +190,7 @@ def play_quiz(questions, quiz_name):
 
     # Loop through the selected questions
     for i, q in enumerate(selected_questions, start=1):
-        print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
+        print(Fore.MAGENTA + f"\nQ{i}: {q['question']}\n")
 
         # Copy and shuffle options to prevent altering original dataset
         options = q["options"][:]
@@ -211,7 +211,7 @@ def play_quiz(questions, quiz_name):
         # Input loop: keep asking until valid
         while True:
             answer = input(
-                "Your choice (A-D) or X to return to quiz menu: "
+                "\nYour choice (A-D) or X to return to quiz menu: "
                 ).strip().upper()
             clear()
 
@@ -234,10 +234,10 @@ def play_quiz(questions, quiz_name):
         # Check if chosen option matches the correct answer
         chosen_text = option_mapping[answer]
         if chosen_text == q["answer"]:
-            print(Fore.GREEN + "Correct!")
+            print(Fore.GREEN + "\nCorrect!")
             score += 1
         else:
-            print(Fore.RED + f"Wrong! The correct answer was: {q['answer']}")
+            print(Fore.RED + f"\nWrong! The correct answer was: {q['answer']}")
 
         # Pause so user can see result, then clear for next question
         input(Fore.CYAN + "\nPress Enter to continue...")
@@ -248,7 +248,7 @@ def play_quiz(questions, quiz_name):
     time_taken = (end_time - start_time).seconds  # Time in seconds
 
     # Display final score and result message
-    print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!")
+    print(Fore.CYAN + f"\nYou scored {score}/{len(selected_questions)}!\n")
     print(Fore.YELLOW + f"Time taken: {time_taken} seconds")
 
     # Feedback based on score
@@ -268,8 +268,8 @@ def play_quiz(questions, quiz_name):
     # Prompt to save score to leaderboard
     while True:
         username = input(
-            "Enter your 3-letter username to save score "
-            "or X to return to quiz menu "
+            "\nEnter your 3-letter username to save score "
+            "or X to return to quiz menu \n\n"
         ).strip().upper()
 
         if username == "X":
@@ -286,7 +286,7 @@ def play_quiz(questions, quiz_name):
             clear()
             print(
                 Fore.RED
-                + f"'{username}' is an invalid username. "
+                + f"\n'{username}' is an invalid username. "
                 "Enter exactly 3 letters (A-Z) or X to cancel."
             )
             input(Fore.CYAN + "\nPress Enter to try again...")
@@ -297,7 +297,7 @@ def play_quiz(questions, quiz_name):
     display_leaderboard(quiz_name)
 
     # Pause so leaderboard stays visible
-    input(Fore.CYAN + "\nPress Enter to return to the quiz menu...")
+    input(Fore.CYAN + "Press Enter to return to the quiz menu...")
 
 
 # Sub-menu for choosing which quiz category to play
@@ -305,12 +305,12 @@ def select_quiz():
     """Sub-menu for selecting which quiz to play."""
     while True:
         clear()  # Clear first, so each menu starts fresh
-        print(Fore.CYAN + "\n=== SELECT A QUIZ ===")
+        print(Fore.CYAN + "\n=== SELECT A QUIZ ===\n")
         print("1 - Jak and Daxter")
         print("2 - Ratchet & Clank")
         print("3 - God of War")
         print("4 - Back to main menu")
-        choice = input("Choose an option (1-4): ").strip()
+        choice = input("\nChoose an option (1-4): ").strip()
 
         if choice == "1":
             play_quiz(JAK_QUESTIONS, "jak")  # Calls play_quiz
@@ -329,12 +329,12 @@ def select_quiz():
 def menu():
     while True:
         clear()
-        print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
+        print(Fore.CYAN + "\n=== FANDOM QUIZ ===\n")
         print("1 - Rules")
         print("2 - About")
         print("3 - Start Quiz")
         print("4 - Exit")
-        choice = input("Choose an option (1-4): ").strip()
+        choice = input("\nChoose an option (1-4): ").strip()
 
         if choice == "1":
             rules()
