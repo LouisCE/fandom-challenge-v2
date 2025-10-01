@@ -117,39 +117,46 @@ init(autoreset=True)
 # Show the quiz rules to the user
 def rules():
     """Display quiz rules to the player."""
-    clear()
-    print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
-    print("1. You will be asked a series of questions.")
-    print("2. Each question has four options: A, B, C, and D.")
-    print("3. The questions and answer positions are randomised each time.")
-    print("4. Type the letter of your chosen answer and press Enter.")
-    print("5. Your score will be shown at the end of the quiz.")
-    print("6. Try to get the highest score you can!")
-    input(Fore.CYAN + "\nPress Enter to return to the menu...")
+    while True:
+        clear()
+        print(Fore.MAGENTA + "\n=== QUIZ RULES ===")
+        print("1. You will be asked a series of questions.")
+        print("2. Each question has four options: A, B, C, and D.")
+        print("3. The questions and answer positions are randomised each "
+              "time.")
+        print("4. Type the letter of your chosen answer and press Enter.")
+        print("5. Your score will be shown at the end of the quiz.")
+        print("6. Try to get the highest score you can!")
+        if input(Fore.CYAN + "\nPress Enter to return to the menu...") == "":
+            clear()
+            return
 
 
 # Show information about the project
 def about():
     """Display information about the quiz."""
-    clear()
-    print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
-    print("Welcome to Fandom Challenge!")
-    print("Test your knowledge with quizzes from your favourite fandoms.")
-    print(
-        "Each quiz is randomised and challenges "
-        "both your knowledge and speed.")
-    print(
-        "\nCurrent categories include "
-        "Jak and Daxter, Ratchet & Clank, and God of War.")
-    print(
-        "This version was developed by Louis as part of a "
-        "Python project to test programming and UX skills.")
-    print(
-        "Future versions may include more categories and "
-        "interactive features!")
-    print("\nView the original project on GitHub:")
-    print("https://github.com/LouisCE/fandom-challenge-v2")
-    input(Fore.CYAN + "\nPress Enter to return to the menu...")
+    while True:
+        clear()
+        print(Fore.BLUE + "\n=== ABOUT THIS QUIZ ===")
+        print("Welcome to Fandom Challenge!")
+        print("Test your knowledge with quizzes from your favourite fandoms.")
+        print(
+            "Each quiz is randomised and challenges "
+            "both your knowledge and speed.")
+        print(
+            "\nCurrent categories include "
+            "Jak and Daxter, Ratchet & Clank, and God of War.")
+        print(
+            "This version was developed by Louis as part of a "
+            "Python project to test programming and UX skills.")
+        print(
+            "Future versions may include more categories and "
+            "interactive features!")
+        print("\nView the original project on GitHub:")
+        print("https://github.com/LouisCE/fandom-challenge-v2")
+        if input(Fore.CYAN + "\nPress Enter to return to the menu...") == "":
+            clear()
+            return
 
 
 # Core Quiz Logic
@@ -198,8 +205,9 @@ def play_quiz(questions, quiz_name):
             if answer in option_mapping:
                 break  # valid A-D answer, continue
             else:
-                print(Fore.RED +
-                      "Invalid choice. Please enter A, B, C, D, or X.")
+                clear()
+                print(Fore.RED + f"'{answer}' is an invalid choice. "
+                      "Please enter A, B, C, D, or X.")
                 # Re-show the question and options
                 print(Fore.MAGENTA + f"\nQ{i}: {q['question']}")
                 for label, option in option_mapping.items():
@@ -255,11 +263,14 @@ def play_quiz(questions, quiz_name):
 
         if re.fullmatch(r"[A-Z]{3}", username):
             break  # valid 3-letter username, continue
-        print(
-            Fore.RED
-            + "Invalid username. Enter exactly 3 letters "
-            "(A-Z) or X to cancel."
-        )
+        else:
+            clear()
+            print(
+                Fore.RED
+                + f"'{username}' is an invalid username. "
+                "Enter exactly 3 letters (A-Z) or X to cancel."
+            )
+            input(Fore.CYAN + "\nPress Enter to try again...")
 
     # Save score and display leaderboard
     save_score(username, score, quiz_name, time_taken)
@@ -274,13 +285,13 @@ def play_quiz(questions, quiz_name):
 def select_quiz():
     """Sub-menu for selecting which quiz to play."""
     while True:
+        clear()  # Clear first, so each menu starts fresh
         print(Fore.CYAN + "\n=== SELECT A QUIZ ===")
         print("1 - Jak and Daxter")
         print("2 - Ratchet & Clank")
         print("3 - God of War")
         print("4 - Back to main menu")
         choice = input("Choose an option (1-4): ").strip()
-        clear()  # Reset before showing quiz list
 
         if choice == "1":
             play_quiz(JAK_QUESTIONS, "jak")  # Calls play_quiz
@@ -291,21 +302,20 @@ def select_quiz():
         elif choice == "4":
             return  # Back to main menu
         else:
-            print(Fore.RED + "Invalid choice. Please enter 1, 2, 3, or 4.")
+            print(Fore.RED + f"'{choice}' is invalid. Please enter 1-4.")
+            input(Fore.CYAN + "\nPress Enter to try again...")
 
-
-# Main menu and entry point
 
 # Main menu that controls navigation between features
 def menu():
     while True:
+        clear()
         print(Fore.CYAN + "\n=== FANDOM QUIZ ===")
         print("1 - Rules")
         print("2 - About")
         print("3 - Start Quiz")
         print("4 - Exit")
         choice = input("Choose an option (1-4): ").strip()
-        clear()  # Reset terminal before showing menu
 
         if choice == "1":
             rules()
@@ -317,7 +327,8 @@ def menu():
             print(Fore.YELLOW + "Goodbye!")
             sys.exit(0)
         else:
-            print(Fore.RED + "Option not implemented yet. Please try again.")
+            print(Fore.RED + f"'{choice}' is invalid. Please enter 1-4.")
+            input(Fore.CYAN + "\nPress Enter to try again...")
 
 
 if __name__ == "__main__":
