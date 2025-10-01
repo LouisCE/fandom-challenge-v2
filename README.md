@@ -37,7 +37,7 @@ This project demonstrates core Python programming concepts such as loops, condit
 | As a player | I want the timer to affect leaderboard rankings | so that the game rewards quick thinking in addition to accuracy. |
 | As a competitive player | I want to see a persistent leaderboard of high scores | so that I can compare my results with others or past runs. |
 
-## Website Goals and Objectives
+## Project Goals and Objectives
 
 - Build an interactive, terminal-based quiz game that is fun and engaging for fans of popular gaming franchises.
 - Provide a simple, text-based interface that is easy to understand and navigate.
@@ -221,7 +221,7 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 - Helps maintain a clean, modern Python coding style.
 
 #### Exit Screen
-- Selecting “Exit” closes the program safely with a **friendly farewell message**.
+- Selecting “Exit” closes the program safely with a **friendly "Goodbye!" message**.
 - Uses yellow text to clearly signal that the game has ended.
 
 ![Exit](docs/exit.png)
@@ -232,7 +232,7 @@ Planned improvements include:
 
 - Adding more quiz categories and questions.
 - Implementing a timer for each question.
-- Adding ASCII art or simple terminal graphics for visual engagement.
+- Expand on ASCII art and simple terminal graphics for visual engagement.
 - Integrating keyboard shortcuts for faster input.
 
 ## Tools & Technologies Used
@@ -709,7 +709,7 @@ Aside from this difference in credentials handling, both versions of the project
 
 | Issue | Screenshot |
 | --- | --- |
-| **Colorama rendering** — Colours (particularly the magenta/purple colour used for the questions) appear bolder and pop more against the dark background when running locally in VS Code compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
+| **Colorama rendering** — Colours (particularly the magenta/purple colour used for the questions) appear bolder and pop more against the dark background when running locally in VS Code (shown in the screenshot) compared to the deployed Heroku terminal. This is a limitation of the Code Institute mock terminal and does not affect functionality. | ![screenshot](docs/colorama.png) |
 | **CTRL+C termination** — If a user presses `CTRL`+`C` in the terminal, the application stops immediately and an error message is displayed. This is expected behaviour for Python programs running in a terminal. | ![screenshot](docs/ctrl-c.png) |
 
 These are minor display or environment-related issues tied to the Heroku/CI mock terminal. They do not affect quiz gameplay or functionality. After thorough testing, no critical bugs remain.
@@ -727,6 +727,8 @@ I would like to thank the following people and resources for their support and g
 - **Code Institute sample README.md for Project 3:** Used as inspiration for structuring the **How to Play** and **Data Model** sections in this README.
 
 [Code Institute sample README.md for Project 3](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
+
+- **Stack Overflow:** [Clear the terminal in Python](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python/50921841#50921841) – Helped me understand how to implement a clear screen function so the terminal stays tidy and uncluttered.
 
 - **ChatGPT:** Assisted in brainstorming initial draft questions for `data.py`. All questions and answers were reviewed, verified, and corrected manually to ensure accuracy with canonical sources.
 
