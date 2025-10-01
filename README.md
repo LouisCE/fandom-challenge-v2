@@ -203,6 +203,10 @@ This simple but engaging gameplay loop makes the quiz fun, replayable and easy t
 ![Colour Feedback](docs/correct-answer.png)
 ![Colour Feedback](docs/wrong-answer.png)
 
+#### Clear Screen Functionality
+- The program uses a custom `clear()` function to **refresh the terminal view** between screens.
+- This prevents clutter, ensures that each menu or question is shown cleanly, and makes the experience feel polished.
+
 #### Exit Screen
 - Selecting “Exit” closes the program safely with a **friendly farewell message**.
 - Uses yellow text to clearly signal that the game has ended.
